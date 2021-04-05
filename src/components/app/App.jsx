@@ -7,10 +7,10 @@ function App() {
   return (
     <BrowserRouter>
     {/* <Header /> */}
-    <Player />
     <Switch>
       <Route exact path="/" component={Map} />
     </Switch>
+    <Player />
   </BrowserRouter>
   
   )

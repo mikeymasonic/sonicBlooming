@@ -3,11 +3,11 @@ import styles from './Map.css';
 
 function Map() {
   return (
-  <section className={styles}><h1>Aural Bloom</h1>
+  <section className={styles.mapClass}><h1>Aural Bloom</h1>
 {/* 
   <img src ="./images/tempMap.jpeg" /> */}
 
-  <svg className={styles.svgClass} xmlns="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/1999/xlink" viewBox="0 0 1224 792">
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/1999/xlink" viewBox="0 0 1224 792">
 
     <g>
       <title>Chester County, PA</title>

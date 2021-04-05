@@ -1,5 +1,5 @@
-svg {
-    /* background-image: url(https://user-images.githubusercontent.com/465414/38976101-0a62803a-4365-11e8-8bdf-1d623736e2c5.png); */
+.mapClass {
+  svg {
     background-image: url(http://localhost:7891/images/tempMap.jpeg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -19,4 +19,5 @@ svg {
   svg a:hover path {
     fill: rgba(30,222,121, 0.25);
     cursor: pointer;
- }
+}
+};

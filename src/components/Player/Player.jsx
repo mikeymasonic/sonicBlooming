@@ -1,11 +1,12 @@
 import React from 'react';
 import AudioPlayer from 'react-h5-audio-player';
-import style from 'react-h5-audio-player/lib/styles.css';
+// import styles from 'react-h5-audio-player/lib/styles.css';
+import styles from './Player.css'
 
 function Player() {
   return (
     <AudioPlayer
-    className={style}
+    className={styles}
     src="./mp3/example.mp3"
     onPlay={e => console.log("onPlay")}
     />
