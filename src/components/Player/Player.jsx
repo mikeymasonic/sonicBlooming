@@ -16,11 +16,11 @@ const Player = () => {
 
   return (
     <>
-      <h1>{song.url}</h1>
+      <h1>{song?.url}</h1>
       <AudioPlayer
         className={styles}
-        src={song.url}
-        onPlay={() => console.log('onPlay')}
+        src={song?.url}
+        // onPlay={() => console.log('onPlay')}
       />
       
       <button
