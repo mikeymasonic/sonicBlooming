@@ -2,25 +2,23 @@ import React, { createContext, useState, useContext } from 'react';
 import PropTypes from 'prop-types';
 import {
   songOne,
-  songTwo,
-  songThree,
-  songFour,
 } from '../utils/data';
 
 const DataContext = createContext();
 
-export const EffectsProvider = ({ children }) => {
-  const [songs, setSongs] = useState(songOne);
+export const DataProvider = ({ children }) => {
+  const [song, setSong] = useState(songOne);
 
-  const handleSongs = ({ target }) => {
-    setSongs(target.value);
+  const handleSong = (thing) => {
+    setSong(thing);
+    // console.log('inside handleSongs')
   };
 
   return (
     <DataContext.Provider
       value={{
-        songs,
-        handleSongs,
+        song,
+        handleSong,
       }}
     >
       {children}
@@ -28,20 +26,20 @@ export const EffectsProvider = ({ children }) => {
   );
 };
 
-EffectsProvider.propTypes = {
+DataProvider.propTypes = {
   children: PropTypes.node,
 };
 
-
 // state
-export const useSongs= () => {
-  const { songs } = useContext(DataContext);
-  return songs;
+export const useSong = () => {
+  const { song } = useContext(DataContext);
+  console.log('ding', song);
+  return song;
 };
 
-
 //handlers
-export const useHandleSongs = () => {
-  const { handleSongs } = useContext(DataContext);
-  return handleSongs;
+export const useHandleSong = () => {
+  const { handleSong } = useContext(DataContext);
+  // console.log('donk', handleSongs)
+  return handleSong;
 };
