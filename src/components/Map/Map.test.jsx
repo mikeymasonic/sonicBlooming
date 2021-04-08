@@ -1,11 +1,11 @@
 import React from 'react';
 import { render, cleanup } from '@testing-library/react';
-import Player from './Player';
+import Map from './Map';
 
-describe('Player component', () => {
+describe('Map component', () => {
   afterEach(() => cleanup());
-  it('renders Player', () => {
-    const { asFragment } = render(<Player />);
+  it('renders Map', () => {
+    const { asFragment } = render(<Map />);
     expect(asFragment()).toMatchSnapshot();
   });
 });

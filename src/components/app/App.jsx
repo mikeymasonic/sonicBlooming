@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Map from '../Map/Map';
 import Player from '../Player/Player';
 import { DataProvider } from '../../hooks/DataProvider';
+import About from '../About/About';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         {/* <Header /> */}
         <Switch>
           <Route exact path="/" component={Map} />
+          <Route exact path="/about" component={About} />
         </Switch>
         <Player />
       </BrowserRouter>
