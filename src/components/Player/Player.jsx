@@ -11,7 +11,7 @@ const Player = () => {
     <>
       <h1>{song?.title}</h1>
       <AudioPlayer
-        className={styles}
+        className={styles.whatever}
         src={song?.url}
         // onPlay={() => console.log('onPlay')}
       />
