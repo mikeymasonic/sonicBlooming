@@ -8,14 +8,14 @@ const Player = () => {
   const song = useSong();
 
   return (
-    <>
+    <section className={styles.Player}>
       <h1>{song?.title}</h1>
       <AudioPlayer
         className={styles.whatever}
         src={song?.url}
         // onPlay={() => console.log('onPlay')}
       />
-    </>
+    </section>
   );
 };
 

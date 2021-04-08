@@ -1,3 +1,75 @@
-.whatever {
-  fill:aqua
+a {
+    text-decoration: none;
+  }
+  
+  a:link {
+    color: rgb(151, 40, 40);
+  }
+  
+  a:visited {
+    color: rgb(145, 24, 24);
+  }
+  
+  a:hover {
+    color: hotpink;
+  }
+  
+  a:active {
+    color: hotpink;
+  }
+
+.Header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.8fr;
+    gap: 1px 1px;
+    grid-template-areas: "logo User navbar";
+    background-color: rgba(133, 32, 119, 0.658);
+    color: white;
+    width: 100%;
+    height: 6rem;
+    margin-bottom: 2rem;
+    justify-items: center;
+
+  .nameLink {
+    font-size: 1.5rem;
+    font-family: var(--display-font);
+    margin-right: 2rem;
+  }
+  
+  .logo { 
+    grid-area: logo;
+    width: 18rem;
+    margin-right: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: .5rem;
+    margin-left: .5rem;
+   }
+  
+  .navbar { 
+    grid-area: navbar;
+    margin-top: 1rem;
+   }
+  
+  .User { 
+    grid-area: User;
+    margin-top: 1rem;
+    margin-bottom: -1rem;
+    margin-left: -8rem;
+    line-height: .1rem;
+   }
+
+  .navLink {
+    margin-right: 1rem;
+  }
+
+  .logout {
+    font-size: .5rem;
+    margin-bottom: 10rem;
+  }
+
+  h4 {
+    font-size: .75rem;
+    margin-top: 1rem;
+  }
 }

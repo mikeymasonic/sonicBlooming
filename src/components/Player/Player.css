@@ -1,3 +1,7 @@
+.Player{
+  background-color: rgba(133, 32, 119, 0.658);
+
+
 svg {
   /* background-image: url(https://user-images.githubusercontent.com/465414/38976101-0a62803a-4365-11e8-8bdf-1d623736e2c5.png); */
   /* background-image: url(http://localhost:7891/images/tempMap.jpeg); */
@@ -18,4 +22,6 @@ svg a:focus path,
 svg a:hover path {
   fill: rgba(30,222,121, 0.25);
   cursor: pointer;
+}
+
 }

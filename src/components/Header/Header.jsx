@@ -7,7 +7,7 @@ import styles from './Header.css';
 const Header = () => {
   return (
     <>
-      <header className={styles.navLink}>
+      <header className={styles.Header}>
         <Link className={styles.navLink} to="/">
           <h1>sonic bloom</h1>
         </Link>
