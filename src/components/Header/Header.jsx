@@ -14,6 +14,9 @@ const Header = () => {
         <Link className={styles.navLink} to="/about">
             _ABOUT
         </Link>
+        <Link className={styles.navLink} to="/upload">
+            _UPLOAD
+        </Link>
 
       </header>
     </>
