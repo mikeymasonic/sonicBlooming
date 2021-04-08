@@ -1,7 +1,17 @@
 import React from 'react';
+import { useHandleSong } from '../../hooks/DataProvider';
+import {
+  songOne,
+  songTwo,
+  songThree,
+  songFour,
+  songFive,
+} from '../../utils/data';
 import styles from './Map.css';
 
 function Map() {
+  // const song = useSong();
+  const handleSong = useHandleSong();
   return (
     <section className={styles.mapClass}><h1>Aural Bloom</h1>
       {/* 
@@ -15,40 +25,39 @@ function Map() {
         height="528"
         viewBox="0 0 816 528">
       
-        {/* <defs
-          id="defs14" /> */}
+
         <g>
-          <a xmlnsXlink="https://www.littletikes.com/item/612060/cozy-coupe-30th-anniversary-edition/1.html" target="_blank">
-            <title>Cozy Coupe</title>
+          <a onClick={() => handleSong(songOne)}>
+            <title>Song One</title>
             <path
               d="m 220.33867,77.491991 c 21.47369,0.622425 43.13125,-1.005157 64.42106,1.867277 18.17837,2.452638 35.48907,9.295492 53.21739,14.004576 14.96426,3.974883 7.22394,6.454873 16.80549,29.876426 1.95052,4.76795 4.23165,9.39695 6.53547,14.00458 0.27336,0.54673 6.35988,8.57833 3.73455,11.20366 -6.90622,6.90623 -22.61814,12.54389 -30.81007,15.87186 -16.13535,6.55498 -26.85255,7.36282 -44.81464,5.60183 -8.76043,-0.85887 -17.66546,-1.36116 -26.14188,-3.73456 -7.24226,-2.02783 -13.53063,-6.6105 -20.54004,-9.33638 -4.22322,-1.64236 -8.8036,-2.21051 -13.07094,-3.73456 -0.29308,-0.10467 0.22006,-0.71357 0,-0.93363 -7.00402,-7.00402 -15.40606,-12.71085 -21.47369,-20.54005 -8.378,-10.81032 -7.81785,-18.52732 -8.40274,-30.81007 -0.0888,-1.865161 -0.59049,-3.830374 0,-5.601829 1.23743,-3.712292 13.73543,-11.069087 17.73913,-13.070938 1.27852,-0.63926 2.75832,-4.583017 2.80091,-4.668192 z"/>
           </a>
         </g>
         <g>
-          <a xmlnsXlink="https://www.littletikes.com/item/612060/cozy-coupe-30th-anniversary-edition/1.html" target="_blank">
-            <title>Cozy Coupe</title>
+          <a onClick={() => handleSong(songTwo)}>
+            <title>Song Two</title>
             <path
               d="m 230.6087,193.26316 c 20.85125,7.15789 42.94467,11.39928 62.55377,21.47368 14.78575,7.59635 26.14188,20.54005 39.21282,30.81007 4.35698,3.42334 8.74415,6.8086 13.07093,10.27002 1.89802,1.51842 4.96229,2.32319 5.60183,4.6682 0.54931,2.01411 -0.83127,4.90979 -2.80091,5.60183 -42.14228,14.80674 -18.86328,6.02998 -42.01373,4.66819 -17.4035,-1.02374 -35.5477,4.08352 -51.35011,-5.60183 -5.47014,-3.35266 -11.18943,-6.93065 -14.93822,-12.1373 -3.59316,-4.9905 -1.38625,-17.41683 0,-22.40732 0.55875,-2.01152 2.14073,-3.62129 2.80092,-5.60184 2.31526,-6.94578 2.80091,-14.24372 2.80091,-21.47368 0,-2.4897 0,-4.9794 0,-7.46911 0,-0.62242 0.53373,-1.54704 0,-1.86727 -2.93048,-1.75829 -10.30453,0.22478 -14.93821,-0.93364 z" />
           </a>
         </g>
         <g>
-          <a xmlnsXlink="https://www.littletikes.com/item/612060/cozy-coupe-30th-anniversary-edition/1.html" target="_blank">
-            <title>Cozy Coupe</title>
+          <a onClick={() => handleSong(songThree)}>
+            <title>Song Three</title>
             
             <path
               d="m 461.21739,182.0595 c 29.89891,0 75.44959,-1.54441 97.0984,14.93821 31.79274,24.20583 5.96635,60.64163 -16.80549,69.08925 -18.63539,6.91313 -64.10931,-3.98267 -75.62472,-22.40733 -11.96531,-19.1445 -2.80267,-19.14928 -5.60183,-34.54462 -0.37948,-2.08715 -3.64357,-19.78837 -1.86727,-23.34096 0.69589,-1.39179 1.86727,-2.4897 2.80091,-3.73455 z" />
           </a>
         </g>
         <g>
-          <a xmlnsXlink="https://www.littletikes.com/item/612060/cozy-coupe-30th-anniversary-edition/1.html" target="_blank">
-            <title>Cozy Coupe</title>
+          <a onClick={() => handleSong(songFour)}>
+            <title>Song Four</title>
             <path
               d="m 480.8238,314.63616 c 24.19348,0 40.82469,-3.34029 61.62014,19.6064 9.58831,10.58021 13.64549,25.92656 14.93821,40.14646 3.96376,43.60136 -34.81707,49.26811 -65.35469,34.54462 -7.93886,-3.82766 -14.10071,-10.857 -19.60641,-17.73913 -15.88968,-19.8621 -16.12547,-23.14861 -12.1373,-45.74829 0.63304,-3.58722 1.90946,-7.11757 3.73456,-10.27002 1.65754,-2.86303 4.55052,-4.82252 6.53547,-7.46911 4.85727,-6.47636 1.50074,-9.56322 10.27002,-13.07093 z" />
           </a>
         </g>
         <g>
-          <a xmlnsXlink="https://www.littletikes.com/item/612060/cozy-coupe-30th-anniversary-edition/1.html" target="_blank">
-            <title>Cozy Coupe</title>
+          <a onClick={() => handleSong(songFive)}>
+            <title>Song Five</title>
             <path
               d="m 235.27689,347.3135 c 9.02517,0 18.26257,-1.94571 27.07551,0 15.47477,3.41651 31.22559,7.71842 44.81465,15.87185 7.41955,4.45174 11.22648,13.24018 15.87185,20.54005 10.77005,16.92437 1.72465,33.08882 -17.73913,36.4119 -13.09265,2.23533 -48.75426,-7.00825 -58.81922,-14.93822 -4.61237,-3.63398 -7.32969,-9.41979 -9.33639,-14.93821 -3.81258,-10.48461 -1.46977,-15.55787 -0.93363,-25.20824 0.13466,-2.42388 0.73408,-7.49048 -0.93364,-10.27002 -0.45288,-0.7548 -1.86728,-0.98704 -1.86728,-1.86728 0,-1.96828 1.24485,-3.73455 1.86728,-5.60183 z"/>
           </a>
@@ -60,43 +69,43 @@ function Map() {
 
         <g>
           <title>Chester County, PA</title>
-          <a xmlnsXlink="https://goo.gl/maps/7CNhPSMQ6ZR2" target="_blank">
+          <a xlinkHref="https://goo.gl/maps/7CNhPSMQ6ZR2" target="_blank">
             <path d="M1 1h640v641H1z"/>
           </a>
         </g>
         <g>
-          <a xmlnsXlink="https://www.littletikes.com/item/612060/cozy-coupe-30th-anniversary-edition/1.html" target="_blank">
+          <a xlinkHref="https://www.littletikes.com/item/612060/cozy-coupe-30th-anniversary-edition/1.html" target="_blank">
             <title>Cozy Coupe</title>
             <path d="M360 155h20l15 3 21 6 18 7 8 5 4 8 9 5 5 2 5 7 2 5v7l-1 8 4 10 6 24 14 61v5l8 4 2 13 2 16-3 29-2 3 2 5-5 12-1 5-1 14-4 7-9 7-7 6-6 9v3l3 3 5 8 3 9v11l-3 13-7 7-7 3-13 2h-11l-15-3-5-8-5-8-3-8 3-19-21 1 20-5v-20l16-9 7-65-6-10 9-34 8-27-5-12 3-15 14-23-10-18-12-7-12 2-6-7 4-10-10-19 3-11-27-10-10-2-5 3-11-8zm-77 73l-38 94-8 18-10 13v37l-7 9 2 9 4 4 7 3 1 5h-12l-10 2-10 4-8 10-4 10v12l4 8 7 10 9 2 17 2 9-2 13-6 5-14-1-16-8-12-5-5-1-8 22 5 6 18 6 15 15 18 12 4h17l8-4 12-8 10-16 9-61-39-4-24 22-15-4-11-15 6-17 8-7-2-11 6-4-2-11 9-6 5-19-2-10 6-10v-9l6-10 4-2-4-9 4-9-14-4-14-21z"/>
           </a>
         </g>
         <g>
-          <a xmlnsXlink="https://www.etsy.com/listing/566632561/faux-fur-poms-in-husky-two-sizes" target="_blank">
+          <a xlinkHref="https://www.etsy.com/listing/566632561/faux-fur-poms-in-husky-two-sizes" target="_blank">
             <title>Faux Fur Poms</title>
             <path d="M372 161h25l10 7 5 12 3 13v17l-6 16-10 10-16 3h-16l-9-9-11-14v-22l7-16 9-10 9-7z"/>
           </a>
         </g>
         <g>
 
-          <a xmlnsXlink="https://www.yarn.com/products/madelinetosh-home" target="_blank">
+          <a xlinkHref="https://www.yarn.com/products/madelinetosh-home" target="_blank">
             <title>Custom knit hat</title>
             <path d="M358 229l-16 4-13 8-13 8h-18l-14-20-5-20v-16l9-20 19-16 17-6h15l26 7 8 6-15 12v17l-4 12 2 14 2 10z"/>
           </a>
         </g>
         <g>
-          <a xmlnsXlink="https://www.hm.com/us/product/68727?article=68727-G">
+          <a xlinkHref="https://www.hm.com/us/product/68727?article=68727-G">
             <title>Parka</title>
             <path d="M413 212l7 9 25-5 10 8v19l-9 16-6 12 2 15 2 20-10 12-8 31 8 20-7 58-17 8v21h-62l10-69-45-4-24 24-21-22 11-22-3-9 10-3-3-17h10l4-16v-18l4-10 6-15 7-8-8-12 19-13 20-8 16 4 18 4 16-4 11-10 7-16zm-68 246l-16 15 5"/>
           </a>
         </g>
         <g>
-          <a xmlnsXlink="https://www.zulily.com/p/navy-speckled-wool-blend-pants-toddler-boys-277675-41628923.html" target="_blank">
+          <a xlinkHref="https://www.zulily.com/p/navy-speckled-wool-blend-pants-toddler-boys-277675-41628923.html" target="_blank">
             <title>Pants</title>
             <path d="M328 470l7 5v7l2 6-1 4 1 7 1 2 2 7-2 7 2 4v11l3 3 12-3 16-7-2-5 3-7 1-8-3-2 3-4-2-4h12l3-3 3-4v-12l-1-13 1-6h-43z"/>
           </a>
         </g>
         <g>
-          <a xmlnsXlink="https://www.target.com/p/boys-deer-stags-ace-oxford-oxfords/-/A-51113222#lnk=sametab&preselect=51002832" target="_blank">
+          <a xlinkHref="https://www.target.com/p/boys-deer-stags-ace-oxford-oxfords/-/A-51113222#lnk=sametab&preselect=51002832" target="_blank">
             <title>Dress shoss</title>       
             <path d="M336 513h-5l-10-3-10 3v6l4 10 8 8 13 9 15 8h10l7-6v-19l-14 7-12-1-5-11-1-11z"/>
           </a>
