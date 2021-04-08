@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component renders Header 1`] = `
+<DocumentFragment>
+  <header
+    class="navLink"
+  >
+    <a
+      class="navLink"
+      href="/"
+    >
+      <h1>
+        sonic bloom
+      </h1>
+    </a>
+    <a
+      class="navLink"
+      href="/about"
+    >
+      _ABOUT
+    </a>
+  </header>
+</DocumentFragment>
+`;

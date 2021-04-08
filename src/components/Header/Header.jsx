@@ -7,16 +7,15 @@ import styles from './Header.css';
 const Header = () => {
   return (
     <>
-      <section className={styles}>
+      <header className={styles.navLink}>
         <Link className={styles.navLink} to="/">
           <h1>sonic bloom</h1>
         </Link>
-        
         <Link className={styles.navLink} to="/about">
             _ABOUT
         </Link>
 
-      </section>
+      </header>
     </>
   );
 };

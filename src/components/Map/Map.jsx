@@ -12,7 +12,7 @@ import styles from './Map.css';
 function Map() {
   const handleSong = useHandleSong();
   return (
-    <section className={styles.mapClass}><h1>Sonic Bloom</h1>
+    <section className={styles.mapClass}>
 
       <svg
         xmlns="http://purl.org/dc/elements/1.1/"
