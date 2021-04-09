@@ -3,7 +3,7 @@
 exports[`Header component renders Header 1`] = `
 <DocumentFragment>
   <header
-    class="navLink"
+    class="Header"
   >
     <a
       class="navLink"
@@ -18,6 +18,12 @@ exports[`Header component renders Header 1`] = `
       href="/about"
     >
       _ABOUT
+    </a>
+    <a
+      class="navLink"
+      href="/upload"
+    >
+      _UPLOAD
     </a>
   </header>
 </DocumentFragment>

@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Player component renders Player 1`] = `
+<DocumentFragment>
+  <section
+    class="Upload"
+  >
+    <h1>
+      Upload
+    </h1>
+  </section>
+</DocumentFragment>
+`;

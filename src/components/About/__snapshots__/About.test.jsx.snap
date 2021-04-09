@@ -3,7 +3,7 @@
 exports[`About component renders About 1`] = `
 <DocumentFragment>
   <section
-    class="whatever"
+    class="About"
   >
     <h1>
       about
