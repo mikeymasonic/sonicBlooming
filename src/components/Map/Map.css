@@ -1,5 +1,4 @@
 .mapClass {
-  
 
   svg {
     background-image: url(https://inbloom.netlify.app/images/tempMapSmaller.png);
@@ -25,5 +24,14 @@
     fill: rgba(231, 19, 19, 0.445);
     cursor: pointer;
 }
+}
+
+body {
   background-color: rgba(133, 32, 119, 0.658);
-};
+}
+section {
+  /* border: 1px solid #2d2d2d; */
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+}
