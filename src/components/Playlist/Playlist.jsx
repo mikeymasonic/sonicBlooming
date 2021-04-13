@@ -13,6 +13,7 @@ const Playlist = () => {
   const playlistNodes = songs.map((song) => {
     // return <p key={song.title}>hi</p>;
     if (mapLocation === song.mapLocation) {
+      
       return <a key={song.title} onClick={() => handleSong(song)}>hii{song.title}</a>;
     }
   });

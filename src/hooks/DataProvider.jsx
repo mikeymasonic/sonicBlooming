@@ -8,7 +8,7 @@ const DataContext = createContext();
 
 export const DataProvider = ({ children }) => {
   const [song, setSong] = useState(null);
-  const [mapLocation, setMapLocation] = useState('Gold Medal Garden');
+  const [mapLocation, setMapLocation] = useState(null);
 
   const handleSong = (track) => {
     setSong(track);

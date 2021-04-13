@@ -1,17 +1,17 @@
 import React from 'react';
-import { useHandleMapLocation, useHandleSong } from '../../hooks/DataProvider';
-import {
-  songOne,
-  songTwo,
-  songThree,
-  songFour,
-  songFive,
-  songs,
-} from '../../utils/data';
+import { useHandleMapLocation } from '../../hooks/DataProvider';
+// import {
+//   songOne,
+//   songTwo,
+//   songThree,
+//   songFour,
+//   songFive,
+//   songs,
+// } from '../../utils/data';
 import styles from './Map.css';
 
 function Map() {
-  const handleSong = useHandleSong();
+  // const handleSong = useHandleSong();
   const handleMapLocation = useHandleMapLocation();
   return (
     <section className={styles.mapClass}>
