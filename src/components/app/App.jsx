@@ -8,8 +8,7 @@ import Header from '../Header/Header';
 import Upload from '../Upload/Upload';
 import Playlist from '../Playlist/Playlist';
 
-function App() {
-  // const location = useHandleMapLocation;
+const App = () => {
 
   return (
 
@@ -27,6 +26,6 @@ function App() {
     </Router>
   
   );
-}
+};
 
 export default App;
