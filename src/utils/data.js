@@ -33,31 +33,32 @@ export const songs = [
   {
     url: '../mp3/example1.mp3',
     title: 'Song One',
-    mapLocation: 'Queen\'s Walk'
+    mapLocation: 'Promenade'
   },
   {
     url: '../mp3/example2.mp3',
     title: 'Song Two',
-    mapLocation: 'Test Garden'
+    mapLocation: 'Royal Rosarian Garden'
   },
   {
     url: '../mp3/example3.mp3',
     title: 'Song Three',
-    mapLocation: 'Gold Medal Garden'
+    mapLocation: 'Test Garden'
   },
   {
     url: '../mp3/example4.mp3',
     title: 'Song Four',
-    mapLocation: 'Promenade'
+    mapLocation: 'Gold Medal Garden'
   },
   {
     url: '../mp3/example5.mp3',
     title: 'Song Five',
-    mapLocation: 'Royal Rosarian Garden'
+    mapLocation: 'Queen\'s Walk'
   },
+  // keep above as is, everything below are new songs
   {
     url: '../mp3/example5.mp3',
-    title: 'Song Three Again (but not really)',
+    title: 'Song Four Again (but not really)',
     mapLocation: 'Gold Medal Garden'
   },
 ];
