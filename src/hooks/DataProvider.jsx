@@ -8,16 +8,23 @@ const DataContext = createContext();
 
 export const DataProvider = ({ children }) => {
   const [song, setSong] = useState(null);
+  const [mapLocation, setMapLocation] = useState('');
 
   const handleSong = (track) => {
     setSong(track);
+  };
+
+  const handleMapLocation = (location) => {
+    setMapLocation(location);
   };
 
   return (
     <DataContext.Provider
       value={{
         song,
+        mapLocation,
         handleSong,
+        handleMapLocation,
       }}
     >
       {children}
@@ -35,8 +42,18 @@ export const useSong = () => {
   return song;
 };
 
+export const useMapLocation = () => {
+  const { mapLocation } = useContext(DataContext);
+  return mapLocation;
+};
+
 // get handlers
 export const useHandleSong = () => {
   const { handleSong } = useContext(DataContext);
   return handleSong;
+};
+
+export const useHandleMapLocation = () => {
+  const { mapLocation } = useContext(DataContext);
+  return mapLocation;
 };
