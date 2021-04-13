@@ -12,6 +12,7 @@ export const DataProvider = ({ children }) => {
 
   const handleSong = (track) => {
     setSong(track);
+    setMapLocation(track.mapLocation);
   };
 
   const handleMapLocation = (location) => {
@@ -54,6 +55,6 @@ export const useHandleSong = () => {
 };
 
 export const useHandleMapLocation = () => {
-  const { mapLocation } = useContext(DataContext);
-  return mapLocation;
+  const { handleMapLocation } = useContext(DataContext);
+  return handleMapLocation;
 };
