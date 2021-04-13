@@ -55,6 +55,11 @@ export const songs = [
     title: 'Song Five',
     mapLocation: 'Royal Rosarian Garden'
   },
+  {
+    url: '../mp3/example5.mp3',
+    title: 'Song Three Again (but not really)',
+    mapLocation: 'Gold Medal Garden'
+  },
 ];
 
 
