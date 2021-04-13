@@ -10,12 +10,15 @@ const Playlist = () => {
   const mapLocation = useMapLocation();
   const handleSong = useHandleSong();
   // const song = useSong();
+
+  // if (mapLocation === song.mapLocation[0])
   const playlistNodes = songs.map((song) => {
     // return <p key={song.title}>hi</p>;
     if (mapLocation === song.mapLocation) {
-      
-      return <a key={song.title} onClick={() => handleSong(song)}>hii{song.title}</a>;
+      // handleSong(songs[0]);
+      return <a key={song.title} onClick={() => handleSong(song)}>{song.title}</a>;
     }
+    // handleSong(songs[1]);
   });
 
   return (
