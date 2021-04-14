@@ -49,7 +49,7 @@ module.exports = {
         },
       },
       {
-        test: /\.css$/,
+        test: /\..+ss$/i,
         use: [
           {
             loader: 'style-loader',
@@ -75,6 +75,7 @@ module.exports = {
               },
             },
           },
+          'sass-loader',
         ],
       },
       {
