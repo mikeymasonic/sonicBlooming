@@ -95,7 +95,7 @@ exports[`App component renders App 1`] = `
     <h1 />
     <div
       aria-label="Audio Player"
-      class="rhap_container whatever"
+      class="rhap_container rhap_container"
       role="group"
       tabindex="0"
     >
