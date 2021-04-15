@@ -37,6 +37,29 @@ export const songs = [
   },
 ];
 
+export const uploads = [
+  {
+    mapLocation: 'Promenade',
+    url: 'https://script.google.com/macros/s/AKfycbzobp1dHDf_Ka5PnqE1u0qXJRz7IaCe4pjuvxcESpYpsbzLVjRiXnRDXJRyxzQuyNrb/exec',
+  },
+  {
+    mapLocation: 'Royal Rosarian Garden',
+    url: 'https://script.google.com/macros/s/AKfycbzobp1dHDf_Ka5PnqE1u0qXJRz7IaCe4pjuvxcESpYpsbzLVjRiXnRDXJRyxzQuyNrb/exec',
+  },
+  {
+    mapLocation: 'Test Garden',
+    url: 'https://script.google.com/macros/s/AKfycbzobp1dHDf_Ka5PnqE1u0qXJRz7IaCe4pjuvxcESpYpsbzLVjRiXnRDXJRyxzQuyNrb/exec',
+  },
+  {
+    mapLocation: 'Gold Medal Garden',
+    url: 'https://script.google.com/macros/s/AKfycbzobp1dHDf_Ka5PnqE1u0qXJRz7IaCe4pjuvxcESpYpsbzLVjRiXnRDXJRyxzQuyNrb/exec',
+  },
+  {
+    mapLocation: 'Queen\'s Walk',
+    url: 'https://script.google.com/macros/s/AKfycbzobp1dHDf_Ka5PnqE1u0qXJRz7IaCe4pjuvxcESpYpsbzLVjRiXnRDXJRyxzQuyNrb/exec',
+  },
+];
+
 export const aboutSite = {
   description: 'This is a site description for home page.  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia dolorem ullam, unde aliquam tenetur consequatur ut in esse harum sunt! Atque dolorem provident accusamus sint? Ducimus, magni. Id, enim non? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem animi ex repellendus eaque. Quam blanditiis cum quo sunt laudantium nihil earum unde dolore laborum! Id libero iusto similique minus dignissimos. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit dolorem ut omnis corrupti consequatur totam, aliquid ex qui cum deleniti minima, maiores temporibus doloribus, voluptatem et veniam eligendi vel? Distinctio.'
 };
