@@ -20,13 +20,16 @@ const Header = (props) => {
   return (
     <header className={styles.Header}>
       <Link className={styles.navLink} to="/">
-        <h1>sonic blooming</h1>
-      </Link>
-      <Link className={styles.navLink} to="/about">
-            _ABOUT
+        <h1 className={styles.logo}>sonic blooming</h1>
       </Link>
       <Player />
       <Playlist />
+      <section className={styles.navbar}>
+        <Link className={styles.navLink} to="/about">
+            _ABOUT
+        </Link>
+      </section>
+
       {/* <Link className={styles.navLink} to="/upload">
             _UPLOAD
       </Link> */}

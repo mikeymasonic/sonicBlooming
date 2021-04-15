@@ -9,7 +9,7 @@ const Player = () => {
 
   return (
     <section className={styles.Player}>
-      <h1>{song?.title}</h1>
+      <h3>{song?.mapLocation}</h3>
       <AudioPlayer
         className={styles.rhap_container}
         src={song?.url}
