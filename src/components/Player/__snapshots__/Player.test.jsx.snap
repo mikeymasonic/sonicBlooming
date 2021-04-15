@@ -5,7 +5,7 @@ exports[`Player component renders Player 1`] = `
   <section
     class="Player"
   >
-    <h1 />
+    <h3 />
     <div
       aria-label="Audio Player"
       class="rhap_container rhap_container"

@@ -13,14 +13,14 @@ exports[`App component renders App 1`] = `
         href="/"
       >
         <h1>
-          sonic bloom
+          sonic blooming
         </h1>
       </a>
     </div>
     <section
       class="Player"
     >
-      <h1 />
+      <h3 />
       <div
         aria-label="Audio Player"
         class="rhap_container rhap_container"
@@ -211,6 +211,9 @@ exports[`App component renders App 1`] = `
         </div>
       </div>
     </section>
+    <section
+      class="Playlist"
+    />
     <div
       class="headerRight"
     >
@@ -386,7 +389,11 @@ exports[`App component renders App 1`] = `
     </svg>
   </section>
   <section
-    class="Playlist"
-  />
+    class="Blurb"
+  >
+    <p>
+      This is a site description for home page.  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia dolorem ullam, unde aliquam tenetur consequatur ut in esse harum sunt! Atque dolorem provident accusamus sint? Ducimus, magni. Id, enim non? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem animi ex repellendus eaque. Quam blanditiis cum quo sunt laudantium nihil earum unde dolore laborum! Id libero iusto similique minus dignissimos. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit dolorem ut omnis corrupti consequatur totam, aliquid ex qui cum deleniti minima, maiores temporibus doloribus, voluptatem et veniam eligendi vel? Distinctio.
+    </p>
+  </section>
 </DocumentFragment>
 `;
