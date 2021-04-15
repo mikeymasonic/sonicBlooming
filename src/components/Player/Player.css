@@ -42,7 +42,17 @@ svg a:hover path {
     width: 10vw;
     height: 2vh;
   }
-}
+
+  div {
+    color: rgb(248, 0, 0);
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+  }
+
+\
 
 /* ******** */
 
