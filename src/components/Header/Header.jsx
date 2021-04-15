@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import styles from './Header.css';
+import Player from './../Player/Player';
+import Playlist from './../Playlist/Playlist';
 
 const Header = (props) => {
   const [back, setBack] = useState(false);
@@ -18,14 +20,16 @@ const Header = (props) => {
   return (
     <header className={styles.Header}>
       <Link className={styles.navLink} to="/">
-        <h1>sonic bloom</h1>
+        <h1>sonic blooming</h1>
       </Link>
       <Link className={styles.navLink} to="/about">
             _ABOUT
       </Link>
-      <Link className={styles.navLink} to="/upload">
+      <Player />
+      <Playlist />
+      {/* <Link className={styles.navLink} to="/upload">
             _UPLOAD
-      </Link>
+      </Link> */}
       {back && <h4><Link className={styles.navLink} to="/">
             back
       </Link></h4>}       
