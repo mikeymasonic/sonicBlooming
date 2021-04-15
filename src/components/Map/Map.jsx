@@ -9,7 +9,8 @@ function Map() {
   const handleSong = useHandleSong();
   const handleMapLocation = useHandleMapLocation();
   return (
-    <section className={styles.mapClass}>
+    <section 
+      className={styles.mapClass}>
 
       <svg
         xmlns="http://purl.org/dc/elements/1.1/"
