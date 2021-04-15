@@ -1,67 +1,45 @@
-export const songOne = {
-  url: '../mp3/example1.mp3',
-  title: 'Song One',
-  mapLocation: 'Queen\'s Walk'
-};
-
-export const songTwo = {
-  url: '../mp3/example2.mp3',
-  title: 'Song Two',
-  mapLocation: 'Test Garden'
-};
-
-export const songThree = {
-  url: '../mp3/example3.mp3',
-  title: 'Song Three',
-  mapLocation: 'Gold Medal Garden'
-};
-
-export const songFour = {
-  url: '../mp3/example4.mp3',
-  title: 'Song Four',
-  mapLocation: 'Promenade'
-};
-
-export const songFive = {
-  url: '../mp3/example5.mp3',
-  title: 'Song Five',
-  mapLocation: 'Royal Rosarian Garden'
-};
-
 export const songs = [
-
   {
     url: '../mp3/example1.mp3',
     title: 'Song One',
-    mapLocation: 'Promenade'
+    mapLocation: 'Promenade',
+    description: 'this is a blurb about promenade, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia dolorem ullam, unde aliquam tenetur consequatur ut in esse harum sunt! Atque dolorem provident accusamus sint? Ducimus, magni. Id, enim non? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem animi ex repellendus eaque. Quam blanditiis cum quo sunt laudantium nihil earum unde dolore laborum! Id libero iusto similique minus dignissimos. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit dolorem ut omnis corrupti consequatur totam, aliquid ex qui cum deleniti minima, maiores temporibus doloribus, voluptatem et veniam eligendi vel? Distinctio.',
   },
   {
     url: '../mp3/example2.mp3',
     title: 'Song Two',
-    mapLocation: 'Royal Rosarian Garden'
+    mapLocation: 'Royal Rosarian Garden',
+    description: 'this is a blurb about royal rosarian garden, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia dolorem ullam, unde aliquam tenetur consequatur ut in esse harum sunt! Atque dolorem provident accusamus sint? Ducimus, magni. Id, enim non? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem animi ex repellendus eaque. Quam blanditiis cum quo sunt laudantium nihil earum unde dolore laborum! Id libero iusto similique minus dignissimos. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit dolorem ut omnis corrupti consequatur totam, aliquid ex qui cum deleniti minima, maiores temporibus doloribus, voluptatem et veniam eligendi vel? Distinctio.',
   },
   {
     url: '../mp3/example3.mp3',
     title: 'Song Three',
-    mapLocation: 'Test Garden'
+    mapLocation: 'Test Garden',
+    description: 'this is a blurb about test garden, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia dolorem ullam, unde aliquam tenetur consequatur ut in esse harum sunt! Atque dolorem provident accusamus sint? Ducimus, magni. Id, enim non? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem animi ex repellendus eaque. Quam blanditiis cum quo sunt laudantium nihil earum unde dolore laborum! Id libero iusto similique minus dignissimos. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit dolorem ut omnis corrupti consequatur totam, aliquid ex qui cum deleniti minima, maiores temporibus doloribus, voluptatem et veniam eligendi vel? Distinctio.',
   },
   {
     url: '../mp3/example4.mp3',
     title: 'Song Four',
-    mapLocation: 'Gold Medal Garden'
+    mapLocation: 'Gold Medal Garden',
+    description: 'this is a blurb about gold medal garden, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia dolorem ullam, unde aliquam tenetur consequatur ut in esse harum sunt! Atque dolorem provident accusamus sint? Ducimus, magni. Id, enim non? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem animi ex repellendus eaque. Quam blanditiis cum quo sunt laudantium nihil earum unde dolore laborum! Id libero iusto similique minus dignissimos. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit dolorem ut omnis corrupti consequatur totam, aliquid ex qui cum deleniti minima, maiores temporibus doloribus, voluptatem et veniam eligendi vel? Distinctio.',
   },
   {
     url: '../mp3/example5.mp3',
     title: 'Song Five',
-    mapLocation: 'Queen\'s Walk'
+    mapLocation: 'Queen\'s Walk',
+    description: 'this is a blurb about queens walk, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia dolorem ullam, unde aliquam tenetur consequatur ut in esse harum sunt! Atque dolorem provident accusamus sint? Ducimus, magni. Id, enim non? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem animi ex repellendus eaque. Quam blanditiis cum quo sunt laudantium nihil earum unde dolore laborum! Id libero iusto similique minus dignissimos. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit dolorem ut omnis corrupti consequatur totam, aliquid ex qui cum deleniti minima, maiores temporibus doloribus, voluptatem et veniam eligendi vel? Distinctio.',
   },
   // keep above as is, everything below are new songs
   {
     url: '../mp3/example5.mp3',
     title: 'Song Four Again (but not really)',
-    mapLocation: 'Gold Medal Garden'
+    mapLocation: 'Gold Medal Garden',
   },
 ];
+
+export const aboutSite = {
+  description: 'This is a site description for home page.  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia dolorem ullam, unde aliquam tenetur consequatur ut in esse harum sunt! Atque dolorem provident accusamus sint? Ducimus, magni. Id, enim non? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem animi ex repellendus eaque. Quam blanditiis cum quo sunt laudantium nihil earum unde dolore laborum! Id libero iusto similique minus dignissimos. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit dolorem ut omnis corrupti consequatur totam, aliquid ex qui cum deleniti minima, maiores temporibus doloribus, voluptatem et veniam eligendi vel? Distinctio.'
+};
 
 
 export const aboutCrystal = {
