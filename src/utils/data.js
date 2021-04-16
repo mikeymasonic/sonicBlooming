@@ -39,12 +39,15 @@ export const songs = [
 
 export const uploads = [
   {
+    description: 'this is a description of how to upload things. Quia dolorem ullam, unde aliquam tenetur consequatur ut in esse harum sunt! Atque dolorem provident accusamus sint? Ducimus, magni. Id, enim non? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem animi ex repellendus eaque. Quam blanditiis cum quo sunt laudantium nihil earum unde dolore laborum! Id libero iusto similique minus dignissimos. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit dolorem ut omnis corrupti consequatur totam, aliquid ex qui cum deleniti minima, maiores temporibus doloribus, voluptatem et veniam eligendi vel? Distinctio.'
+  },
+  {
     mapLocation: 'Promenade',
-    url: 'https://script.google.com/macros/s/AKfycbzobp1dHDf_Ka5PnqE1u0qXJRz7IaCe4pjuvxcESpYpsbzLVjRiXnRDXJRyxzQuyNrb/exec',
+    url: 'https://script.google.com/macros/s/AKfycbxtDj39tRFOQcbI2OraoM7w2NT9N9xV5tXsCbAMsci94EkCYJzD87iWajNWYLuuWIap/exec',
   },
   {
     mapLocation: 'Royal Rosarian Garden',
-    url: 'https://script.google.com/macros/s/AKfycbzobp1dHDf_Ka5PnqE1u0qXJRz7IaCe4pjuvxcESpYpsbzLVjRiXnRDXJRyxzQuyNrb/exec',
+    url: 'https://script.google.com/macros/s/AKfycbwPrr2R-ScfYxQV0HEgC4J93qTGSJnDkEALAUmpEb8bmVZqZ9KwKTct5mT3h9y2Z1U/exec',
   },
   {
     mapLocation: 'Test Garden',
