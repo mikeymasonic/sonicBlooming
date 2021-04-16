@@ -12,7 +12,7 @@ const Blurb = () => {
 
   const blurbNodes = songs.map((song) => {
     if (mapLocation === song.mapLocation) {
-      return <p>{song.description}</p>;
+      return <p key={song.title}>{song.description}</p>;
     }
   });
 

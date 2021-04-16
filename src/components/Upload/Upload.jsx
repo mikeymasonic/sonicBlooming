@@ -12,10 +12,10 @@ const Upload = () => {
   const uploadNodes = uploads.map((upload) => {
     if (mapLocation === upload.mapLocation) {
       return (
-        <>
+        <section key={upload.mapLocation}>
           <h1>Upload {upload.mapLocation}</h1>
           <iframe src={upload.url} width="200"></iframe>
-        </>
+        </section>
       );
     }
   });
