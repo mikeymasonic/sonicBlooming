@@ -14,7 +14,7 @@ const Upload = () => {
       return (
         <>
           <h1>Upload {upload.mapLocation}</h1>
-          <iframe src={upload.url} width="500"></iframe>
+          <iframe src={upload.url} width="200"></iframe>
         </>
       );
     }
