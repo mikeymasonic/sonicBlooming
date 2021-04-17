@@ -4,6 +4,21 @@ exports[`Player component renders Player 1`] = `
 <DocumentFragment>
   <section
     class="Playlist"
-  />
+  >
+    <div
+      class="title"
+    >
+      Playlist:
+    </div>
+    <div
+      class="scrollarea scroll"
+    >
+      <div
+        class="scrollarea-content content"
+        style="margin-top: 0px; margin-left: 0px;"
+        tabindex="1"
+      />
+    </div>
+  </section>
 </DocumentFragment>
 `;

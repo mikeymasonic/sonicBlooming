@@ -1,4 +1,5 @@
 import React from 'react';
+import ScrollArea from 'react-scrollbar';
 import { useHandleSong, useMapLocation } from '../../hooks/DataProvider';
 import {
   songs,
@@ -17,7 +18,16 @@ const Playlist = () => {
 
   return (
     <section className={styles.Playlist}>
-      {playlistNodes}
+      <div className={styles.title}>
+        Playlist:
+      </div>
+      <ScrollArea
+        speed={0.8}
+        className={styles.scroll}
+        contentClassName={styles.content}
+        horizontal={false}>
+        {playlistNodes}
+      </ScrollArea>
     </section>
   );
 };

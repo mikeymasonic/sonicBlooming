@@ -24,8 +24,9 @@ const Header = (props) => {
           <h1>sonic blooming</h1>
         </Link>
       </div>
-      <Player />
-      <Playlist />
+      <div className={styles.audio}>
+        <Player />
+      </div>
       <div className={styles.headerRight}>
         <a id='about' className='nav-link' href='/about'>About</a>
       </div>
