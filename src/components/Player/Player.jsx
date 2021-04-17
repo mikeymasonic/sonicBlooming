@@ -1,21 +1,37 @@
 import React from 'react';
-import AudioPlayer from 'react-h5-audio-player';
+import AudioPlayer, { RHAP_UI } from 'react-h5-audio-player';
 import { useSong } from '../../hooks/DataProvider';
+import Playlist from '../Playlist/Playlist';
 import styles from './Player.css';
 // import 'react-h5-audio-player/lib/styles.css';
 
 const Player = () => {
   const song = useSong();
 
-  return (
-    <section className={styles.Player}>
-      <h3>{song?.mapLocation}</h3>
-      <AudioPlayer
-        className={styles.rhap_container}
-        src={song?.url}
-        // onPlay={() => console.log('onPlay')}
-      />
-    </section>
+  return song ? (
+    <>
+      <section className={styles.Player}>
+        <div className={styles.title}>
+          {song?.mapLocation} - {song?.title}
+        </div>
+        <AudioPlayer
+          className={styles.rhap_container}
+          src={song?.url}
+          customProgressBarSection={
+            [
+              RHAP_UI.CURRENT_TIME,
+              // eslint-disable-next-line react/jsx-key
+              <div>/</div>,
+              RHAP_UI.DURATION
+            ]
+          }
+        />
+      </section>
+      <Playlist />
+    </>
+  ) : (
+    <>
+    </>
   );
 };
 
