@@ -217,109 +217,13 @@ exports[`App component renders App 1`] = `
     <div
       class="headerRight"
     >
-      <div>
-        <div
-          class="bm-overlay"
-          style="position: fixed; z-index: 1000; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.3); opacity: 0; transform: translate3d(100%, 0, 0); transition: opacity 0.3s, transform 0s 0.3s;"
-        />
-        <div>
-          <div
-            class="bm-burger-button"
-            style="z-index: 1000; position: fixed; width: 36px; height: 30px; right: 36px; top: 36px;"
-          >
-            <button
-              id="react-burger-menu-btn"
-              style="position: absolute; left: 0px; top: 0px; z-index: 1; width: 100%; height: 100%; margin: 0px; padding: 0px; font-size: 0px; background: transparent; cursor: pointer;"
-            >
-              Open Menu
-            </button>
-            <span>
-              <span
-                class="bm-burger-bars"
-                style="position: absolute; height: 20%; left: 0px; right: 0px; top: 0%; opacity: 1; background: black;"
-              />
-              <span
-                class="bm-burger-bars"
-                style="position: absolute; height: 20%; left: 0px; right: 0px; top: 40%; opacity: 1; background: black;"
-              />
-              <span
-                class="bm-burger-bars"
-                style="position: absolute; height: 20%; left: 0px; right: 0px; top: 80%; opacity: 1; background: black;"
-              />
-            </span>
-          </div>
-        </div>
-        <div
-          aria-hidden="true"
-          class="bm-menu-wrap NavMenu"
-          id=""
-          style="position: fixed; right: 0px; z-index: 1100; width: 300px; height: 100%; transform: translate3d(300px, 0, 0); transition: transform 0.4s cubic-bezier(0.7, 0, 0.3, 1);"
-        >
-          <div
-            class="bm-menu"
-            style="height: 100%; box-sizing: border-box; overflow: auto; background: white; padding: 2.5em 1.5em 0px; font-size: 1em; box-shadow: 5px 8px 10px 6px black; text-align: left;"
-          >
-            <nav
-              class="bm-item-list"
-              style="height: 100%; display: flex; flex-direction: column; padding: 0.8em; text-align: left;"
-            >
-              <a
-                class="bm-item nav-link"
-                href="/"
-                id="home"
-                style="display: inline-block; transform: translate3d(0, 500px, 0); transition: transform 0s 0.2s cubic-bezier(0.7, 0, 0.3, 1); text-decoration: none; color: rgb(136, 134, 130); margin: 10px; font-size: 1.2rem; text-align: left;"
-                tabindex="-1"
-              >
-                Home
-              </a>
-              <a
-                class="bm-item nav-link"
-                href="/about"
-                id="about"
-                style="display: inline-block; transform: translate3d(0, 1000px, 0); transition: transform 0s 0.2s cubic-bezier(0.7, 0, 0.3, 1); text-decoration: none; color: rgb(136, 134, 130); margin: 10px; font-size: 1.2rem; text-align: left;"
-                tabindex="-1"
-              >
-                About
-              </a>
-              <a
-                class="bm-item nav-link"
-                href="/upload"
-                id="upload"
-                style="display: inline-block; transform: translate3d(0, 1500px, 0); transition: transform 0s 0.2s cubic-bezier(0.7, 0, 0.3, 1); text-decoration: none; color: rgb(136, 134, 130); margin: 10px; font-size: 1.2rem; text-align: left;"
-                tabindex="-1"
-              >
-                Upload
-              </a>
-            </nav>
-          </div>
-          <div>
-            <div
-              class="bm-cross-button"
-              style="position: absolute; width: 24px; height: 24px; right: 8px; top: 8px;"
-            >
-              <button
-                id="react-burger-cross-btn"
-                style="position: absolute; left: 0px; top: 0px; z-index: 1; width: 100%; height: 100%; margin: 0px; padding: 0px; font-size: 0px; background: transparent; cursor: pointer;"
-                tabindex="-1"
-              >
-                Close Menu
-              </button>
-              <span
-                style="position: absolute; top: 6px; right: 14px;"
-              >
-                <span
-                  class="bm-cross"
-                  style="position: absolute; width: 3px; height: 14px; transform: rotate(45deg); background: rgb(189, 195, 199);"
-                />
-                <span
-                  class="bm-cross"
-                  style="position: absolute; width: 3px; height: 14px; transform: rotate(-45deg); background: rgb(189, 195, 199);"
-                />
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
+      <a
+        class="nav-link"
+        href="/about"
+        id="about"
+      >
+        About
+      </a>
     </div>
     <div
       class="backContainer"

@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import styles from './Header.css';
 import Playlist from './../Playlist/Playlist';
 import Player from '../Player/Player';
-import { NavMenu } from '../NavMenu/NavMenu';
 
 const Header = (props) => {
   const [back, setBack] = useState(false);
@@ -28,7 +27,7 @@ const Header = (props) => {
       <Player />
       <Playlist />
       <div className={styles.headerRight}>
-        <NavMenu />
+        <a id='about' className='nav-link' href='/about'>About</a>
       </div>
       <div className={styles.backContainer}>
         {back && <h4><Link className={styles.navLink} to="/">
