@@ -1,5 +1,8 @@
 .Blurb{
-  /* background-color: rgba(133, 32, 119, 0.658); */
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
 
 }
