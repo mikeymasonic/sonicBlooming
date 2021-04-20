@@ -3,14 +3,33 @@
 exports[`Player component renders Player 1`] = `
 <DocumentFragment>
   <section
-    class="Player"
-    style="visibility: hidden;"
+    class="Playlist"
+    style="visibility: hidden; height: 0px;"
   >
     <div
       class="title"
     >
-       - 
+      Playlist:
     </div>
+    <div
+      class="scrollarea scroll"
+    >
+      <div
+        class="scrollarea-content content"
+        style="margin-top: 0px; margin-left: 0px;"
+        tabindex="1"
+      />
+    </div>
+  </section>
+  <section
+    class="Player"
+    style="visibility: collapse; height: 0px;"
+  >
+    <section
+      class="title"
+    >
+       - 
+    </section>
     <div
       aria-label="Audio Player"
       class="rhap_container rhap_container"
@@ -32,9 +51,9 @@ exports[`Player component renders Player 1`] = `
           >
             --:--
           </div>
-          <div>
+          <section>
             /
-          </div>
+          </section>
           <div
             class="rhap_time rhap_total-time"
           >
@@ -182,24 +201,8 @@ exports[`Player component renders Player 1`] = `
       </div>
     </div>
   </section>
-  <section
-    class="Playlist"
-    style="visibility: hidden;"
-  >
-    <div
-      class="title"
-    >
-      Playlist:
-    </div>
-    <div
-      class="scrollarea scroll"
-    >
-      <div
-        class="scrollarea-content content"
-        style="margin-top: 0px; margin-left: 0px;"
-        tabindex="1"
-      />
-    </div>
-  </section>
+  <p>
+    select a garden to listen to:
+  </p>
 </DocumentFragment>
 `;
