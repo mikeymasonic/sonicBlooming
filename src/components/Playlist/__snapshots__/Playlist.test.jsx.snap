@@ -4,6 +4,7 @@ exports[`Player component renders Player 1`] = `
 <DocumentFragment>
   <section
     class="Playlist"
+    style="visibility: hidden;"
   >
     <div
       class="title"
