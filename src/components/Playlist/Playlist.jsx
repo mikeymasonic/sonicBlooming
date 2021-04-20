@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import ScrollArea from 'react-scrollbar';
 import { useHandleSong, useMapLocation } from '../../hooks/DataProvider';
 import {
@@ -7,17 +7,28 @@ import {
 import styles from './Playlist.css';
 
 const Playlist = () => {
+  const [playlistVisible, setPlaylistVisible] = useState(false);
   const mapLocation = useMapLocation();
   const handleSong = useHandleSong();
+  const mapLocationNodes = [];
   
   const playlistNodes = songs.map((song) => {
     if (mapLocation === song.mapLocation) {
+      mapLocationNodes.push(song.mapLocation);
       return <a key={song.title} onClick={() => handleSong(song)}>{song.title}</a>;
     }
   });
 
+  useEffect(() => {
+    if (mapLocationNodes.length > 1) {
+      setPlaylistVisible(true);
+    } else {
+      setPlaylistVisible(false);
+    }
+  }, [mapLocationNodes]);
+
   return (
-    <section className={styles.Playlist}>
+    <section className={styles.Playlist} style={{ visibility: playlistVisible ? 'visible' : 'hidden' }}>
       <div className={styles.title}>
         Playlist:
       </div>
