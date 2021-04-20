@@ -23,6 +23,7 @@ const Blurb = () => {
       <Popup 
         modal
         closeOnDocumentClick={true}
+        overlayStyle={{ background: 'rgba(0, 0, 0, 0.4)' }}
         trigger={open => (
           <button open={open}>Upload</button>
         )}>

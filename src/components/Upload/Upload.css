@@ -3,19 +3,21 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 60%;
+  width: 60vw;
   background-color: rgba(241, 171, 233, 0.9);
   border-radius: 10px;
   position: relative;
+  box-shadow: 0 0 15px 0 black;
+  border: 1px outset black;
 
   .uploadContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
-    width: 70%;
+    width: 60vw;
     margin: 2em 0 1em 0;
+    text-align: center;
   }
 
   .close {
@@ -41,7 +43,8 @@
    }
 
    .description {
-     width: 80%;
+     width: 90%;
      margin: 1em 0 2em 0;
+     text-align: justify;
    }
 }
