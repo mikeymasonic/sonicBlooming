@@ -1,14 +1,12 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Map from '../Map/Map';
-// import Player from '../Player/Player';
 import { DataProvider } from '../../hooks/DataProvider';
 import About from '../About/About';
-import Header from '../Header/Header';
-import Upload from '../Upload/Upload';
 import Blurb from '../Blurb/Blurb';
+import Header from '../Header/Header';
+import Map from '../Map/Map';
 import Player from '../Player/Player';
-// import Playlist from '../Playlist/Playlist';
+import Upload from '../Upload/Upload';
 
 const App = () => {
 
@@ -24,8 +22,6 @@ const App = () => {
           <Route path="/upload" exact component={Upload} />
         </Switch>
         <Route component={Blurb} />
-        {/* <Route component={Player} />
-        <Route component={Playlist} /> */}
       </DataProvider>
     </Router>
   

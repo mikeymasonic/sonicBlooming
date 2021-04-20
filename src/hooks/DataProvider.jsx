@@ -1,8 +1,5 @@
 import React, { createContext, useState, useContext } from 'react';
 import PropTypes from 'prop-types';
-// import {
-//   songOne,
-// } from '../utils/data';
 
 const DataContext = createContext();
 
