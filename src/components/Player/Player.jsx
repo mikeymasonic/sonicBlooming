@@ -11,10 +11,13 @@ const Player = () => {
 
   return (
     <>
-      <section className={styles.Player} style={{ visibility: playerVisible ? 'visible' : 'hidden' }}>
-        <div className={styles.title}>
+      
+      <Playlist style={{ visibility: playerVisible ? 'visible' : 'hidden', height: playerVisible ? 100 : 0 }} />
+      <section className={styles.Player} style={{ visibility: playerVisible ? 'visible' : 'collapse', height: playerVisible ? 100 : 0 }}>
+        <section className={styles.title}>
           {song?.mapLocation} - {song?.title}
-        </div>
+        </section>
+        
         <AudioPlayer
           className={styles.rhap_container}
           src={song?.url}
@@ -22,13 +25,14 @@ const Player = () => {
             [
               RHAP_UI.CURRENT_TIME,
               // eslint-disable-next-line react/jsx-key
-              <div>/</div>,
+              <section>/</section>,
               RHAP_UI.DURATION
             ]
           }
         />
       </section>
-      <Playlist />
+      {!playerVisible && <p>select a garden to listen to:</p>} 
+      
     </>
   );
 };
