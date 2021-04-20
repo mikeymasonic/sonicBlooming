@@ -2,8 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import styles from './Header.css';
-import Playlist from './../Playlist/Playlist';
-import Player from '../Player/Player';
 
 const Header = (props) => {
   const [back, setBack] = useState(false);
@@ -24,11 +22,9 @@ const Header = (props) => {
           <h1>sonic blooming</h1>
         </Link>
       </div>
-      <div className={styles.audio}>
-        <Player />
-      </div>
+
       <div className={styles.headerRight}>
-        <a id='about' className='nav-link' href='/about'>About</a>
+        <Link id='about' className={styles.navLink} to='/about'>About</Link>
       </div>
       <div className={styles.backContainer}>
         {back && <h4><Link className={styles.navLink} to="/">

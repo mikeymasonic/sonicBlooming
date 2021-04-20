@@ -7,6 +7,7 @@ import About from '../About/About';
 import Header from '../Header/Header';
 import Upload from '../Upload/Upload';
 import Blurb from '../Blurb/Blurb';
+import Player from '../Player/Player';
 // import Playlist from '../Playlist/Playlist';
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
     <Router>
       <DataProvider>
         <Route component={Header} />
+        <Route component={Player} />
         <Switch>
           <Route path="/" exact component={Map} />
           <Route path="/about" exact component={About} />
