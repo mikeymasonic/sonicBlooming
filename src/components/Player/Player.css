@@ -24,6 +24,13 @@ svg a:hover path {
 
 /* this is all that matters */
 
+.audioContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .Player {
   display: flex;
   flex-direction: column;
@@ -34,8 +41,8 @@ svg a:hover path {
   box-shadow: 0px 0px 3px 0px black;
   border-radius: 10px;
   color: black;
-  padding: 0 0.5em 0 0.5em;
-  margin: 0;
+  margin-bottom: 1em;
+  width: 90vw;
   visibility: none;
 
   .title {
@@ -54,9 +61,12 @@ svg a:hover path {
   margin: 0.7em 0 1em 0;
 
   button {
+    display: flex;
+  justify-content: center;
+  align-items: center;
     color: black;
     background-color: white;
-    width: 5vw;
+    width: 100%;
     height: 3vh;
     border-radius: 5px;
     margin: 0.1em;
@@ -90,9 +100,9 @@ svg a:hover path {
   justify-content: center;
   align-items: center;
   border-radius: 5px;
-  margin: 0 0 0 1em;
+  margin-bottom: 1em;
   height: 5.8em;
-  width: 10em;
+  width: 90vw;
   border: 2px groove black;
   box-shadow: 0px 0px 3px 0px black;
   border-radius: 10px;
@@ -135,4 +145,11 @@ svg a:hover path {
   justify-content: center;
   align-items: center;
   }
+
+}
+
+.instructions {
+  width: 100%;
+  text-align: center;
+  margin: 0 0 2em 0;
 }

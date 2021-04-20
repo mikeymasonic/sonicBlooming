@@ -2,8 +2,8 @@ export const songs = [
   {
     url: '../mp3/example1.mp3',
     title: 'Song One',
-    mapLocation: 'Promenade',
-    description: 'this is a blurb about promenade, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia dolorem ullam, unde aliquam tenetur consequatur ut in esse harum sunt! Atque dolorem provident accusamus sint? Ducimus, magni. Id, enim non? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem animi ex repellendus eaque. Quam blanditiis cum quo sunt laudantium nihil earum unde dolore laborum! Id libero iusto similique minus dignissimos. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit dolorem ut omnis corrupti consequatur totam, aliquid ex qui cum deleniti minima, maiores temporibus doloribus, voluptatem et veniam eligendi vel? Distinctio.',
+    mapLocation: 'Amphitheater',
+    description: 'this is a blurb about Amphitheater, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia dolorem ullam, unde aliquam tenetur consequatur ut in esse harum sunt! Atque dolorem provident accusamus sint? Ducimus, magni. Id, enim non? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem animi ex repellendus eaque. Quam blanditiis cum quo sunt laudantium nihil earum unde dolore laborum! Id libero iusto similique minus dignissimos. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit dolorem ut omnis corrupti consequatur totam, aliquid ex qui cum deleniti minima, maiores temporibus doloribus, voluptatem et veniam eligendi vel? Distinctio.',
   },
   {
     url: '../mp3/example2.mp3',
@@ -14,14 +14,14 @@ export const songs = [
   {
     url: '../mp3/example3.mp3',
     title: 'Song Three',
-    mapLocation: 'Test Garden',
-    description: 'this is a blurb about test garden, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia dolorem ullam, unde aliquam tenetur consequatur ut in esse harum sunt! Atque dolorem provident accusamus sint? Ducimus, magni. Id, enim non? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem animi ex repellendus eaque. Quam blanditiis cum quo sunt laudantium nihil earum unde dolore laborum! Id libero iusto similique minus dignissimos. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit dolorem ut omnis corrupti consequatur totam, aliquid ex qui cum deleniti minima, maiores temporibus doloribus, voluptatem et veniam eligendi vel? Distinctio.',
+    mapLocation: 'Rose Test Garden',
+    description: 'this is a blurb about Rose Test Garden, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia dolorem ullam, unde aliquam tenetur consequatur ut in esse harum sunt! Atque dolorem provident accusamus sint? Ducimus, magni. Id, enim non? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem animi ex repellendus eaque. Quam blanditiis cum quo sunt laudantium nihil earum unde dolore laborum! Id libero iusto similique minus dignissimos. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit dolorem ut omnis corrupti consequatur totam, aliquid ex qui cum deleniti minima, maiores temporibus doloribus, voluptatem et veniam eligendi vel? Distinctio.',
   },
   {
     url: '../mp3/example4.mp3',
     title: 'Song Four',
-    mapLocation: 'Gold Medal Garden',
-    description: 'this is a blurb about gold medal garden, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia dolorem ullam, unde aliquam tenetur consequatur ut in esse harum sunt! Atque dolorem provident accusamus sint? Ducimus, magni. Id, enim non? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem animi ex repellendus eaque. Quam blanditiis cum quo sunt laudantium nihil earum unde dolore laborum! Id libero iusto similique minus dignissimos. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit dolorem ut omnis corrupti consequatur totam, aliquid ex qui cum deleniti minima, maiores temporibus doloribus, voluptatem et veniam eligendi vel? Distinctio.',
+    mapLocation: 'Shakespeare Garden',
+    description: 'this is a blurb about Shakespeare Garden, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia dolorem ullam, unde aliquam tenetur consequatur ut in esse harum sunt! Atque dolorem provident accusamus sint? Ducimus, magni. Id, enim non? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem animi ex repellendus eaque. Quam blanditiis cum quo sunt laudantium nihil earum unde dolore laborum! Id libero iusto similique minus dignissimos. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit dolorem ut omnis corrupti consequatur totam, aliquid ex qui cum deleniti minima, maiores temporibus doloribus, voluptatem et veniam eligendi vel? Distinctio.',
   },
   {
     url: '../mp3/example5.mp3',
@@ -33,7 +33,7 @@ export const songs = [
   {
     url: '../mp3/example5.mp3',
     title: 'Song Four Again (but not really)',
-    mapLocation: 'Gold Medal Garden',
+    mapLocation: 'Shakespeare Garden',
   },
 ];
 
@@ -42,7 +42,7 @@ export const uploads = [
     description: 'this is a description of how to upload things. Quia dolorem ullam, unde aliquam tenetur consequatur ut in esse harum sunt! Atque dolorem provident accusamus sint? Ducimus, magni. Id, enim non? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem animi ex repellendus eaque. Quam blanditiis cum quo sunt laudantium nihil earum unde dolore laborum! Id libero iusto similique minus dignissimos. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit dolorem ut omnis corrupti consequatur totam, aliquid ex qui cum deleniti minima, maiores temporibus doloribus, voluptatem et veniam eligendi vel? Distinctio.'
   },
   {
-    mapLocation: 'Promenade',
+    mapLocation: 'Amphitheater',
     url: 'https://script.google.com/macros/s/AKfycbxtDj39tRFOQcbI2OraoM7w2NT9N9xV5tXsCbAMsci94EkCYJzD87iWajNWYLuuWIap/exec',
   },
   {
@@ -50,11 +50,11 @@ export const uploads = [
     url: 'https://script.google.com/macros/s/AKfycbwPrr2R-ScfYxQV0HEgC4J93qTGSJnDkEALAUmpEb8bmVZqZ9KwKTct5mT3h9y2Z1U/exec',
   },
   {
-    mapLocation: 'Test Garden',
+    mapLocation: 'Rose Test Garden',
     url: 'https://script.google.com/macros/s/AKfycbzobp1dHDf_Ka5PnqE1u0qXJRz7IaCe4pjuvxcESpYpsbzLVjRiXnRDXJRyxzQuyNrb/exec',
   },
   {
-    mapLocation: 'Gold Medal Garden',
+    mapLocation: 'Shakespeare Garden',
     url: 'https://script.google.com/macros/s/AKfycbzobp1dHDf_Ka5PnqE1u0qXJRz7IaCe4pjuvxcESpYpsbzLVjRiXnRDXJRyxzQuyNrb/exec',
   },
   {
