@@ -36,6 +36,7 @@ svg a:hover path {
   color: black;
   padding: 0 0.5em 0 0.5em;
   margin: 0;
+  visibility: none;
 
   .title {
     margin-top: 0.8em;

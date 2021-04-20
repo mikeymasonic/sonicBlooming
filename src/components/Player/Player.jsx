@@ -1,16 +1,17 @@
 import React from 'react';
 import AudioPlayer, { RHAP_UI } from 'react-h5-audio-player';
-import { useSong } from '../../hooks/DataProvider';
+import { useSong, usePlayerVisible } from '../../hooks/DataProvider';
 import Playlist from '../Playlist/Playlist';
 import styles from './Player.css';
 // import 'react-h5-audio-player/lib/styles.css';
 
 const Player = () => {
   const song = useSong();
+  const playerVisible = usePlayerVisible();
 
-  return song ? (
+  return (
     <>
-      <section className={styles.Player}>
+      <section className={styles.Player} style={{ visibility: playerVisible ? 'visible' : 'hidden' }}>
         <div className={styles.title}>
           {song?.mapLocation} - {song?.title}
         </div>
@@ -28,9 +29,6 @@ const Player = () => {
         />
       </section>
       <Playlist />
-    </>
-  ) : (
-    <>
     </>
   );
 };

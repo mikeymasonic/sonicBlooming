@@ -1,5 +1,5 @@
 import React from 'react';
-import { useHandleMapLocation, useHandleSong } from '../../hooks/DataProvider';
+import { useHandleMapLocation, useHandleSong, useHandlePlayerVisible } from '../../hooks/DataProvider';
 import {
   songs,
 } from '../../utils/data';
@@ -8,6 +8,7 @@ import styles from './Map.css';
 function Map() {
   const handleSong = useHandleSong();
   const handleMapLocation = useHandleMapLocation();
+  const handlePlayerVisible = useHandlePlayerVisible();
   return (
     <section 
       className={styles.mapClass}>
@@ -24,6 +25,7 @@ function Map() {
           <a onClick={() => {
             handleSong(songs[0]);
             handleMapLocation('Promenade');
+            handlePlayerVisible(true);
           }}>
             <title>Promenade</title>
             <path
@@ -34,6 +36,7 @@ function Map() {
           <a onClick={() => {
             handleSong(songs[1]);
             handleMapLocation('Royal Rosarian Garden');
+            handlePlayerVisible(true);
           }}>
             <title>Royal Rosarian Garden</title>
             <path
@@ -44,6 +47,7 @@ function Map() {
           <a onClick={() => {
             handleSong(songs[2]);
             handleMapLocation('Test Garden');
+            handlePlayerVisible(true);
           }}>
             <title>Test Garden</title>
             
@@ -56,6 +60,7 @@ function Map() {
           <a onClick={() => {
             handleSong(songs[3]);
             handleMapLocation('Gold Medal Garden');
+            handlePlayerVisible(true);
           }}>
             <title>Gold Medal Garden</title>
             <path
@@ -67,6 +72,7 @@ function Map() {
           <a onClick={() => {
             handleSong(songs[4]);
             handleMapLocation('Queen\'s Walk');
+            handlePlayerVisible(true);
           }}>
             <title>Queen`&apos`s Walk</title>
             <path
