@@ -1,6 +1,47 @@
 .Upload{
-  /* background-color: rgba(133, 32, 119, 0.658); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  background-color: rgba(241, 171, 233, 0.9);
+  border-radius: 10px;
+  position: relative;
+
+  .uploadContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+    width: 70%;
+    margin: 2em 0 1em 0;
+  }
+
+  .close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+
+  .close:hover {
+    transform: scale(1.1)
+  }
+
+  .close:active {
+    transform: scale(0.9);
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
   iframe {    
     border: 0;
+   }
+
+   .description {
+     width: 80%;
+     margin: 1em 0 2em 0;
    }
 }

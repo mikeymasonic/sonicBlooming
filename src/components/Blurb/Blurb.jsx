@@ -1,10 +1,9 @@
 import React from 'react';
+import Popup from 'reactjs-popup';
 import { useMapLocation } from '../../hooks/DataProvider';
-import {
-  songs,
-  aboutSite,
-} from '../../utils/data';
+import { songs, aboutSite } from '../../utils/data';
 import Upload from '../Upload/Upload';
+import 'reactjs-popup/dist/index.css';
 import styles from './Blurb.css';
 
 const Blurb = () => {
@@ -20,7 +19,18 @@ const Blurb = () => {
     <section className={styles.Blurb}>
       {blurbNodes}
       {!mapLocation && <p>{aboutSite.description}</p>} 
-      {mapLocation && <Upload />} 
+      {mapLocation && 
+      <Popup 
+        modal
+        closeOnDocumentClick={true}
+        trigger={open => (
+          <button open={open}>Upload</button>
+        )}>
+        {close => (
+          <Upload close={close} />
+        )}
+      </Popup>
+      } 
     </section>
   );
 };
