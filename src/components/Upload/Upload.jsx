@@ -14,7 +14,7 @@ const Upload = ({ close }) => {
           key={upload.mapLocation}
           className={styles.uploadContainer}>
           <h1>Upload {upload.mapLocation}</h1>
-          <iframe src={upload.url} width="100%"></iframe>
+          <iframe src={upload.url} width="90%"></iframe>
         </section>
       );
     }
