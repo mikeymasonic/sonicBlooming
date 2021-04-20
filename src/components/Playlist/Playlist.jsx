@@ -4,7 +4,7 @@ import { useHandleSong, useMapLocation } from '../../hooks/DataProvider';
 import {
   songs,
 } from '../../utils/data';
-import styles from './Playlist.css';
+import styles from '../Player/Player.css';
 
 const Playlist = () => {
   const [playlistVisible, setPlaylistVisible] = useState(false);
@@ -28,7 +28,7 @@ const Playlist = () => {
   }, [mapLocationNodes]);
 
   return (
-    <section className={styles.Playlist} style={{ visibility: playlistVisible ? 'visible' : 'hidden' }}>
+    <section className={styles.Playlist} style={{ visibility: playlistVisible ? 'visible' : 'hidden', height: playlistVisible ? 100 : 0 }}>
       <div className={styles.title}>
         Playlist:
       </div>
