@@ -7,6 +7,7 @@ import Header from '../Header/Header';
 import Map from '../Map/Map';
 import Player from '../Player/Player';
 import Upload from '../Upload/Upload';
+import Visualizer from '../Visualizer/Visualizer';
 
 const App = () => {
 
@@ -22,6 +23,7 @@ const App = () => {
           <Route path="/upload" exact component={Upload} />
         </Switch>
         <Route component={Blurb} />
+        <Route component={Visualizer} />
       </DataProvider>
     </Router>
   
