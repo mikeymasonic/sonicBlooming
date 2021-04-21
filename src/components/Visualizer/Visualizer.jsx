@@ -143,6 +143,7 @@ const Visualizer = () => {
   // to the main Web Audio context
     const source = context.createMediaElementSource(audio);
     source.connect(splitter);
+    //comment this out to disable audio playback
     splitter.connect(context.destination);
   }
 
