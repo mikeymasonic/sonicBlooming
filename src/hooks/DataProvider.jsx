@@ -4,7 +4,8 @@ import PropTypes from 'prop-types';
 const DataContext = createContext();
 
 export const DataProvider = ({ children }) => {
-  const [song, setSong] = useState(null);
+  const [song, setSong] = useState('../mp3/example2.mp3');
+  // const [song, setSong] = useState(null);
   const [mapLocation, setMapLocation] = useState(null);
   const [playerVisible, setPlayerVisible] = useState(false);
 

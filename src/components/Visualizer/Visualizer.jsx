@@ -60,8 +60,19 @@ const Visualizer = () => {
     }
     toggleAudio();
     draw();
+    
+
+    // useEffect(() => {
+    //   draw();
+    //   toggleAudio();
+    // }, [song]);
+    console.log(song);
    
   }, [canvasRef]);
+
+  // useEffect(() => {
+  //   toggleAudio();
+  // }, [song]);
 
   // canvas.width = 500;
   // canvas.height = 500;
@@ -134,6 +145,10 @@ const Visualizer = () => {
     // call `handleCanplay` when it music can be played
     audio.addEventListener('canplay', handleCanplay);
     // audio.src = 'https://s3.eu-west-2.amazonaws.com/nelsoncodepen/Audiobinger_-_The_Garden_State.mp3';
+
+    // audio.src = '../mp3/example1.mp3';
+
+    
     audio.src = song;
     audio.load();
     running = true;
@@ -160,6 +175,8 @@ const Visualizer = () => {
       audio.pause();
     }
   }
+
+
 
   // canvas.addEventListener('click', toggleAudio);
 
