@@ -16,10 +16,11 @@ const Blurb = () => {
   });
 
   return (
-    <section className={styles.Blurb}>
-      {blurbNodes}
-      {!mapLocation && <p>{aboutSite.description}</p>} 
-      {mapLocation && 
+    <div className={styles.blurbContainer}>
+      <section className={styles.Blurb}>
+        {blurbNodes}
+        {!mapLocation && <p>{aboutSite.description}</p>} 
+        {mapLocation && 
       <Popup 
         modal
         closeOnDocumentClick={true}
@@ -31,8 +32,9 @@ const Blurb = () => {
           <Upload close={close} />
         )}
       </Popup>
-      } 
-    </section>
+        } 
+      </section>
+    </div>
   );
 };
 

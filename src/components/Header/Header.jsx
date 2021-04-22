@@ -19,14 +19,31 @@ const Header = (props) => {
     <header className={styles.Header}>
       <div className={styles.headerLeft}>
         <Link className={styles.navLink} to="/">
-          <h1>sonic blooming</h1>
+          <h1>Sonic Blooming</h1>
         </Link>
       </div>
 
-      <div className={styles.headerRight}>
-        <Link id='about' className={styles.navLink} to='/about'>About</Link>
+      <div 
+        className={styles.headerRight} 
+        style={{ visibility: !back ? 'visible' : 'hidden' }}>
+        <Link id='about' className={styles.navLink} to='/about'>
+          <svg 
+            className="w-6 h-6" 
+            fill="none" 
+            stroke="white"
+            height="2.5em"
+            viewBox="0 0 24 24" 
+            xmlns="http://www.w3.org/2000/svg">
+            <path 
+              strokeLinecap="round" 
+              strokeLinejoin="round" 
+              strokeWidth={2} 
+              d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </Link>
       </div>
-      <div className={styles.backContainer}>
+
+      <div className={styles.backContainer} >
         {back && <h4><Link className={styles.navLink} to="/">
             back
         </Link></h4>} 

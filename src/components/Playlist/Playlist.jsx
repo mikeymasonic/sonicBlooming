@@ -28,15 +28,15 @@ const Playlist = () => {
   }, [mapLocationNodes]);
 
   return (
-    <section className={styles.Playlist} style={{ visibility: playlistVisible ? 'visible' : 'hidden', height: playlistVisible ? 100 : 0 }}>
-      <div className={styles.title}>
+    <section className={styles.Playlist} style={{ visibility: playlistVisible ? 'visible' : 'hidden', height: !playlistVisible && 0 }}>
+      {/* <div className={styles.playlistTitle}>
         Playlist:
-      </div>
+      </div> */}
       <ScrollArea
         speed={0.8}
         className={styles.scroll}
         contentClassName={styles.content}
-        horizontal={false}>
+        vertical={false}>
         {playlistNodes}
       </ScrollArea>
     </section>
