@@ -1,10 +1,10 @@
 import React, { useRef, useEffect } from 'react';
-// import { useSong, useVisualizerVisible } from '../../hooks/DataProvider';
+import { useSong } from '../../hooks/DataProvider';
 import styles from './Visualizer.css';
 
 const Visualizer = () => {
-  // const song = useSong();
-  // const VisualizerVisible = useVisualizerVisible();
+  const song = useSong();
+
   const canvasRef = useRef(null);
 
   useEffect(() => {
@@ -133,7 +133,8 @@ const Visualizer = () => {
 
     // call `handleCanplay` when it music can be played
     audio.addEventListener('canplay', handleCanplay);
-    audio.src = 'https://s3.eu-west-2.amazonaws.com/nelsoncodepen/Audiobinger_-_The_Garden_State.mp3';
+    // audio.src = 'https://s3.eu-west-2.amazonaws.com/nelsoncodepen/Audiobinger_-_The_Garden_State.mp3';
+    audio.src = song;
     audio.load();
     running = true;
   }
