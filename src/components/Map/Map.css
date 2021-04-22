@@ -1,21 +1,25 @@
+body {
+  background-color: rgba(133, 32, 119, 0.658);
+  margin: 0;
+}
+
 .mapContainer {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
 
 .mapClass {
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  max-width: max-content;
+  max-width: 60%;
   border: 2px groove black;
   box-shadow: 0px 0px 3px 0px black;
 
   svg {
-    background-image: url(https://inbloom.netlify.app/images/tempMapSmaller.png);
+    background-image: url(https://inbloom.netlify.app/images/altmap2.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     max-width: 90vw;
@@ -37,9 +41,26 @@
     /* fill: rgba(30,222,121, 0.25); */
     fill: rgba(231, 19, 19, 0.445);
     cursor: pointer;
-}
+  }
+  }
 }
 
-body {
-  background-color: rgba(133, 32, 119, 0.658);
+@media (max-width: 1200px) {
+  .mapContainer {
+
+    .mapClass {
+     max-width: 70%;
+    }
+  }
+
+}
+
+@media (max-width: 667px) {
+  .mapContainer {
+
+    .mapClass {
+     max-width: 85%;
+    }
+  }
+
 }
