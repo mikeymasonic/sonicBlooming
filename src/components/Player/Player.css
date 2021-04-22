@@ -1,54 +1,22 @@
-/* .Player{
-
-svg {
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  max-width: 900px;
-  width: 90%;
-}
-path {
-  cursor: pointer;
-  transition: fill 0.2s
-}
-svg a:focus,
-svg a:hover {
-  outline: none;
-}
-svg a:focus path,
-svg a:hover path {
-  fill: rgba(30,222,121, 0.25);
-  cursor: pointer;
-}
-
-}  */
-
-/* this is all that matters */
-
 .audioContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
 
 .Player {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: white;
-  border: 2px groove black;
-  box-shadow: 0px 0px 3px 0px black;
-  border-radius: 10px;
   color: black;
-  margin-bottom: 1em;
   width: 90vw;
   visibility: none;
 
   .title {
-    margin-top: 0.8em;
-    font-size: 1.2em;
+    font-size: 1.4em;
     font-weight: bold;
+    text-align: center;
   }
 
 .rhap_container {
@@ -58,18 +26,17 @@ svg a:hover path {
   line-height: 1;
   font-family: inherit;
   width: 100%;
-  margin: 0.7em 0 1em 0;
+  margin-top: 0.7em;
 
   button {
     display: flex;
-  justify-content: center;
-  align-items: center;
+    justify-content: center;
+    align-items: center;
     color: black;
     background-color: white;
-    width: 100%;
+    width: 5vw;
     height: 3vh;
     border-radius: 5px;
-    margin: 0.1em;
   }
 
   button:hover {
@@ -96,55 +63,58 @@ svg a:hover path {
 
 .Playlist{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   border-radius: 5px;
-  margin-bottom: 1em;
-  height: 5.8em;
-  width: 90vw;
-  border: 2px groove black;
-  box-shadow: 0px 0px 3px 0px black;
-  border-radius: 10px;
-  background-color: white;
+  height: 3em;
+  width: 55vw;
   color: black;
-  padding: 0 0.3em 0 0.3em;
+  padding: 0.3em;
+  border: 1px inset black;
+  box-shadow: inset 0px 3px 3px -3px black;
 
   a {
-    /* border-radius: 5px; */
-    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 0.1em;
-    margin: 0.1em;
-    width: 95%;
+    width: 30%;
+    height: 4vh;
     text-align: center;
     font-size: 0.8em;
+    box-shadow: 0px 0px 1px 0px black;
   }
 
-  a:hover {
+  /* a:hover {
     box-shadow: 0px 0px 3px 0px black;
-  }
+  } */
 
   a:active {
-    transform: scale(0.9);
+    color: white;
+    box-shadow: inset 0px 0px 1px 1px black;
   }
 
-  .title {
+  .playlistTitle {
     font-weight: bold;
-    padding: 0.2em 0 0.4em 0;
-    font-size: 1.1em;
+    font-size: 1em;
+    align-self: center;
+    margin-right: 0.3em;
   }
 
   .scroll {
     width: 100%;
-    margin-bottom: 0.3em;
+    box-shadow: inset 0px 0px 2px 1px black;
   }
 
   .content {
     display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
   }
+
+}
 
 }
 
@@ -152,4 +122,32 @@ svg a:hover path {
   width: 100%;
   text-align: center;
   margin: 0 0 2em 0;
+}
+
+@media (max-width: 1200px) {
+  .audioContainer {
+
+    .Player {
+      width: 55vw;
+    }
+
+    .Playlist {
+      width: 55vw;
+    }
+
+  }
+}
+
+@media (max-width: 667px) {
+  .audioContainer {
+
+    .Player {
+      width: 85vw;
+    }
+
+    .Playlist {
+      width: 85vw;
+    }
+
+  }
 }
