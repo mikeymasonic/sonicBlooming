@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styles from './Visualizer.css';
 // import { useHandlePlayerSuspend, usePlayerSuspend } from '../../hooks/DataProvider';
 
-const Visualizer = ({ forwardRef, close }) => {
+const Visualizer = ({ forwardRef, close, context, source }) => {
   // const [visualizerOn, setVisualizerOn] = useState(false);
   const canvasRef = useRef(null);
   let running = true;
@@ -27,7 +27,7 @@ const Visualizer = ({ forwardRef, close }) => {
     // Audio stuff
     // -------------
 
-    const context = new AudioContext();
+    // const context = new AudioContext();
     // const context = window.AudioContext || window.webkitAudioContext;
     // const context = forwardRef.current.context.current;
 
@@ -56,8 +56,8 @@ const Visualizer = ({ forwardRef, close }) => {
 
     // Make a audio node
     // const audio = new Audio();
-    const audio = forwardRef.current.audio.current;
-    const source = context.createMediaElementSource(audio);
+    // const audio = forwardRef.current.audio.current;
+    // const source = context.createMediaElementSource(audio);
     source.connect(splitter);
     //comment this out to disable audio playback
     splitter.connect(context.destination);
@@ -194,6 +194,8 @@ const Visualizer = ({ forwardRef, close }) => {
 Visualizer.propTypes = {
   close: PropTypes.func,
   forwardRef: PropTypes.object,
+  source: PropTypes.any,
+  context: PropTypes.any,
 };
 
 export default Visualizer;

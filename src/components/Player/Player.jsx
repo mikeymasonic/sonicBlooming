@@ -1,4 +1,4 @@
-import React, { createRef } from 'react';
+import React, { createRef, useEffect } from 'react';
 import Popup from 'reactjs-popup';
 import AudioPlayer, { RHAP_UI } from 'react-h5-audio-player';
 import { useSong, usePlayerVisible } from '../../hooks/DataProvider';
@@ -12,6 +12,30 @@ const Player = () => {
   const song = useSong();
   const playerVisible = usePlayerVisible();
   const player = createRef();
+  let source;
+  let context;
+
+  
+
+  // useEffect(() => {
+
+    
+  //   const audio = player.current.audio.current;
+  //   source = context.createMediaElementSource(audio);
+   
+  //   console.log(player.current.audio.current);
+
+  // }, [song]);
+
+  setTimeout(() => {
+    context = new AudioContext();
+    const audio = player.current.audio.current;
+    source = context.createMediaElementSource(audio);
+    console.log(player.current.audio.current);
+  }, 1000);
+
+
+  // const context = new AudioContext();
 
   return (
     <>
@@ -45,7 +69,7 @@ const Player = () => {
             <button open={open}>Fullscreen</button>
           )}>
           {close => (
-            <Visualizer forwardRef={player} close={close}/>
+            <Visualizer forwardRef={player} close={close} context={context} source={source}/>
           )}
         </Popup>
         
