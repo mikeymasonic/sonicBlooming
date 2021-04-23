@@ -1,17 +1,14 @@
-import React, { useRef, useEffect, useState } from 'react';
-import { useSong } from '../../hooks/DataProvider';
+import React, { useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import styles from './Visualizer.css';
 
 const Visualizer = (props) => {
-  const song = useSong();
-  const [visualizerOn, setVisualizerOn] = useState(false);
-
+  // const [visualizerOn, setVisualizerOn] = useState(false);
   const canvasRef = useRef(null);
-  
+  let running = true;
 
   useEffect(() => {
-    console.log('propThing: ', props.forwardRef.current.context);
+    // console.log('propThing: ', props.forwardRef.current.context);
     const centerX = 500;
     const centerY = 500;
     const radius = document.body.clientWidth <= 425 ? 120 : 160;
@@ -21,15 +18,12 @@ const Visualizer = (props) => {
     const pointsDown = [];
     const pCircle = 2 * Math.PI * radius;
     const angleExtra = 90;
-    let running = true;
-    const context = new AudioContext();
-    // const context = new AudioContext();
+    
     // -------------
     // Audio stuff
     // -------------
 
-    // make a Web Audio Context
-    
+    const context = new AudioContext();
     const splitter = context.createChannelSplitter();
 
     const analyserL = context.createAnalyser();
@@ -51,21 +45,11 @@ const Visualizer = (props) => {
     // Make a audio node
     // const audio = new Audio();
     const audio = props.forwardRef.current.audio.current;
-
-  
-
     const source = context.createMediaElementSource(audio);
     source.connect(splitter);
     //comment this out to disable audio playback
     splitter.connect(context.destination);
 
-    // function handleCanplay() {
-    //   // connect the audio element to the analyser node and the analyser node
-    //   // to the main Web Audio context
-
-    // }
-
-  
     // Create points
     for(let angle = 0; angle < 360; angle += interval) {
       const distUp = 1.1;
@@ -133,16 +117,9 @@ const Visualizer = (props) => {
       drawLine(pointsUp);
       drawLine(pointsDown);
       connectPoints(pointsUp, pointsDown);
-      // console.log('is this happening');
     }
-    // toggleAudio();
   
-
-   
-
-   
-
-    function update(dt) {
+    function update() {
       let audioIndex, audioValue;
   
       // get the current audio data
@@ -168,230 +145,18 @@ const Visualizer = (props) => {
       }
     }
 
-
-    
-
-    // audio.loop = false;
-    // audio.autoplay = false;
-    // audio.crossOrigin = 'anonymous';
-
     draw();
-    // audio.src = song?.url;
-    // const whatever = async () => {
-    //   if (audio.paused && visualizerOn) {
-    //     await audio.play();
-    //   } else {
-    //     await audio.pause();
-    //   }
-    // };
-    // whatever();
-
-
-    // const whatever1 = async () => {
-    //   await audio.play();
-    //   // await audio.pause();
-    //   console.log('play function happened');
-    // };
-
-    // const whatever2 = async () => {
-    //   await audio.pause();
-    //   console.log('pause function happened');
-    // };
-
-    // const whatever3 = async () => {
-    //   if(visualizerOn) {
-    //     await whatever1();
-    //   } else {
-    //     await whatever2();
-    //   }
-
-    // };
-
-    // whatever3();
-
-    // useEffect(() => {
-    //   draw();
-    //   toggleAudio();
-    // }, [song]);
-    console.log(song);
-    // const whatever = async () => {
-    //   if (visualizerOn) {
-    //   // if (audio.paused) {
-    //   //   audio.play();
-    //   // } else {
-    //   //   audio.pause();
-    //   // }
-    //   // toggleAudio();
-    //   // await loadAudio();
-    //     audio.src = song?.url;
-    //     // audio.load();
-    //     // audio.play();
-    //     await audio.play();
-    //     // await audio.pause();
-    //     // await audio.play();
-    //     // setTimeout(async function(){ await audio.pause();}, 3000);
-        
-    //     // await audio.load();
-    //     running = true;
-    //     // await audio.pause();
-    //     console.log('visualizer is: ', visualizerOn);
-    //   // loadAudio();
-    //   // audio.play();
-    //   // running === true;
-    //   } else {
-    //     console.log('visualizer is: ', visualizerOn);
-        
-    //     // await loadAudio();
-    //     // await audio.load();
-    //     // if (audio.paused) {
-    //     //   audio.play();
-    //     // } else {
-    //     //   audio.pause();
-    //     // }
-    //     // audio.src = song;
-    //     // audio.pause();
-    //     // audio.remove();
-    //     running === false;
-    //     await audio.pause();
-    //   }
-  
-    // };
-    // whatever();
   }, []);
-
-
-
-  
-
-  // useEffect(() => {
-
-   
-  // }, [visualizerOn]);
-
- 
-  // audio.load();
- 
-  
-
-  // handleCanplay();
-
-  // useEffect(() => {
-  //   toggleAudio();
-  // }, [song]);
-
-  // canvas.width = 500;
-  // canvas.height = 500;
-
-  // const centerX = canvas.width / 2;
-  // const centerY = canvas.height / 2;
- 
-
-  
-
-  // function loadAudio() {
-  //   audio.loop = false;
-  //   audio.autoplay = false;
-  //   audio.crossOrigin = 'anonymous';
-
-  //   // call `handleCanplay` when it music can be played
-  //   // audio.addEventListener('canplay', handleCanplay);
-  //   // audio.src = 'https://s3.eu-west-2.amazonaws.com/nelsoncodepen/Audiobinger_-_The_Garden_State.mp3';
-
-  //   // audio.src = '../mp3/example1.mp3';
-
-    
-  //   // audio.src = song?.url;
-  //   // audio.src = song;
-  //   // audio.load();
-  //   // running = true;
-  // }
-
-  
-
-  // function toggleAudio() {
-  //   if (running === false) {
-  //     loadAudio();
-  //     // document.querySelector('.callToAction').remove();
-  //   }
-
-  //   if (audio.paused) {
-  //     audio.play();
-  //   } else {
-  //     audio.pause();
-  //   }
-  // }
-
-
-
-  // canvas.addEventListener('click', toggleAudio);
-
-  // document.body.addEventListener('touchend', function(ev) {
-  //   context.resume();
-  // });
-
- 
-
-  const handleVisualizer = () => {
-    
-    setVisualizerOn(!visualizerOn);
-    console.log(!visualizerOn);
-
-    // if (visualizerOn) {
-    //   await setVisualizerOn(false);
-    // } else if (!visualizerOn) {
-    //   await setVisualizerOn(true);
-    // }
-
-    // await console.log(visualizerOn);
-    // toggleAudio();
-
-    // if (visualizerOn) {
-    //   // toggleAudio();
-    //   loadAudio();
-    //   audio.play();
-    //   // loadAudio();
-    //   // audio.play();
-    //   // running === true;
-    // }
-
-
-    // function toggleAudio() {
-    //   if (running === false) {
-    //     loadAudio();
-    //     // document.querySelector('.callToAction').remove();
-    //   }
-  
-    // if (audio.paused) {
-    //   audio.play();
-    // } else {
-    //   audio.pause();
-    // }
-    // }
-  };
-
-  // useEffect(async () => {
-
-  // }, [visualizerOn]);
-
-  // useEffect(async () => {
-  
-  //   // running === true;
-  // }, []);
-
-  // toggleAudio();
 
   return (
     <section className={styles.Visualizer}>
-      {/* <p>{visualizerOn ? `visualizer ${visualizerOn}` : `visualizer ${visualizerOn}`}</p> */}
-      <button onClick={() => handleVisualizer()}>CLICK ME</button>
       <canvas ref={canvasRef} />
-      {/* <div className={styles.callToAction}>Click to play!</div> */}
     </section>
   );
 };
 
 Visualizer.propTypes = {
-  forwardRef: PropTypes.any,
+  forwardRef: PropTypes.object,
 };
 
 export default Visualizer;

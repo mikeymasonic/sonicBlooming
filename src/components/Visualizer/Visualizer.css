@@ -8,9 +8,9 @@ canvas {
 }
 
 
-html, body {
+/* html, body {
   height: 100%;
-}
+} */
 /* 
 body {
   background-image: radial-gradient(circle, #F0C505, #F76E2A 10%, #A71A5B 40%, #651366);
@@ -22,12 +22,3 @@ canvas {
   display: block;
   background-color: lime;
 } */
-
-.callToAction {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: red;
-  cursor: pointer;
-}
