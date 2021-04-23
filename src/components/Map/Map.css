@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
 body {
-  background-color: rgba(133, 32, 119, 0.658);
+  background: rgb(40,4,78);
+  background: linear-gradient(0deg, rgba(40,4,78,1) 0%, rgba(20,2,39,1) 100%);
   margin: 0;
+  height: max-content;
+  font-family: 'Kanit', sans-serif;
 }
 
 .mapContainer {
@@ -13,17 +18,19 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   max-width: 60%;
-  border: 2px groove black;
-  box-shadow: 0px 0px 3px 0px black;
+  /* border: 2px groove black; */
+  margin-bottom: 2em;
+  box-shadow: 0px 0px 4px 4px #070E0D;
+  background: linear-gradient(120deg, #d3b1fb, #d6b1fb, #e0b3fb, #edb5fb, #fbb7fa, #fbbaea, #fcbcdb, #fcbfce, #fcc1c3, #fcccc3, #fcd3c5, #fcd6c5);
 
   svg {
     background-image: url(https://inbloom.netlify.app/images/altmap2.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     max-width: 90vw;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     display: flex;
     justify-content: center;
   }
