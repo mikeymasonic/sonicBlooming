@@ -1,9 +1,11 @@
 import React, { createRef } from 'react';
+import Popup from 'reactjs-popup';
 import AudioPlayer, { RHAP_UI } from 'react-h5-audio-player';
 import { useSong, usePlayerVisible } from '../../hooks/DataProvider';
 import Playlist from '../Playlist/Playlist';
 import Visualizer from '../Visualizer/Visualizer';
 import styles from './Player.css';
+import 'reactjs-popup/dist/index.css';
 // import 'react-h5-audio-player/lib/styles.css';
 
 const Player = () => {
@@ -35,7 +37,18 @@ const Player = () => {
             }
           />
         </section>
-        <Visualizer forwardRef={player}/>
+        <Popup 
+          modal
+          closeOnDocumentClick={true}
+          overlayStyle={{ background: 'rgba(0, 0, 0, 0.4)' }}
+          trigger={open => (
+            <button open={open}>Fullscreen</button>
+          )}>
+          {close => (
+            <Visualizer forwardRef={player} close={close}/>
+          )}
+        </Popup>
+        
 
         {!playerVisible && <p className={styles.instructions}>Select a garden to listen to:</p>} 
       </div>
