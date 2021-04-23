@@ -7,6 +7,11 @@ exports[`Player component renders Player 1`] = `
     style="visibility: hidden; height: 0px;"
   >
     <div
+      class="playlistTitle"
+    >
+      NULL PLAYLIST
+    </div>
+    <div
       class="scrollarea scroll"
     >
       <div

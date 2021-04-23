@@ -11,6 +11,8 @@ const Playlist = () => {
   const mapLocation = useMapLocation();
   const handleSong = useHandleSong();
   const mapLocationNodes = [];
+  const playlistTitle = mapLocation + ' Playlist';
+  const upperPlaylistTitle = playlistTitle.toUpperCase();
   
   const playlistNodes = songs.map((song) => {
     if (mapLocation === song.mapLocation) {
@@ -29,9 +31,9 @@ const Playlist = () => {
 
   return (
     <section className={styles.Playlist} style={{ visibility: playlistVisible ? 'visible' : 'hidden', height: !playlistVisible && 0 }}>
-      {/* <div className={styles.playlistTitle}>
-        Playlist:
-      </div> */}
+      <div className={styles.playlistTitle}>
+        {upperPlaylistTitle}
+      </div>
       <ScrollArea
         speed={0.8}
         className={styles.scroll}
