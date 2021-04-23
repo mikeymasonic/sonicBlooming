@@ -12,8 +12,7 @@ const Visualizer = ({ forwardRef, close }) => {
 
   useEffect(() => {
     console.log('propThing: ', forwardRef.current);
-    // console.log(JSON.stringify(forwardRef, null, 4));
-    // console.log(JSON.stringify(forwardRef.current.audio.current));
+    
     const centerX = 500;
     const centerY = 500;
     const radius = document.body.clientWidth <= 425 ? 120 : 160;
@@ -28,18 +27,15 @@ const Visualizer = ({ forwardRef, close }) => {
     // Audio stuff
     // -------------
 
-
-
     const context = new AudioContext();
+    // const context = window.AudioContext || window.webkitAudioContext;
+    // const context = forwardRef.current.context.current;
 
     // if(playerSuspend) {
     //   context.resume();
     //   handlePlayerSuspend(false);
     // }
 
-    // const context = window.AudioContext || window.webkitAudioContext;
-
-    // const context = forwardRef.current.context.current;
     const splitter = context.createChannelSplitter();
 
     const analyserL = context.createAnalyser();
