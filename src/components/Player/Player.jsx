@@ -15,7 +15,7 @@ const Player = () => {
 
   return (
     <>
-      <div className={styles.audioContainer}>
+      <section className={styles.audioContainer}>
         <Playlist style={{ visibility: playerVisible ? 'visible' : 'hidden', height: playerVisible ? 100 : 0 }} />
 
         <section className={styles.Player} style={{ visibility: playerVisible ? 'visible' : 'collapse', height: playerVisible ? 100 : 0 }}>
@@ -51,7 +51,7 @@ const Player = () => {
         
 
         {!playerVisible && <p className={styles.instructions}>Select a garden to listen to:</p>} 
-      </div>
+      </section>
     </>
   );
 };

@@ -8,7 +8,7 @@ export const DataProvider = ({ children }) => {
   const [song, setSong] = useState(null);
   const [mapLocation, setMapLocation] = useState(null);
   const [playerVisible, setPlayerVisible] = useState(false);
-  const [playerContext, setPlayerContext] = useState('dink');
+  const [playerSuspend, setPlayerSuspend] = useState(false);
 
   const handleSong = (track) => {
     setSong(track);
@@ -23,8 +23,8 @@ export const DataProvider = ({ children }) => {
     setPlayerVisible(bool);
   };
 
-  const handlePlayerContext = (ref) => {
-    setPlayerContext(ref);
+  const handlePlayerSuspend = (ref) => {
+    setPlayerSuspend(ref);
   };
 
   return (
@@ -33,11 +33,11 @@ export const DataProvider = ({ children }) => {
         song,
         mapLocation,
         playerVisible,
-        playerContext,
+        playerSuspend,
         handleSong,
         handleMapLocation,
         handlePlayerVisible,
-        handlePlayerContext,
+        handlePlayerSuspend,
       }}
     >
       {children}
@@ -65,9 +65,9 @@ export const usePlayerVisible = () => {
   return playerVisible;
 };
 
-export const usePlayerContext = () => {
-  const { playerContext } = useContext(DataContext);
-  return playerContext;
+export const usePlayerSuspend = () => {
+  const { playerSuspend } = useContext(DataContext);
+  return playerSuspend;
 };
 
 // get handlers
@@ -86,8 +86,8 @@ export const useHandlePlayerVisible = () => {
   return handlePlayerVisible;
 };
 
-export const useHandlePlayerContext = () => {
-  const { handlePlayerContext } = useContext(DataContext);
-  return handlePlayerContext;
+export const useHandlePlayerSuspend = () => {
+  const { handlePlayerSuspend } = useContext(DataContext);
+  return handlePlayerSuspend;
 };
 

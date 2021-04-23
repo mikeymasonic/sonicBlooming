@@ -1,14 +1,19 @@
 import React, { useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import styles from './Visualizer.css';
+// import { useHandlePlayerSuspend, usePlayerSuspend } from '../../hooks/DataProvider';
 
-const Visualizer = (props) => {
+const Visualizer = ({ forwardRef, close }) => {
   // const [visualizerOn, setVisualizerOn] = useState(false);
   const canvasRef = useRef(null);
   let running = true;
+  // const playerSuspend = usePlayerSuspend();
+  // const handlePlayerSuspend = useHandlePlayerSuspend();
 
   useEffect(() => {
-    // console.log('propThing: ', props.forwardRef.current.context);
+    console.log('propThing: ', forwardRef.current);
+    // console.log(JSON.stringify(forwardRef, null, 4));
+    // console.log(JSON.stringify(forwardRef.current.audio.current));
     const centerX = 500;
     const centerY = 500;
     const radius = document.body.clientWidth <= 425 ? 120 : 160;
@@ -23,7 +28,18 @@ const Visualizer = (props) => {
     // Audio stuff
     // -------------
 
+
+
     const context = new AudioContext();
+
+    // if(playerSuspend) {
+    //   context.resume();
+    //   handlePlayerSuspend(false);
+    // }
+
+    // const context = window.AudioContext || window.webkitAudioContext;
+
+    // const context = forwardRef.current.context.current;
     const splitter = context.createChannelSplitter();
 
     const analyserL = context.createAnalyser();
@@ -44,7 +60,7 @@ const Visualizer = (props) => {
 
     // Make a audio node
     // const audio = new Audio();
-    const audio = props.forwardRef.current.audio.current;
+    const audio = forwardRef.current.audio.current;
     const source = context.createMediaElementSource(audio);
     source.connect(splitter);
     //comment this out to disable audio playback
@@ -146,16 +162,41 @@ const Visualizer = (props) => {
     }
 
     draw();
+
+    // return function cleanup () {
+    //   // context.close();
+    //   context.suspend();
+
+    //   context.suspend().then(function() {
+    //     handlePlayerSuspend(true);
+    //   });
+    // };
+
   }, []);
 
   return (
     <section className={styles.Visualizer}>
+      <svg 
+        className={styles.close} 
+        fill="none" 
+        stroke="currentColor" 
+        viewBox="0 0 24 24" 
+        xmlns="http://www.w3.org/2000/svg"
+        height='1.5em'
+        onClick={close}>
+        <path 
+          strokeLinecap="round" 
+          strokeLinejoin="round" 
+          strokeWidth={2} 
+          d="M6 18L18 6M6 6l12 12" />
+      </svg>
       <canvas ref={canvasRef} />
     </section>
   );
 };
 
 Visualizer.propTypes = {
+  close: PropTypes.func,
   forwardRef: PropTypes.object,
 };
 

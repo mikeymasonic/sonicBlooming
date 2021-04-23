@@ -5,6 +5,21 @@ canvas {
   /* background-color: lime; */
 }
 
+.close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.close:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.close:active {
+  transform: scale(0.9);
+}
+
 }
 
 
