@@ -1,6 +1,6 @@
-import React, { createRef, useEffect } from 'react';
+import React, { createRef } from 'react';
 import AudioPlayer, { RHAP_UI } from 'react-h5-audio-player';
-import { useSong, usePlayerVisible, usePlayerContext, useHandlePlayerContext } from '../../hooks/DataProvider';
+import { useSong, usePlayerVisible } from '../../hooks/DataProvider';
 import Playlist from '../Playlist/Playlist';
 import Visualizer from '../Visualizer/Visualizer';
 import styles from './Player.css';
@@ -9,24 +9,7 @@ import styles from './Player.css';
 const Player = () => {
   const song = useSong();
   const playerVisible = usePlayerVisible();
-  // const playerContext = usePlayerContext();
-  // const handlePlayerContext = useHandlePlayerContext();
   const player = createRef();
-
-  
-
-  const handleRef = () => {
-    // handlePlayerContext(player);
-    // handlePlayerContext('player');
-    console.log(player);
-    // console.log(playerContext);
-  };
-
-  // useEffect(() => {
-  //   handlePlayerContext(player);
-  // }, [player]);
-
-
 
   return (
     <>
@@ -37,8 +20,7 @@ const Player = () => {
           <section className={styles.title}>
             {song?.mapLocation} - {song?.title}
           </section>
-          {/* <ReactAudioPlayer ref={this.player} /> */}
-          <button onClick={() => {handleRef();}}>CLICK ME</button>
+
           <AudioPlayer
             ref={player}
             className={styles.rhap_container}

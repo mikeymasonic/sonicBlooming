@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useMapLocation } from '../../hooks/DataProvider';
+import PropTypes from 'prop-types';
 import { uploads } from '../../utils/data';
 import styles from './Upload.css';
 
@@ -22,9 +23,6 @@ const Upload = ({ close }) => {
 
   return (
     <section className={styles.Upload}>
-      {/* <button 
-        className={styles.close}
-        onClick={close}> */}
       <svg 
         className={styles.close} 
         fill="none" 
@@ -39,13 +37,16 @@ const Upload = ({ close }) => {
           strokeWidth={2} 
           d="M6 18L18 6M6 6l12 12" />
       </svg>
-      {/* </button> */}
       {uploadNodes}
-      <div className={styles.description}>
+      <section className={styles.description}>
         {uploadDescription}
-      </div>
+      </section>
     </section>
   );
+};
+
+Upload.propTypes = {
+  close: PropTypes.func,
 };
 
 export default Upload;
