@@ -10,7 +10,7 @@ function Map() {
   const handleMapLocation = useHandleMapLocation();
   const handlePlayerVisible = useHandlePlayerVisible();
   return (
-    <div className={styles.mapContainer}>
+    <section className={styles.mapContainer}>
       <section 
         className={styles.mapClass}>
 
@@ -83,7 +83,7 @@ function Map() {
 
         </svg>
       </section>
-    </div>
+    </section>
   );
 }
 
