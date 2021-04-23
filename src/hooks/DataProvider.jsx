@@ -4,10 +4,11 @@ import PropTypes from 'prop-types';
 const DataContext = createContext();
 
 export const DataProvider = ({ children }) => {
-  const [song, setSong] = useState('../mp3/example2.mp3');
-  // const [song, setSong] = useState(null);
+  // const [song, setSong] = useState('../mp3/example2.mp3');
+  const [song, setSong] = useState(null);
   const [mapLocation, setMapLocation] = useState(null);
   const [playerVisible, setPlayerVisible] = useState(false);
+  const [playerContext, setPlayerContext] = useState('dink');
 
   const handleSong = (track) => {
     setSong(track);
@@ -22,15 +23,21 @@ export const DataProvider = ({ children }) => {
     setPlayerVisible(bool);
   };
 
+  const handlePlayerContext = (ref) => {
+    setPlayerContext(ref);
+  };
+
   return (
     <DataContext.Provider
       value={{
         song,
         mapLocation,
         playerVisible,
+        playerContext,
         handleSong,
         handleMapLocation,
         handlePlayerVisible,
+        handlePlayerContext,
       }}
     >
       {children}
@@ -58,6 +65,11 @@ export const usePlayerVisible = () => {
   return playerVisible;
 };
 
+export const usePlayerContext = () => {
+  const { playerContext } = useContext(DataContext);
+  return playerContext;
+};
+
 // get handlers
 export const useHandleSong = () => {
   const { handleSong } = useContext(DataContext);
@@ -73,3 +85,9 @@ export const useHandlePlayerVisible = () => {
   const { handlePlayerVisible } = useContext(DataContext);
   return handlePlayerVisible;
 };
+
+export const useHandlePlayerContext = () => {
+  const { handlePlayerContext } = useContext(DataContext);
+  return handlePlayerContext;
+};
+
