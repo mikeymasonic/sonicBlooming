@@ -199,7 +199,7 @@ const Visualizer = ({ forwardRef }) => {
             pointsDown[i].dist;
       }
     }
-    context.resume();
+    // context.resume();
     draw();
 
     return function cleanup () {
