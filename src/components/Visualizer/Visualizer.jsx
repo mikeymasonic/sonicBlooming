@@ -4,8 +4,8 @@ import { useVisualizerDisplay, useHandleVisualizerDisplay } from '../../hooks/Da
 import styles from './Visualizer.css';
 
 const Visualizer = ({ forwardRef }) => {
-  const canvasRef = useRef(null);
   let running = true;
+  const canvasRef = useRef(null);
   const visualizerDisplay = useVisualizerDisplay();
   const handleVisualizerDisplay = useHandleVisualizerDisplay();
 
@@ -13,11 +13,21 @@ const Visualizer = ({ forwardRef }) => {
     handleVisualizerDisplay(false);
   };
 
+  // useEffect(() => {
+  //   if (visualizerDisplay) {
+  //     running = true;
+  //     console.log('running :', running);
+  //     draw();
+  //   } else {  
+  //     running = false;
+  //     console.log('running :', running);
+  //   }
+  // }, [visualizerDisplay]);
+
   useEffect(() => {
     // -------------
     // Audio stuff
     // -------------
-
     const audio = forwardRef.current.audio.current;
     audio.context = audio.context || new AudioContext();
     const context = audio.context;
@@ -37,7 +47,7 @@ const Visualizer = ({ forwardRef }) => {
     // canvas.height = document.body.clientHeight;
 
     const centerX = canvas.width / 2;
-    const centerY = canvas.height / 2;
+    const centerY = canvas.height / 4;
     const radius = document.body.clientWidth <= 425 ? 120 : 160;
     const steps = document.body.clientWidth <= 425 ? 60 : 120;
     const interval = 360 / steps;
@@ -105,7 +115,6 @@ const Visualizer = ({ forwardRef }) => {
         dist: distDown,
       });
     }
-
 
     function drawLine(points) {
       const origin = points[0];
@@ -192,15 +201,10 @@ const Visualizer = ({ forwardRef }) => {
 
     draw();
 
-    // return function cleanup () {
-    //   // context.close();
-    //   context.suspend();
-    //   // audio.source.
-
-    //   // context.suspend().then(function() {
-    //   //   handlePlayerSuspend(true);
-    //   // });
-    // };
+    return function cleanup () {
+      context.close();
+      running = false;
+    };
   }, []);
 
   return (
@@ -221,7 +225,7 @@ const Visualizer = ({ forwardRef }) => {
           d="M6 18L18 6M6 6l12 12"
         />
       </svg>
-      <canvas ref={canvasRef} />
+      <canvas ref={canvasRef} onClick={handleClose} />
     </section>
   );
 };

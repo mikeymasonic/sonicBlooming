@@ -1,5 +1,4 @@
 import React, { createRef } from 'react';
-import Popup from 'reactjs-popup';
 import AudioPlayer, { RHAP_UI } from 'react-h5-audio-player';
 import { useSong, usePlayerVisible, useVisualizerDisplay, useHandleVisualizerDisplay } from '../../hooks/DataProvider';
 import Playlist from '../Playlist/Playlist';
@@ -14,6 +13,10 @@ const Player = () => {
   const player = createRef();
   const visualizerDisplay = useVisualizerDisplay();
   const handleVisualizerDisplay = useHandleVisualizerDisplay();
+
+  const handleFullscreen = () => {
+    handleVisualizerDisplay(!visualizerDisplay);
+  };
 
   return (
     <>
@@ -32,29 +35,15 @@ const Player = () => {
             customProgressBarSection={
               [
                 RHAP_UI.CURRENT_TIME,
-                // eslint-disable-next-line react/jsx-key
-                <section>/</section>,
-                RHAP_UI.DURATION
+                <section key="slash">/</section>,
+                RHAP_UI.DURATION,
               ]
             }
           />
+          <button onClick={handleFullscreen}>Fullscreen</button>
         </section>
-        {/* <Popup 
-          modal
-          closeOnDocumentClick={true}
-          overlayStyle={{ background: 'rgba(0, 0, 0, 0.4)' }}
-          trigger={open => (
-            <button open={open}>Fullscreen</button>
-          )}>
-          {close => (
-            <Visualizer forwardRef={player} close={close}/>
-          )}
-        </Popup> */}
         <Visualizer forwardRef={player}/>
-        {/* 
-        <Playlist style={{ visibility: playerVisible ? 'visible' : 'hidden', height: playerVisible ? 100 : 0 }} /> */}
         
-
         {!playerVisible && <p className={styles.instructions}>Select a garden to listen to:</p>} 
       </section>
     </>

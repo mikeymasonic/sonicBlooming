@@ -8,7 +8,7 @@ export const DataProvider = ({ children }) => {
   const [song, setSong] = useState(null);
   const [mapLocation, setMapLocation] = useState(null);
   const [playerVisible, setPlayerVisible] = useState(false);
-  const [visualizerDisplay, setVisualizerDisplay] = useState(true);
+  const [visualizerDisplay, setVisualizerDisplay] = useState(false);
 
   const handleSong = (track) => {
     setSong(track);
