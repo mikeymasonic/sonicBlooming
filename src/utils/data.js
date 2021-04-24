@@ -26,8 +26,8 @@ export const songs = [
   {
     url: '../mp3/example5.mp3',
     title: 'Song Five',
-    mapLocation: 'Queen\'s Walk',
-    description: 'this is a blurb about queens walk, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia dolorem ullam, unde aliquam tenetur consequatur ut in esse harum sunt! Atque dolorem provident accusamus sint? Ducimus, magni. Id, enim non? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem animi ex repellendus eaque. Quam blanditiis cum quo sunt laudantium nihil earum unde dolore laborum! Id libero iusto similique minus dignissimos. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit dolorem ut omnis corrupti consequatur totam, aliquid ex qui cum deleniti minima, maiores temporibus doloribus, voluptatem et veniam eligendi vel? Distinctio.',
+    mapLocation: 'Gold Medal Garden',
+    description: 'this is a blurb about Gold Medal Garden, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia dolorem ullam, unde aliquam tenetur consequatur ut in esse harum sunt! Atque dolorem provident accusamus sint? Ducimus, magni. Id, enim non? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem animi ex repellendus eaque. Quam blanditiis cum quo sunt laudantium nihil earum unde dolore laborum! Id libero iusto similique minus dignissimos. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit dolorem ut omnis corrupti consequatur totam, aliquid ex qui cum deleniti minima, maiores temporibus doloribus, voluptatem et veniam eligendi vel? Distinctio.',
   },
   // keep above as is, everything below are new songs
   {

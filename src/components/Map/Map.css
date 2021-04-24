@@ -46,7 +46,8 @@ body {
   svg a:focus path,
   svg a:hover path {
     /* fill: rgba(30,222,121, 0.25); */
-    fill: rgba(231, 19, 19, 0.445);
+    /* fill: rgba(231, 19, 19, 0.445); */
+    fill: rgba(40,4,78,0.25);
     cursor: pointer;
   }
   }

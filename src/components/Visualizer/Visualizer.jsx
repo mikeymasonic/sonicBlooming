@@ -38,13 +38,9 @@ const Visualizer = ({ forwardRef }) => {
     const canvas = canvasRef.current;
     const ctx = canvas.getContext('2d');
     canvasRef.current.getContext('2d');
-    // console.log(canvasRef.current.getContext('2d'));
 
     canvas.width = document.body.clientWidth;
     canvas.height = document.body.clientHeight;
-
-    // canvas.width = document.body.clientWidth;
-    // canvas.height = document.body.clientHeight;
 
     const centerX = canvas.width / 2;
     const centerY = canvas.height / 4;
