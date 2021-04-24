@@ -1,17 +1,21 @@
 import React, { useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { useVisualizerDisplay, useHandleVisualizerDisplay } from '../../hooks/DataProvider';
+import { useVisualizerDisplay, useHandleVisualizerDisplay, usePlayerVisible } from '../../hooks/DataProvider';
 import styles from './Visualizer.css';
 
 const Visualizer = ({ forwardRef }) => {
   let running = true;
+  // let context;
   const canvasRef = useRef(null);
   const visualizerDisplay = useVisualizerDisplay();
   const handleVisualizerDisplay = useHandleVisualizerDisplay();
+  const playerVisible = usePlayerVisible();
 
   const handleClose = () => {
     handleVisualizerDisplay(false);
   };
+
+
 
   // useEffect(() => {
   //   if (visualizerDisplay) {
@@ -31,6 +35,7 @@ const Visualizer = ({ forwardRef }) => {
     const audio = forwardRef.current.audio.current;
     audio.context = audio.context || new AudioContext();
     const context = audio.context;
+
 
     // -------------
     // Canvas stuff
@@ -194,7 +199,7 @@ const Visualizer = ({ forwardRef }) => {
             pointsDown[i].dist;
       }
     }
-
+    context.resume();
     draw();
 
     return function cleanup () {
@@ -202,6 +207,35 @@ const Visualizer = ({ forwardRef }) => {
       running = false;
     };
   }, []);
+
+  // useEffect(() => {
+  //   const whatever = () => {
+  //     if(playerVisible){
+  //       context.resume();
+  //     }
+  //   };
+  //   const timer = setTimeout(() => {
+  //     whatever();
+  //   }, 5000);
+
+  //   return () => clearTimeout(timer);
+  // }, [playerVisible]);
+
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     await fetch(`https://api.github.com/users/${input}`)
+  //       .then((res) => res.json())
+  //       .then((res) => setData([res]))
+  //       .catch((e) => console.error(e));
+  //   };
+
+  //   const timer = setTimeout(() => {
+  //     fetchData();
+  //   }, 5000);
+
+  //   return () => clearTimeout(timer);
+  // }, [playerVisible]);
+ 
 
   return (
     <section className={styles.Visualizer}  style={{ visibility: visualizerDisplay ? 'visible' : 'hidden', height: visualizerDisplay ? 100 : 0 }}>

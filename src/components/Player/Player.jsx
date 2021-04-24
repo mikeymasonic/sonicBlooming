@@ -42,7 +42,9 @@ const Player = () => {
           />
           <button onClick={handleFullscreen}>Fullscreen</button>
         </section>
-        <Visualizer forwardRef={player}/>
+
+        {playerVisible && <Visualizer forwardRef={player}/>} 
+        
         
         {!playerVisible && <p className={styles.instructions}>Select a garden to listen to:</p>} 
       </section>
