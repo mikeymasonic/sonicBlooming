@@ -7,11 +7,11 @@ a {
   }
   
   a:link {
-    color: rgb(151, 40, 40);
+    color: rgba(40,4,78,1);
   }
   
   a:visited {
-    color: rgb(145, 24, 24);
+    color: rgba(40,4,78,1);
   }
   
   a:hover { 
@@ -25,7 +25,7 @@ a {
 .Header {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   color: white;
   width: 100%;
@@ -33,12 +33,20 @@ a {
   margin-bottom: 2em;
   border-bottom: 1px solid black;
   box-shadow: 0 0 2px 0 black;
+  background: linear-gradient(120deg, #d3b1fb, #d6b1fb, #e0b3fb, #edb5fb, #fbb7fa, #fbbaea, #fcbcdb, #fcbfce, #fcc1c3, #fcccc3, #fcd3c5, #fcd6c5);
 
   .headerLeft {
     float: left;
     padding: 1em 0 0 5%;
     position: absolute;
-    left: 1vw;
+    left: -2vw;
+    top: -1vh;
+  }
+
+  .headerCenter {
+    height: 100%;
+    letter-spacing: 0.4em;
+    font-size: 1.3em;
   }
 
   h1 {

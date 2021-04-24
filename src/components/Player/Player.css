@@ -1,8 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
 .audioContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
+
+  .playerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    visibility: none;
+    margin-bottom: 2em;
+    border-radius: 5px;
+    border: 1px outset #FBC9B1;
+    box-shadow: 0px 0px 4px 4px #070E0D;
+    background: linear-gradient(120deg, #d3b1fb, #d6b1fb, #e0b3fb, #edb5fb, #fbb7fa, #fbbaea, #fcbcdb, #fcbfce, #fcc1c3, #fcccc3, #fcd3c5, #fcd6c5);
+  }
+
+  .title {
+    font-weight: bold;
+    font-size: 1em;
+    align-self: center;
+    margin: 0.1em;
+    color: black;
+    text-align: center;
+    letter-spacing: 0.9vmax;
+    width: 100%;
+    font-family: 'Kanit', sans-serif;
+  }
 
 .Player {
   display: flex;
@@ -10,14 +38,13 @@
   justify-content: center;
   align-items: center;
   color: black;
-  width: 90vw;
+  width: 50vw;
+  margin: 0.2em;
   visibility: none;
-
-  .title {
-    font-size: 1.4em;
-    font-weight: bold;
-    text-align: center;
-  }
+  background: rgb(53,5,97);
+  background: linear-gradient(94deg, rgba(53,5,97,1) 0%, rgba(32,3,58,1) 100%);
+  color: #FBC9B1;
+  overflow: hidden;
 
 .rhap_container {
   box-sizing: border-box;
@@ -26,22 +53,23 @@
   line-height: 1;
   font-family: inherit;
   width: 100%;
-  margin-top: 0.7em;
 
   button {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: black;
+    color: #FBC6B1;
     background-color: white;
-    width: 5vw;
-    height: 3vh;
-    border-radius: 5px;
+    width: 4.5vw;
+    height: 6vh;
+    border-radius: 50%;
+    font-size: 2.5em;
+    background: none;
+    border: none;
   }
 
   button:hover {
-    background-color: grey;
-    box-shadow: 0 0 2px 0 black;
+    transform: scale(1.1)
   }
 
   button:active {
@@ -52,59 +80,71 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: black;
-    font-size: 16px;
+    color: #FBC9B1;
     user-select: none;
     -webkit-user-select: none;
-    margin-left: 0.3em;
+    margin: 0 0.7em 0 0.7em;
   }
+
   }
 }
 
 .Playlist{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 5px;
-  height: 3em;
-  width: 55vw;
-  color: black;
-  padding: 0.3em;
-  border: 1px inset black;
-  box-shadow: inset 0px 3px 3px -3px black;
+  height: 4.5em;
+  width: 50vw;
+  color: #FBC9B1;
+  padding: 0.1em 0.2em 0 0.2em;
+  margin-bottom: 1em;
+  border: 1px outset #FBC9B1;
+  box-shadow: 0px 0px 4px 4px #070E0D;
+  background: linear-gradient(120deg, #d3b1fb, #d6b1fb, #e0b3fb, #edb5fb, #fbb7fa, #fbbaea, #fcbcdb, #fcbfce, #fcc1c3, #fcccc3, #fcd3c5, #fcd6c5);
 
   a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0.1em;
-    width: 30%;
+    display: block;
+    padding: 0.4em 0.1em 0 0.7em;
+    width: 25%;
     height: 4vh;
-    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;  
+    text-overflow: ellipsis;
     font-size: 0.8em;
-    box-shadow: 0px 0px 1px 0px black;
+    box-shadow: inset 0px 0px 1px 0px #FBC9B1;
+    border-right: 1px inset #FBC9B1;
+    background: rgb(53,5,97);
+    background: linear-gradient(94deg, rgba(53,5,97,1) 0%, rgba(32,3,58,1) 100%);
+    border-radius: 2px;
   }
 
-  /* a:hover {
-    box-shadow: 0px 0px 3px 0px black;
-  } */
+  a:hover {
+    box-shadow: 0px 0px 2px 1px #FBC9B1;
+  }
 
   a:active {
     color: white;
-    box-shadow: inset 0px 0px 1px 1px black;
+    box-shadow: inset 0px 0px 1px 1px #FBC9B1;
   }
 
   .playlistTitle {
     font-weight: bold;
-    font-size: 1em;
+    font-size: 1.2vmax;
     align-self: center;
-    margin-right: 0.3em;
+    margin: 0.2em;
+    color: black;
+    text-align: center;
+    letter-spacing: 0.9vmax;
+    width: 100%;
+    font-family: 'Kanit', sans-serif;
   }
 
   .scroll {
     width: 100%;
-    box-shadow: inset 0px 0px 2px 1px black;
+    box-shadow: inset 0px 0px 2px 1px #FBC9B1;
+    background-color: #0A0113;
   }
 
   .content {
@@ -122,6 +162,7 @@
   width: 100%;
   text-align: center;
   margin: 0 0 2em 0;
+  color: #FBC9B1;
 }
 
 @media (max-width: 1200px) {
@@ -147,6 +188,7 @@
 
     .Playlist {
       width: 85vw;
+      height: 
     }
 
   }

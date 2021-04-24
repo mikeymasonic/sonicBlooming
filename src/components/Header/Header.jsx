@@ -18,8 +18,12 @@ const Header = (props) => {
   return (
     <header className={styles.Header}>
       <div className={styles.headerLeft}>
+        <img src='../../../public/images/rose-shape.png' height='50vw' />
+      </div>
+
+      <div className={styles.headerCenter}>
         <Link className={styles.navLink} to="/">
-          <h1>Sonic Blooming</h1>
+          <h1>SONIC BLOOMING</h1>
         </Link>
       </div>
 
@@ -30,7 +34,7 @@ const Header = (props) => {
           <svg 
             className="w-6 h-6" 
             fill="none" 
-            stroke="white"
+            stroke="rgba(40,4,78,1)"
             height="2.5em"
             viewBox="0 0 24 24" 
             xmlns="http://www.w3.org/2000/svg">
