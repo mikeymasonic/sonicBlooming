@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { useVisualizerDisplay, useHandleVisualizerDisplay, usePlayerVisible } from '../../hooks/DataProvider';
+import { useVisualizerDisplay, useHandleVisualizerDisplay } from '../../hooks/DataProvider';
 import styles from './Visualizer.css';
 
 const Visualizer = ({ forwardRef }) => {
@@ -9,33 +9,18 @@ const Visualizer = ({ forwardRef }) => {
   const canvasRef = useRef(null);
   const visualizerDisplay = useVisualizerDisplay();
   const handleVisualizerDisplay = useHandleVisualizerDisplay();
-  const playerVisible = usePlayerVisible();
 
   const handleClose = () => {
     handleVisualizerDisplay(false);
   };
-
-
-
-  // useEffect(() => {
-  //   if (visualizerDisplay) {
-  //     running = true;
-  //     console.log('running :', running);
-  //     draw();
-  //   } else {  
-  //     running = false;
-  //     console.log('running :', running);
-  //   }
-  // }, [visualizerDisplay]);
 
   useEffect(() => {
     // -------------
     // Audio stuff
     // -------------
     const audio = forwardRef.current.audio.current;
-    audio.context = audio.context || new AudioContext();
-    const context = audio.context;
-
+    // audio.context = audio.context || new AudioContext();
+    const context =  new AudioContext();
 
     // -------------
     // Canvas stuff
@@ -76,10 +61,8 @@ const Visualizer = ({ forwardRef }) => {
     const audioDataArrayR = new Uint8Array(bufferLengthR);
 
     // Make a audio node
-    // const audio = new Audio();
-
-    audio.source = audio.source || context.createMediaElementSource(audio);
-    const source = audio.source;
+    // audio.source = audio.source || context.createMediaElementSource(audio);
+    const source = context.createMediaElementSource(audio);
 
     source.connect(splitter);
     //comment this out to disable audio playback
@@ -199,7 +182,7 @@ const Visualizer = ({ forwardRef }) => {
             pointsDown[i].dist;
       }
     }
-    // context.resume();
+
     draw();
 
     return function cleanup () {
@@ -207,35 +190,6 @@ const Visualizer = ({ forwardRef }) => {
       running = false;
     };
   }, []);
-
-  // useEffect(() => {
-  //   const whatever = () => {
-  //     if(playerVisible){
-  //       context.resume();
-  //     }
-  //   };
-  //   const timer = setTimeout(() => {
-  //     whatever();
-  //   }, 5000);
-
-  //   return () => clearTimeout(timer);
-  // }, [playerVisible]);
-
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     await fetch(`https://api.github.com/users/${input}`)
-  //       .then((res) => res.json())
-  //       .then((res) => setData([res]))
-  //       .catch((e) => console.error(e));
-  //   };
-
-  //   const timer = setTimeout(() => {
-  //     fetchData();
-  //   }, 5000);
-
-  //   return () => clearTimeout(timer);
-  // }, [playerVisible]);
- 
 
   return (
     <section className={styles.Visualizer}  style={{ visibility: visualizerDisplay ? 'visible' : 'hidden', height: visualizerDisplay ? 100 : 0 }}>
