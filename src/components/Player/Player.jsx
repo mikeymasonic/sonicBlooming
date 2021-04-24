@@ -12,6 +12,14 @@ const Player = () => {
   const song = useSong();
   const playerVisible = usePlayerVisible();
   const player = createRef();
+  let source;
+
+  const context = new AudioContext();
+
+  setTimeout(() =>{
+    const audio = player.current.audio.current;
+    source = context.createMediaElementSource(audio);
+  }, 2000);
 
   return (
     <>
@@ -45,7 +53,7 @@ const Player = () => {
             <button open={open}>Fullscreen</button>
           )}>
           {close => (
-            <Visualizer forwardRef={player} close={close}/>
+            <Visualizer forwardRef={player} close={close} context={context} source={source}/>
           )}
         </Popup>
         
