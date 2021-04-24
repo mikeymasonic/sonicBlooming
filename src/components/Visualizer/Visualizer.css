@@ -1,23 +1,28 @@
 .Visualizer {
+pointer-events: none;
 
 canvas {
   display: block;
   /* background-color: lime; */
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .close {
   position: absolute;
   right: 10px;
   top: 10px;
+  pointer-events: all;
 }
 
 .close:hover {
   transform: scale(1.1);
   cursor: pointer;
+  pointer-events: all;
 }
 
 .close:active {
   transform: scale(0.9);
+  pointer-events: all;
 }
 
 }

@@ -8,7 +8,7 @@ export const DataProvider = ({ children }) => {
   const [song, setSong] = useState(null);
   const [mapLocation, setMapLocation] = useState(null);
   const [playerVisible, setPlayerVisible] = useState(false);
-  const [playerSuspend, setPlayerSuspend] = useState(false);
+  const [visualizerDisplay, setVisualizerDisplay] = useState(true);
 
   const handleSong = (track) => {
     setSong(track);
@@ -23,8 +23,8 @@ export const DataProvider = ({ children }) => {
     setPlayerVisible(bool);
   };
 
-  const handlePlayerSuspend = (ref) => {
-    setPlayerSuspend(ref);
+  const handleVisualizerDisplay = (bool) => {
+    setVisualizerDisplay(bool);
   };
 
   return (
@@ -33,11 +33,11 @@ export const DataProvider = ({ children }) => {
         song,
         mapLocation,
         playerVisible,
-        playerSuspend,
+        visualizerDisplay,
         handleSong,
         handleMapLocation,
         handlePlayerVisible,
-        handlePlayerSuspend,
+        handleVisualizerDisplay,
       }}
     >
       {children}
@@ -65,9 +65,9 @@ export const usePlayerVisible = () => {
   return playerVisible;
 };
 
-export const usePlayerSuspend = () => {
-  const { playerSuspend } = useContext(DataContext);
-  return playerSuspend;
+export const useVisualizerDisplay = () => {
+  const { visualizerDisplay } = useContext(DataContext);
+  return visualizerDisplay;
 };
 
 // get handlers
@@ -86,8 +86,8 @@ export const useHandlePlayerVisible = () => {
   return handlePlayerVisible;
 };
 
-export const useHandlePlayerSuspend = () => {
-  const { handlePlayerSuspend } = useContext(DataContext);
-  return handlePlayerSuspend;
+export const useHandleVisualizerDisplay = () => {
+  const { handleVisualizerDisplay } = useContext(DataContext);
+  return handleVisualizerDisplay;
 };
 

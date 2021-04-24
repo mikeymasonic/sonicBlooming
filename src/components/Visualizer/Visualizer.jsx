@@ -1,21 +1,43 @@
 import React, { useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
+import { useVisualizerDisplay, useHandleVisualizerDisplay } from '../../hooks/DataProvider';
 import styles from './Visualizer.css';
-// import { useHandlePlayerSuspend, usePlayerSuspend } from '../../hooks/DataProvider';
 
-const Visualizer = ({ forwardRef, close }) => {
-  // const [visualizerOn, setVisualizerOn] = useState(false);
+const Visualizer = ({ forwardRef }) => {
   const canvasRef = useRef(null);
   let running = true;
-  // const playerSuspend = usePlayerSuspend();
-  // const handlePlayerSuspend = useHandlePlayerSuspend();
+  const visualizerDisplay = useVisualizerDisplay();
+  const handleVisualizerDisplay = useHandleVisualizerDisplay();
+
+  const handleClose = () => {
+    handleVisualizerDisplay(false);
+  };
 
   useEffect(() => {
-    // console.log('propThing: ', forwardRef.current);
-    const audio = forwardRef.current.audio.current;
+    // -------------
+    // Audio stuff
+    // -------------
 
-    const centerX = 500;
-    const centerY = 500;
+    const audio = forwardRef.current.audio.current;
+    audio.context = audio.context || new AudioContext();
+    const context = audio.context;
+
+    // -------------
+    // Canvas stuff
+    // -------------
+    const canvas = canvasRef.current;
+    const ctx = canvas.getContext('2d');
+    canvasRef.current.getContext('2d');
+    // console.log(canvasRef.current.getContext('2d'));
+
+    canvas.width = document.body.clientWidth;
+    canvas.height = document.body.clientHeight;
+
+    // canvas.width = document.body.clientWidth;
+    // canvas.height = document.body.clientHeight;
+
+    const centerX = canvas.width / 2;
+    const centerY = canvas.height / 2;
     const radius = document.body.clientWidth <= 425 ? 120 : 160;
     const steps = document.body.clientWidth <= 425 ? 60 : 120;
     const interval = 360 / steps;
@@ -23,21 +45,6 @@ const Visualizer = ({ forwardRef, close }) => {
     const pointsDown = [];
     const pCircle = 2 * Math.PI * radius;
     const angleExtra = 90;
-
-    // -------------
-    // Audio stuff
-    // -------------
-
-    audio.context = audio.context || new AudioContext();
-    const context = audio.context;
-
-    // const context = window.AudioContext || window.webkitAudioContext;
-    // const context = forwardRef.current.context.current;
-
-    // if(playerSuspend) {
-    //   context.resume();
-    //   handlePlayerSuspend(false);
-    // }
 
     const splitter = context.createChannelSplitter();
 
@@ -98,16 +105,7 @@ const Visualizer = ({ forwardRef, close }) => {
         dist: distDown,
       });
     }
-    const canvas = canvasRef.current;
-    const ctx = canvas.getContext('2d');
-    canvasRef.current.getContext('2d');
-    // console.log(canvasRef.current.getContext('2d'));
 
-    // -------------
-    // Canvas stuff
-    // -------------
-    canvas.width = document.body.clientWidth;
-    canvas.height = document.body.clientHeight;
 
     function drawLine(points) {
       const origin = points[0];
@@ -206,7 +204,7 @@ const Visualizer = ({ forwardRef, close }) => {
   }, []);
 
   return (
-    <section className={styles.Visualizer}>
+    <section className={styles.Visualizer}  style={{ visibility: visualizerDisplay ? 'visible' : 'hidden', height: visualizerDisplay ? 100 : 0 }}>
       <svg
         className={styles.close}
         fill="none"
@@ -214,7 +212,7 @@ const Visualizer = ({ forwardRef, close }) => {
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
         height="1.5em"
-        onClick={close}
+        onClick={handleClose}
       >
         <path
           strokeLinecap="round"
