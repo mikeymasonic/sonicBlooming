@@ -9,8 +9,8 @@ exports[`App component renders App 1`] = `
       class="headerLeft"
     >
       <img
-        height="50vw"
-        src="https://www.sonicblooming.com/images/rose-shape.png"
+        height="60%"
+        src="./images/rose-shape.png"
       />
     </div>
     <div
@@ -37,7 +37,7 @@ exports[`App component renders App 1`] = `
         <svg
           class="w-6 h-6"
           fill="none"
-          height="2.5em"
+          height="3em"
           stroke="rgba(40,4,78,1)"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
