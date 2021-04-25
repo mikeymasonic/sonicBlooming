@@ -35,7 +35,7 @@ const Header = (props) => {
             className="w-6 h-6" 
             fill="none" 
             stroke="rgba(40,4,78,1)"
-            height="3vw"
+            height="3em"
             viewBox="0 0 24 24" 
             xmlns="http://www.w3.org/2000/svg">
             <path 

@@ -88,7 +88,6 @@ a {
     position: absolute;
     right: 1vw;
     width: 4vw;
-    /* border: 1px solid red; */
   }
 }
 
@@ -105,10 +104,32 @@ a {
   }
 }
 
+@media (max-width: 1200px) {
+  .Header {
+
+    .headerRight, .backContainer {
+      width: 6vw;
+    }
+  }
+}
+
 @media (max-width: 667px) {
 
   .Header {
     height: 8vh;
+
+    .headerLeft {
+      height: 9vh;
+    }
+
+    .headerRight {
+      height: 8vh;
+      width: 8vw;
+    }
+
+    .backContainer {
+      margin-right: 1em;
+    }
 
     h1 {
       font-size: 1.1em;
