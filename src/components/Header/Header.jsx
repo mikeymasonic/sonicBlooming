@@ -18,7 +18,7 @@ const Header = (props) => {
   return (
     <header className={styles.Header}>
       <div className={styles.headerLeft}>
-        <img src='./images/rose-shape.png' height='50vw' />
+        <img src='./images/rose-shape.png' height='60%' />
       </div>
 
       <div className={styles.headerCenter}>
@@ -35,7 +35,7 @@ const Header = (props) => {
             className="w-6 h-6" 
             fill="none" 
             stroke="rgba(40,4,78,1)"
-            height="2.5em"
+            height="3vw"
             viewBox="0 0 24 24" 
             xmlns="http://www.w3.org/2000/svg">
             <path 

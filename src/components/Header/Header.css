@@ -33,11 +33,13 @@ a {
     justify-content: center;
     align-items: center;
     float: left;
-    padding: 1em 0 0 5%;
     position: absolute;
-    left: -2.5vw;
-    top: -0.5vh;
-
+    left: 1vw;
+    top: -1vh;
+    height: 11vh;
+    padding: 0.2em 0 0 0;
+    width: fit-content;
+    margin-left: 0.8em;
   }
 
   .headerCenter {
@@ -50,6 +52,10 @@ a {
   }
 
   .navLink {
+
+    svg {
+      width: 80%;
+    }
 
     svg:hover {
       transform: scale(1.1);
@@ -81,7 +87,21 @@ a {
     align-items: center;
     position: absolute;
     right: 1vw;
-    margin-right: 1em;
+    width: 4vw;
+    /* border: 1px solid red; */
+  }
+}
+
+@media (min-width: 1500px) {
+  .Header {
+
+    .headerCenter {
+      font-size: 1.3em;
+    }
+
+    .headerRight {
+      width: 3.3vw;
+    }
   }
 }
 
