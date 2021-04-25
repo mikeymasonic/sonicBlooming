@@ -48,8 +48,8 @@ const Header = (props) => {
       </div>
 
       <div className={styles.backContainer} >
-        {back && <h4><Link className={styles.navLink} to="/">
-            back
+        {back && <h4><Link className={styles.navLink} to="/"> 
+        back
         </Link></h4>} 
       </div>   
     </header>

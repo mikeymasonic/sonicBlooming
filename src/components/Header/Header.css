@@ -14,13 +14,6 @@ a {
     color: rgba(40,4,78,1);
   }
   
-  a:hover { 
-    color: hotpink;
-  }
-  
-  a:active {
-    color: hotpink;
-  }
 
 .Header {
   display: flex;
@@ -56,6 +49,18 @@ a {
 
   .navLink {
     margin-right: 1rem;
+
+    svg:hover {
+      transform: scale(1.1);
+    }
+
+    svg:active {
+      transform: scale(0.9);
+    }
+  }
+
+  .navLink:hover {
+    color: #56089B;
   }
 
 
