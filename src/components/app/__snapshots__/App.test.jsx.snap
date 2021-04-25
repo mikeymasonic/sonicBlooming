@@ -10,7 +10,7 @@ exports[`App component renders App 1`] = `
     >
       <img
         height="50vw"
-        src="https://www.sonicblooming.com/images/rose-shape.png"
+        src="./images/rose-shape.png"
       />
     </div>
     <div

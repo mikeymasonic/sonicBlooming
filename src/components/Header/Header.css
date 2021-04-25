@@ -29,26 +29,27 @@ a {
   background: linear-gradient(120deg, #d3b1fb, #d6b1fb, #e0b3fb, #edb5fb, #fbb7fa, #fbbaea, #fcbcdb, #fcbfce, #fcc1c3, #fcccc3, #fcd3c5, #fcd6c5);
 
   .headerLeft {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     float: left;
     padding: 1em 0 0 5%;
     position: absolute;
-    left: -2vw;
-    top: -1vh;
+    left: -2.5vw;
+    top: -0.5vh;
+
   }
 
   .headerCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100%;
     letter-spacing: 0.4em;
-    font-size: 1.3em;
-  }
-
-  h1 {
-    font-size: 1.4em;
-    font-weight: bold;
+    font-size: 1.1em;
   }
 
   .navLink {
-    margin-right: 1rem;
 
     svg:hover {
       transform: scale(1.1);
@@ -80,7 +81,7 @@ a {
     align-items: center;
     position: absolute;
     right: 1vw;
-    margin: 0;
+    margin-right: 1em;
   }
 }
 
@@ -88,6 +89,10 @@ a {
 
   .Header {
     height: 8vh;
+
+    h1 {
+      font-size: 1.1em;
+    }
   }
 
 }

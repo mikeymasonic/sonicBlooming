@@ -18,7 +18,7 @@ const Header = (props) => {
   return (
     <header className={styles.Header}>
       <div className={styles.headerLeft}>
-        <img src='https://www.sonicblooming.com/images/rose-shape.png' height='50vw' />
+        <img src='./images/rose-shape.png' height='50vw' />
       </div>
 
       <div className={styles.headerCenter}>
