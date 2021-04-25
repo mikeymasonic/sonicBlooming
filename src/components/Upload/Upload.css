@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   width: 60vw;
-  background-color: rgba(241, 171, 233, 0.9);
+  background: linear-gradient(120deg, #d3b1fb, #d6b1fb, #e0b3fb, #edb5fb, #fbb7fa, #fbbaea, #fcbcdb, #fcbfce, #fcc1c3, #fcccc3, #fcd3c5, #fcd6c5);
   border-radius: 10px;
   position: relative;
   box-shadow: 0 0 15px 0 black;

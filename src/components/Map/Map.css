@@ -66,6 +66,10 @@ body {
 
 @media (max-width: 667px) {
 
+  body {
+    height: 100vh;
+  }
+
   .mapContainer {
 
     .mapClass {

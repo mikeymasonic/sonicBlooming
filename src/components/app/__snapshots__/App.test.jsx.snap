@@ -79,7 +79,7 @@ exports[`App component renders App 1`] = `
     </section>
     <div
       class="playerContainer"
-      style="visibility: hidden; height: 0px;"
+      style="visibility: hidden; height: 0px; margin-bottom: 0px;"
     >
       <section
         class="title"
