@@ -12,6 +12,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 50vw;
     visibility: none;
     margin-bottom: 2em;
     border-radius: 5px;
@@ -22,12 +23,12 @@
 
   .title {
     font-weight: bold;
-    font-size: 1.1vmax;
+    font-size: 0.8vw;
     align-self: center;
     margin: 0.2em;
     color: rgb(53,5,97);
     text-align: center;
-    letter-spacing: 0.9vmax;
+    letter-spacing: 0.5vmax;
     width: 100%;
     font-family: 'Kanit', sans-serif;
   }
@@ -37,8 +38,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: black;
-  width: 50vw;
+  width: 99%;
   margin: 0.2em;
   visibility: none;
   background: rgb(53,5,97);
@@ -188,6 +188,19 @@
   text-align: center;
   margin: 0 0 2em 0;
   color: #FBC9B1;
+}
+
+@media (min-width: 1500px) {
+  .audioContainer {
+
+    .Playlist {
+      height: 5.5em;
+
+      a {
+        font-size: 1em;
+      }
+    }
+  }
 }
 
 @media (max-width: 1200px) {
