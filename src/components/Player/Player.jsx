@@ -15,6 +15,7 @@ const Player = () => {
   const handleVisualizerDisplay = useHandleVisualizerDisplay();
   const playerTitle = `${song?.mapLocation} - ${song?.title}`.toUpperCase();
 
+
   const handleFullscreen = () => {
     handleVisualizerDisplay(!visualizerDisplay);
   };
@@ -26,8 +27,8 @@ const Player = () => {
 
         <div className={styles.playerContainer} style={{ visibility: playerVisible ? 'visible' : 'hidden', height: playerVisible ? 100 : 0 }}>
           <section className={styles.title}>{playerTitle}</section>
-
           <section className={styles.Player} style={{ visibility: playerVisible ? 'visible' : 'collapse', height: playerVisible ? 100 : 0 }}>
+
             <section className={styles.playerControls}>
               <AudioPlayer
                 ref={player}
@@ -41,7 +42,7 @@ const Player = () => {
                   ]
                 }
               />
-              <button onClick={handleFullscreen}>Fullscreen</button>
+              <button onClick={handleFullscreen}><img src='./images/fullscreen.png' height='25px' /></button>
             </section>
           </section>
         </div>
