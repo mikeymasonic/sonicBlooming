@@ -12,6 +12,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 50vw;
     visibility: none;
     margin-bottom: 2em;
     border-radius: 5px;
@@ -22,12 +23,12 @@
 
   .title {
     font-weight: bold;
-    font-size: 1em;
+    font-size: 0.9vw;
     align-self: center;
-    margin: 0.1em;
-    color: black;
+    margin: 0.2em;
+    color: rgb(53,5,97);
     text-align: center;
-    letter-spacing: 0.9vmax;
+    letter-spacing: 0.5vmax;
     width: 100%;
     font-family: 'Kanit', sans-serif;
   }
@@ -37,14 +38,38 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: black;
-  width: 50vw;
+  width: 99%;
   margin: 0.2em;
   visibility: none;
   background: rgb(53,5,97);
   background: linear-gradient(94deg, rgba(53,5,97,1) 0%, rgba(32,3,58,1) 100%);
   color: #FBC9B1;
   overflow: hidden;
+
+  .playerControls {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 4.5vw;
+      height: 6vh;
+      background: none;
+      border: none;
+    }
+
+    button:hover {
+      transform: scale(1.1)
+    }
+  
+    button:active {
+      transform: scale(0.9);
+    }
+  }
 
 .rhap_container {
   box-sizing: border-box;
@@ -83,7 +108,7 @@
     color: #FBC9B1;
     user-select: none;
     -webkit-user-select: none;
-    margin: 0 0.7em 0 0.7em;
+    margin: 0 0.2em 0 0.2em;
   }
 
   }
@@ -95,7 +120,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 5px;
-  height: 4.5em;
+  height: 4.2em;
   width: 50vw;
   color: #FBC9B1;
   padding: 0.1em 0.2em 0 0.2em;
@@ -133,8 +158,8 @@
     font-weight: bold;
     font-size: 1.2vmax;
     align-self: center;
-    margin: 0.2em;
-    color: black;
+    margin: 0 0 0.2em 0;
+    color: rgb(53,5,97);
     text-align: center;
     letter-spacing: 0.9vmax;
     width: 100%;
@@ -165,11 +190,33 @@
   color: #FBC9B1;
 }
 
+@media (min-width: 1500px) {
+  .audioContainer {
+
+    .Playlist {
+      height: 5.5em;
+
+      a {
+        font-size: 1em;
+      }
+    }
+  }
+}
+
 @media (max-width: 1200px) {
   .audioContainer {
 
-    .Player {
+    .playerContainer {
       width: 55vw;
+
+      .title {
+        font-size: 1.2vw;
+        letter-spacing: 0.7vmax;
+      }
+    }
+
+    .Player {
+      width: 99%;
     }
 
     .Playlist {
@@ -182,13 +229,45 @@
 @media (max-width: 667px) {
   .audioContainer {
 
-    .Player {
+    .playerContainer {
       width: 85vw;
+
+      .title {
+        font-size: 2.2vw;
+        letter-spacing: 0.7vmax;
+      }
+
+      .Player {
+        width: 99%;
+
+        .playerControls {
+
+          button {
+            width: 8.5vw;
+          }
+        }
+
+        .rhap_container {
+
+          button {
+            width: 9.5vw;
+          }
+
+          div {
+            margin: 0 0.1em 0 0.1em;
+          }
+        }
+      }
     }
+
 
     .Playlist {
       width: 85vw;
-      height: 
+      height: 7vh;
+
+      a {
+        width: 35%;
+      }
     }
 
   }

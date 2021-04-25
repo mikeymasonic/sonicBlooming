@@ -5,6 +5,7 @@ canvas {
   display: block;
   /* background-color: lime; */
   background-color: rgba(0, 0, 0, 0.8);
+  height: 100vh;
 }
 
 .close {
@@ -26,7 +27,6 @@ canvas {
 }
 
 }
-
 
 /* html, body {
   height: 100%;
