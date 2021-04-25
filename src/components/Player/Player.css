@@ -46,6 +46,13 @@
   color: #FBC9B1;
   overflow: hidden;
 
+  .playerControls {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
 .rhap_container {
   box-sizing: border-box;
   display: flex;
@@ -83,7 +90,7 @@
     color: #FBC9B1;
     user-select: none;
     -webkit-user-select: none;
-    margin: 0 0.7em 0 0.7em;
+    margin: 0 0.4em 0 0.4em;
   }
 
   }
@@ -134,7 +141,7 @@
     font-size: 1.2vmax;
     align-self: center;
     margin: 0.2em;
-    color: black;
+    color: rgb(53,5,97);
     text-align: center;
     letter-spacing: 0.9vmax;
     width: 100%;

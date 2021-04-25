@@ -13,6 +13,7 @@ const Player = () => {
   const player = createRef();
   const visualizerDisplay = useVisualizerDisplay();
   const handleVisualizerDisplay = useHandleVisualizerDisplay();
+  const playerTitle = `${song?.mapLocation} - ${song?.title}`.toUpperCase();
 
   const handleFullscreen = () => {
     handleVisualizerDisplay(!visualizerDisplay);
@@ -23,25 +24,27 @@ const Player = () => {
       <section className={styles.audioContainer}>
         <Playlist style={{ visibility: playerVisible ? 'visible' : 'hidden', height: playerVisible ? 100 : 0 }} />
 
-        <section className={styles.Player} style={{ visibility: playerVisible ? 'visible' : 'collapse', height: playerVisible ? 100 : 0 }}>
-          <section className={styles.title}>
-            {song?.mapLocation} - {song?.title}
-          </section>
+        <div className={styles.playerContainer} style={{ visibility: playerVisible ? 'visible' : 'hidden', height: playerVisible ? 100 : 0 }}>
+          <section className={styles.title}>{playerTitle}</section>
 
-          <AudioPlayer
-            ref={player}
-            className={styles.rhap_container}
-            src={song?.url}
-            customProgressBarSection={
-              [
-                RHAP_UI.CURRENT_TIME,
-                <section key="slash">/</section>,
-                RHAP_UI.DURATION,
-              ]
-            }
-          />
-          <button onClick={handleFullscreen}>Fullscreen</button>
-        </section>
+          <section className={styles.Player} style={{ visibility: playerVisible ? 'visible' : 'collapse', height: playerVisible ? 100 : 0 }}>
+            <section className={styles.playerControls}>
+              <AudioPlayer
+                ref={player}
+                className={styles.rhap_container}
+                src={song?.url}
+                customProgressBarSection={
+                  [
+                    RHAP_UI.CURRENT_TIME,
+                    <section key="slash">/</section>,
+                    RHAP_UI.DURATION,
+                  ]
+                }
+              />
+              <button onClick={handleFullscreen}>Fullscreen</button>
+            </section>
+          </section>
+        </div>
 
         {playerVisible && <Visualizer forwardRef={player}/>} 
         
