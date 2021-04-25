@@ -5,6 +5,7 @@ body {
   background: linear-gradient(0deg, rgba(40,4,78,1) 0%, rgba(20,2,39,1) 100%);
   margin: 0;
   height: fit-content;
+  width: 100vw;
   font-family: 'Kanit', sans-serif;
 }
 
@@ -64,6 +65,7 @@ body {
 }
 
 @media (max-width: 667px) {
+
   .mapContainer {
 
     .mapClass {

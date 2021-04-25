@@ -23,7 +23,7 @@
 
   .title {
     font-weight: bold;
-    font-size: 0.8vw;
+    font-size: 0.9vw;
     align-self: center;
     margin: 0.2em;
     color: rgb(53,5,97);
@@ -206,8 +206,17 @@
 @media (max-width: 1200px) {
   .audioContainer {
 
-    .Player {
+    .playerContainer {
       width: 55vw;
+
+      .title {
+        font-size: 1.2vw;
+        letter-spacing: 0.7vmax;
+      }
+    }
+
+    .Player {
+      width: 99%;
     }
 
     .Playlist {
@@ -220,13 +229,45 @@
 @media (max-width: 667px) {
   .audioContainer {
 
-    .Player {
+    .playerContainer {
       width: 85vw;
+
+      .title {
+        font-size: 2.2vw;
+        letter-spacing: 0.7vmax;
+      }
+
+      .Player {
+        width: 99%;
+
+        .playerControls {
+
+          button {
+            width: 8.5vw;
+          }
+        }
+
+        .rhap_container {
+
+          button {
+            width: 9.5vw;
+          }
+
+          div {
+            margin: 0 0.1em 0 0.1em;
+          }
+        }
+      }
     }
+
 
     .Playlist {
       width: 85vw;
-      height: 
+      height: 7vh;
+
+      a {
+        width: 35%;
+      }
     }
 
   }
