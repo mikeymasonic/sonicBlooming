@@ -125,6 +125,7 @@ a {
     .headerRight {
       height: 8vh;
       width: 8vw;
+      margin-right: 0.5em;
     }
 
     .backContainer {
@@ -132,7 +133,7 @@ a {
     }
 
     h1 {
-      font-size: 1.1em;
+      font-size: 1.3em;
     }
   }
 
