@@ -28,8 +28,10 @@ body {
 
   svg {
     background-image: url(https://inbloom.netlify.app/images/altmap2.png);
-    background-size: 100% 100%;
+    background-size: 100%;
+    background-position: center;
     background-repeat: no-repeat;
+    padding-bottom: 1em;
     max-width: 90vw;
     /* border-radius: 10px; */
     display: flex;
