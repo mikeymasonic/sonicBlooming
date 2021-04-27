@@ -2,6 +2,7 @@ import React, { useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { useVisualizerDisplay, useHandleVisualizerDisplay } from '../../hooks/DataProvider';
 import styles from './Visualizer.css';
+import Player from '../Player/Player';
 
 const Visualizer = ({ forwardRef }) => {
   let running = true;
@@ -33,8 +34,8 @@ const Visualizer = ({ forwardRef }) => {
     canvas.height = document.body.clientHeight;
 
     const centerX = canvas.width / 2;
-    const centerY = canvas.height / 4;
-    const radius = document.body.clientWidth <= 425 ? 120 : 160;
+    const centerY = canvas.height / 5;
+    const radius = document.body.clientWidth <= 425 ? 120 : 140;
     const steps = document.body.clientWidth <= 425 ? 60 : 120;
     const interval = 360 / steps;
     const pointsUp = [];
@@ -193,7 +194,7 @@ const Visualizer = ({ forwardRef }) => {
 
   return (
     <section className={styles.Visualizer}  style={{ visibility: visualizerDisplay ? 'visible' : 'hidden', height: visualizerDisplay ? 100 : 0 }}>
-      <svg
+      {/* <svg
         className={styles.close}
         fill="none"
         stroke="currentColor"
@@ -208,7 +209,7 @@ const Visualizer = ({ forwardRef }) => {
           strokeWidth={2}
           d="M6 18L18 6M6 6l12 12"
         />
-      </svg>
+      </svg> */}
       <canvas ref={canvasRef} onClick={handleClose} />
     </section>
   );
