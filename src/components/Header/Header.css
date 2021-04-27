@@ -49,6 +49,7 @@ a {
     height: 100%;
     letter-spacing: 0.4em;
     font-size: 1.1em;
+    text-shadow: 1px 1px 1px rgba(7, 14, 13, 0.4);
   }
 
   .navLink {
@@ -68,6 +69,7 @@ a {
 
   .navLink:hover {
     color: #56089B;
+    text-shadow: 1px 0px 0px rgba(7, 14, 13, 0.4);
   }
 
 

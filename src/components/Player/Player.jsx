@@ -42,7 +42,11 @@ const Player = () => {
                   ]
                 }
               />
-              <button onClick={handleFullscreen}><img src='./images/fullscreen.png' height='25px' /></button>
+              {!visualizerDisplay
+                ?
+                <button onClick={handleFullscreen}><img src='./images/fullscreen.png' height='25px' /></button>
+                : <button onClick={handleFullscreen}><img src='./images/close.png' height='25px' /></button>
+              }
             </section>
           </section>
         </div>
