@@ -58,8 +58,13 @@ a {
       width: 80%;
     }
 
+    path {
+      -webkit-filter: drop-shadow( 1px 1px 0px rgba(0, 0, 0, .2));
+    filter: drop-shadow( 1px 1px 0px rgba(0, 0, 0, .2));
+    }
+
     svg:hover {
-      transform: scale(1.1);
+      transform: scale(0.95);
     }
 
     svg:active {

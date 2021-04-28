@@ -7,6 +7,7 @@ body {
   height: fit-content;
   width: 100vw;
   font-family: 'Kanit', sans-serif;
+
 }
 
 .mapContainer {
@@ -14,6 +15,12 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  -webkit-animation: fadein 2s; 
+  -moz-animation: fadein 2s; 
+  animation: fadein 2s;
+  animation: scale 1.5s;
+  -webkit-animation: scale 1.5s;
+  -moz-animation: scale 2s; 
 
 .mapClass {
   display: flex;
@@ -31,16 +38,24 @@ body {
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    padding-bottom: 1em;
     max-width: 90vw;
+    padding: 1em 0 1em 0;
     /* border-radius: 10px; */
     display: flex;
     justify-content: center;
+    -webkit-animation: fadein 3s; 
+    -moz-animation: fadein 3s; 
+    animation: fadein 3s;
   }
+
   path {
     fill: transparent;
     cursor: pointer;
-    transition: fill 0.2s
+    transition: fill 0.2s;
+    /* stroke-dasharray: 4; */
+    /* animation: glow 1s linear;
+    stroke-linecap: round; */
+
   }
   svg a:focus,
   svg a:hover {
@@ -48,9 +63,7 @@ body {
   }
   svg a:focus path,
   svg a:hover path {
-    /* fill: rgba(30,222,121, 0.25); */
-    /* fill: rgba(231, 19, 19, 0.445); */
-    fill: rgba(40,4,78,0.25);
+    fill: rgba(40,4,78,0.2);
     cursor: pointer;
   }
   }
@@ -79,4 +92,32 @@ body {
     }
   }
 
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes scale {
+  0% {
+      transform: scale(0.9);
+      -webkit-transform: scale(0.9);
+  }
+  100% {
+      transform: scale(1.0);
+      -webkit-transform: scale(1.0);
+  }
 }
