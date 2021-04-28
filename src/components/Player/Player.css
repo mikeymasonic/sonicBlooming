@@ -196,6 +196,9 @@
   color: #FBC9B1;
   font-size: 1.2em;
   letter-spacing: 0.15em;
+  -webkit-animation: fadein 5s; 
+    -moz-animation: fadein 5s; 
+    animation: fadein 5s;
 }
 
 @media (min-width: 1500px) {
@@ -280,4 +283,21 @@
     }
 
   }
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
