@@ -3,6 +3,7 @@ import { render, cleanup } from '@testing-library/react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { DataProvider } from '../../hooks/DataProvider';
 import Map from './Map';
+const location = { pathname: '/' };
 
 describe('Map component', () => {
   afterEach(() => cleanup());
@@ -10,7 +11,7 @@ describe('Map component', () => {
     const { asFragment } = render(
       <Router>
         <DataProvider>
-          <Map />
+          <Map location={ location } />
         </DataProvider>
       </Router>
     );

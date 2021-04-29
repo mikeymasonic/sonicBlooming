@@ -20,11 +20,6 @@ exports[`Player component renders Player 1`] = `
         stroke-width="2"
       />
     </svg>
-    <section
-      class="description"
-    >
-      this is a description of how to upload things. Quia dolorem ullam, unde aliquam tenetur consequatur ut in esse harum sunt! Atque dolorem provident accusamus sint? Ducimus, magni. Id, enim non? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem animi ex repellendus eaque. Quam blanditiis cum quo sunt laudantium nihil earum unde dolore laborum! Id libero iusto similique minus dignissimos. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit dolorem ut omnis corrupti consequatur totam, aliquid ex qui cum deleniti minima, maiores temporibus doloribus, voluptatem et veniam eligendi vel? Distinctio.
-    </section>
   </section>
 </DocumentFragment>
 `;
