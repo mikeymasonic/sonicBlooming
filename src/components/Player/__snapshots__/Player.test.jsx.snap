@@ -219,11 +219,6 @@ exports[`Player component renders Player 1`] = `
         </section>
       </section>
     </div>
-    <p
-      class="instructions"
-    >
-      Select a garden to listen to:
-    </p>
   </section>
 </DocumentFragment>
 `;
