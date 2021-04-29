@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { useHandleOnAbout } from '../../hooks/DataProvider';
+import { useHandleOnAbout, useHandleVisualizerDisplay } from '../../hooks/DataProvider';
 import PropTypes from 'prop-types';
 import styles from './Header.css';
 
 const Header = (props) => {
   const [back, setBack] = useState(false);
   const handleOnAbout = useHandleOnAbout();
+  const handleVisualizerDisplay = useHandleVisualizerDisplay();
   const pathname = props.location.pathname;
 
   useEffect(() => {
@@ -16,6 +17,7 @@ const Header = (props) => {
     } else if (pathname === '/about') {
       handleOnAbout(true);
       setBack(true);
+      handleVisualizerDisplay(false);
     }
   }, [pathname]);
 
