@@ -1,19 +1,8 @@
-import React, { useEffect } from 'react';
-import { useHandleOnAbout } from '../../hooks/DataProvider';
+import React from 'react';
 import { aboutPage } from '../../utils/data';
-import PropTypes from 'prop-types';
 import styles from './About.css';
 
-const About = (props) => {
-  const handleOnAbout = useHandleOnAbout();
-  const pathname = props.location.pathname;
-
-  useEffect(() => {
-    if (pathname === '/about') {
-      handleOnAbout(true);
-    }
-  }, [pathname]);
-
+const About = () => {
   return (
     <section className={styles.aboutContainer}>
       <section className={styles.About}>
@@ -22,10 +11,6 @@ const About = (props) => {
       </section>
     </section>
   );
-};
-
-About.propTypes = {
-  location: PropTypes.object,
 };
 
 export default About;

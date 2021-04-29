@@ -1,15 +1,15 @@
 import React, { createRef } from 'react';
 import AudioPlayer, { RHAP_UI } from 'react-h5-audio-player';
-import { useSong, usePlayerVisible, useVisualizerDisplay, useHandleVisualizerDisplay } from '../../hooks/DataProvider';
+import { useSong, usePlayerVisible, useVisualizerDisplay, useHandleVisualizerDisplay, useOnAbout } from '../../hooks/DataProvider';
 import Playlist from '../Playlist/Playlist';
 import Visualizer from '../Visualizer/Visualizer';
 import styles from './Player.css';
 import 'reactjs-popup/dist/index.css';
-// import 'react-h5-audio-player/lib/styles.css';
 
 const Player = () => {
   const song = useSong();
   const playerVisible = usePlayerVisible();
+  const onAbout = useOnAbout();
   const player = createRef();
   const visualizerDisplay = useVisualizerDisplay();
   const handleVisualizerDisplay = useHandleVisualizerDisplay();
@@ -52,8 +52,7 @@ const Player = () => {
         </div>
 
         {playerVisible && <Visualizer forwardRef={player}/>} 
-        
-        {!playerVisible && <p className={styles.instructions}>Select a garden to listen to:</p>} 
+        {!playerVisible && !onAbout && <p className={styles.instructions}>Select a garden to listen to:</p>} 
       </section>
     </>
   );

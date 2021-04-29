@@ -147,6 +147,7 @@
     border-radius: 2px;
     text-shadow: 2px 2px 1px rgba(7, 14, 13, 1);
     opacity: 0.9;
+    cursor: pointer;
   }
 
   a:hover {
