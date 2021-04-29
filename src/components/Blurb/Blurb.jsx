@@ -34,7 +34,7 @@ const Blurb = () => {
         closeOnDocumentClick={true}
         overlayStyle={{ background: 'rgba(0, 0, 0, 0.4)' }}
         trigger={open => (
-          <button open={open}>Upload</button>
+          <button open={open}>UPLOAD</button>
         )}>
         {close => (
           <Upload close={close} />

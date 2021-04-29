@@ -29,6 +29,27 @@
     -moz-animation: fadein 5s; 
     animation: fadein 5s;
   }
+
+  button { 
+    background-image: linear-gradient(to right, rgb(34, 4, 66) 0%, rgba(65, 6, 116) 51%, rgb(34, 4, 66) 100%);
+    color: #EDBBF2;
+    height: 2.5em;
+    width: 6.5em;
+    border-radius: 5px;
+    font-family: 'Kanit', sans-serif;
+    letter-spacing: 0.1em;
+    box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.3);
+    font-size: 1em;
+  }
+
+  button:hover {
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.3);
+    transform: scale(1.02);
+  }
+
+  button:active {
+    transform: scale(0.95)
+  }
 }
 
 @media (max-width: 1200px) {

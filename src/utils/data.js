@@ -53,7 +53,7 @@ export const uploads = [
   },
   {
     mapLocation: 'Amphitheater',
-    url: 'https://script.google.com/macros/s/AKfycbxtDj39tRFOQcbI2OraoM7w2NT9N9xV5tXsCbAMsci94EkCYJzD87iWajNWYLuuWIap/exec',
+    url: 'https://script.google.com/macros/s/AKfycbzOHoT40yseAvGDsHY60Y6ryTqYcaQHp-oX-FF1w5tgAVMaYH8Saxwe40XwH2MLHdRH/exec',
   },
   {
     mapLocation: 'Royal Rosarian Garden',
