@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { useVisualizerDisplay, useHandleVisualizerDisplay } from '../../hooks/DataProvider';
 import styles from './Visualizer.css';
-import Player from '../Player/Player';
+// import Player from '../Player/Player';
 
 const Visualizer = ({ forwardRef }) => {
   let running = true;

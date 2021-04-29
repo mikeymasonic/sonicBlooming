@@ -19,7 +19,7 @@ const Blurb = () => {
     <div className={styles.blurbContainer}>
       <section className={styles.Blurb}>
         {blurbNodes}
-        {!mapLocation && <p>{aboutSite.description}</p>} 
+        {!mapLocation && <section><p>{aboutSite.description.main}<br /><br />{aboutSite.description.record}<br /><br />{aboutSite.description.footer}</p></section>} 
         {mapLocation && 
       <Popup 
         modal

@@ -3,7 +3,7 @@ export const songs = [
     url: '../mp3/example1.mp3',
     title: 'Song One',
     mapLocation: 'Amphitheater',
-    description: 'this is a blurb about Amphitheater, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia dolorem ullam, unde aliquam tenetur consequatur ut in esse harum sunt! Atque dolorem provident accusamus sint? Ducimus, magni. Id, enim non? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem animi ex repellendus eaque. Quam blanditiis cum quo sunt laudantium nihil earum unde dolore laborum! Id libero iusto similique minus dignissimos. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit dolorem ut omnis corrupti consequatur totam, aliquid ex qui cum deleniti minima, maiores temporibus doloribus, voluptatem et veniam eligendi vel? Distinctio.',
+    description: 'The plant electricity data from this part of the garden came from an Ivy plant growing on the ground near the stage area. It’s electrical pattern was dense and scattered. As you listen to this soundscape and wander the ampitheater I invite you to think of the part of transformation when you are taking stock of what you’d like to change. Change is constant….something...something.  After the soundscape ends, take a moment to pause and listen without your headphones to the environment around you. Notice any sounds that arrive and disappear. Listen for at least 1 minute.',
   },
   {
     url: '../mp3/example2.mp3',
@@ -15,7 +15,7 @@ export const songs = [
     url: '../mp3/example3.mp3',
     title: 'Song Three',
     mapLocation: 'Rose Test Garden',
-    description: 'this is a blurb about Rose Test Garden, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia dolorem ullam, unde aliquam tenetur consequatur ut in esse harum sunt! Atque dolorem provident accusamus sint? Ducimus, magni. Id, enim non? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem animi ex repellendus eaque. Quam blanditiis cum quo sunt laudantium nihil earum unde dolore laborum! Id libero iusto similique minus dignissimos. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit dolorem ut omnis corrupti consequatur totam, aliquid ex qui cum deleniti minima, maiores temporibus doloribus, voluptatem et veniam eligendi vel? Distinctio.',
+    description: 'For this part of the garden I took a reading of a rose called “ring of fire” it’s electrical patterns were more predictable patterns of up and down. During this soundscape I invite you to think about the patterns in your life. Which patterns assist you in blooming, which patterns get in the way? Impedit dolorem ut omnis corrupti consequatur totam, aliquid ex qui cum deleniti minima, maiores temporibus doloribus, voluptatem et veniam eligendi vel? Distinctio',
   },
   {
     url: '../mp3/example4.mp3',
@@ -27,7 +27,7 @@ export const songs = [
     url: '../mp3/example5.mp3',
     title: 'Song Five',
     mapLocation: 'Gold Medal Garden',
-    description: 'this is a blurb about Gold Medal Garden, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia dolorem ullam, unde aliquam tenetur consequatur ut in esse harum sunt! Atque dolorem provident accusamus sint? Ducimus, magni. Id, enim non? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem animi ex repellendus eaque. Quam blanditiis cum quo sunt laudantium nihil earum unde dolore laborum! Id libero iusto similique minus dignissimos. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit dolorem ut omnis corrupti consequatur totam, aliquid ex qui cum deleniti minima, maiores temporibus doloribus, voluptatem et veniam eligendi vel? Distinctio.',
+    description: 'The plant energy performing the soundscape for this garden was a rose called “Gemini Rose”. This plant’s reading oscillated between sparse to dense signals.  Voluptatem animi ex repellendus eaque. Quam blanditiis cum quo sunt laudantium nihil earum unde dolore laborum! Id libero iusto similique minus dignissimos. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit dolorem ut omnis corrupti consequatur totam, aliquid ex qui cum deleniti minima, maiores temporibus doloribus, voluptatem et veniam eligendi vel? Distinctio.',
   },
   // keep above as is, everything below are new songs
   {
@@ -64,7 +64,11 @@ export const uploads = [
 ];
 
 export const aboutSite = {
-  description: 'This is a site description for home page TEST.  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia dolorem ullam, unde aliquam tenetur consequatur ut in esse harum sunt! Atque dolorem provident accusamus sint? Ducimus, magni. Id, enim non? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem animi ex repellendus eaque. Quam blanditiis cum quo sunt laudantium nihil earum unde dolore laborum! Id libero iusto similique minus dignissimos. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit dolorem ut omnis corrupti consequatur totam, aliquid ex qui cum deleniti minima, maiores temporibus doloribus, voluptatem et veniam eligendi vel? Distinctio.'
+  description: {
+    main: 'Welcome to Sonic Blooming! This soundwalk is a meditation on movement, growth and transformation in our external and internal environments. At the time of year when the roses at the International Rose Test Garden are beginning to bloom, plants are generating extra energy. I have used a process called Biodata Sonification; attaching sensors to the plant\'s in the garden to collect their electrical impulses. You will hear these impulses translated into musical pitches and sounds that will guide you through the garden.',
+    record: 'On each page there will also be a section encouraging you to record any interesting sounds you hear and upload them to be added to that part of the garden’s soundscape! Submitted field recordings will be added to the soundscapes over the course of the month.',
+    footer: 'I invite you to pause, listen and explore.',
+  }
 };
 
 
