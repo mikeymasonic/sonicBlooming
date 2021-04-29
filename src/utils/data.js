@@ -64,7 +64,7 @@ export const uploads = [
     url: 'https://script.google.com/macros/s/AKfycbzobp1dHDf_Ka5PnqE1u0qXJRz7IaCe4pjuvxcESpYpsbzLVjRiXnRDXJRyxzQuyNrb/exec',
   },
   {
-    mapLocation: 'Shakespeare Garden',
+    mapLocation: 'Shakespearean Garden',
     url: 'https://script.google.com/macros/s/AKfycbzobp1dHDf_Ka5PnqE1u0qXJRz7IaCe4pjuvxcESpYpsbzLVjRiXnRDXJRyxzQuyNrb/exec',
   },
   {
