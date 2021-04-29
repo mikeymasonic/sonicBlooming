@@ -11,7 +11,10 @@ const Blurb = () => {
 
   const blurbNodes = songs.map((song) => {
     if (mapLocation === song.mapLocation) {
-      return <p key={song.title}>{song.description}</p>;
+      return <section key={song.title}>
+        <p>{song.description}</p>
+        <p>{song.upload}</p>
+      </section>;
     }
   });
 
@@ -19,7 +22,12 @@ const Blurb = () => {
     <div className={styles.blurbContainer}>
       <section className={styles.Blurb}>
         {blurbNodes}
-        {!mapLocation && <section><p>{aboutSite.description.main}<br /><br />{aboutSite.description.record}<br /><br />{aboutSite.description.footer}</p></section>} 
+        {!mapLocation && 
+        <section>
+          <p>{aboutSite.description.main}</p>
+          <p>{aboutSite.description.record}</p>
+          <p>{aboutSite.description.footer}</p>
+        </section>} 
         {mapLocation && 
       <Popup 
         modal

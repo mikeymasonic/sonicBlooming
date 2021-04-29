@@ -15,6 +15,14 @@ const Upload = ({ close }) => {
           key={upload.mapLocation}
           className={styles.uploadContainer}>
           <h1>Upload for {upload.mapLocation}</h1>
+          <section className={styles.description}>
+            <ul>
+              <li>{uploadDescription.record}</li>
+              <li>{uploadDescription.choose}</li>
+              <li>{uploadDescription.open}</li>
+              <li>{uploadDescription.upload}</li>
+            </ul>
+          </section>
           <iframe src={upload.url} width="90%"></iframe>
         </section>
       );
@@ -38,9 +46,6 @@ const Upload = ({ close }) => {
           d="M6 18L18 6M6 6l12 12" />
       </svg>
       {uploadNodes}
-      <section className={styles.description}>
-        {uploadDescription}
-      </section>
     </section>
   );
 };

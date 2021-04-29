@@ -1,14 +1,26 @@
-import React from 'react';
-import { useHandleMapLocation, useHandleSong, useHandlePlayerVisible } from '../../hooks/DataProvider';
+import React, { useEffect } from 'react';
+import PropTypes from 'prop-types';
+import Blurb from '../Blurb/Blurb';
+import { useHandleMapLocation, useHandleSong, useHandlePlayerVisible, useOnAbout, useHandleOnAbout } from '../../hooks/DataProvider';
 import {
   songs,
 } from '../../utils/data';
 import styles from './Map.css';
 
-function Map() {
+function Map(props) {
   const handleSong = useHandleSong();
   const handleMapLocation = useHandleMapLocation();
   const handlePlayerVisible = useHandlePlayerVisible();
+  const onAbout = useOnAbout();
+  const handleOnAbout = useHandleOnAbout();
+  const pathname = props.location.pathname;
+
+  useEffect(() => {
+    if (pathname === '/') {
+      handleOnAbout(false);
+    }
+  }, [pathname]);
+
   return (
     <section className={styles.mapContainer}>
       <section 
@@ -85,8 +97,14 @@ function Map() {
 
         </svg>
       </section>
+      {!onAbout && <Blurb />}
     </section>
   );
 }
+
+Map.propTypes = {
+  location: PropTypes.object,
+};
+
 
 export default Map;

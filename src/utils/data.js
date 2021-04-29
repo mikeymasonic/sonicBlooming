@@ -4,30 +4,35 @@ export const songs = [
     title: 'Song One',
     mapLocation: 'Amphitheater',
     description: 'The plant electricity data from this part of the garden came from an Ivy plant growing on the ground near the stage area. It’s electrical pattern was dense and scattered. As you listen to this soundscape and wander the ampitheater I invite you to think of the part of transformation when you are taking stock of what you’d like to change. Change is constant….something...something.  After the soundscape ends, take a moment to pause and listen without your headphones to the environment around you. Notice any sounds that arrive and disappear. Listen for at least 1 minute.',
+    upload: 'If you hear something you’d like to add to the soundscape you just heard you can record it with your phone and upload it here: ',
   },
   {
     url: '../mp3/example2.mp3',
     title: 'Song Two',
     mapLocation: 'Royal Rosarian Garden',
     description: 'this is a blurb about royal rosarian garden, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia dolorem ullam, unde aliquam tenetur consequatur ut in esse harum sunt! Atque dolorem provident accusamus sint? Ducimus, magni. Id, enim non? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem animi ex repellendus eaque. Quam blanditiis cum quo sunt laudantium nihil earum unde dolore laborum! Id libero iusto similique minus dignissimos. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit dolorem ut omnis corrupti consequatur totam, aliquid ex qui cum deleniti minima, maiores temporibus doloribus, voluptatem et veniam eligendi vel? Distinctio.',
+    upload: 'If you hear something you’d like to add to the soundscape you just heard you can record it with your phone and upload it here: ',
   },
   {
     url: '../mp3/example3.mp3',
     title: 'Song Three',
     mapLocation: 'Rose Test Garden',
     description: 'For this part of the garden I took a reading of a rose called “ring of fire” it’s electrical patterns were more predictable patterns of up and down. During this soundscape I invite you to think about the patterns in your life. Which patterns assist you in blooming, which patterns get in the way? Impedit dolorem ut omnis corrupti consequatur totam, aliquid ex qui cum deleniti minima, maiores temporibus doloribus, voluptatem et veniam eligendi vel? Distinctio',
+    upload: 'If you hear something you’d like to add to the soundscape you just heard you can record it with your phone and upload it here: ',
   },
   {
     url: '../mp3/example4.mp3',
     title: 'Song Four',
     mapLocation: 'Shakespeare Garden',
     description: 'this is a blurb about Shakespeare Garden, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia dolorem ullam, unde aliquam tenetur consequatur ut in esse harum sunt! Atque dolorem provident accusamus sint? Ducimus, magni. Id, enim non? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem animi ex repellendus eaque. Quam blanditiis cum quo sunt laudantium nihil earum unde dolore laborum! Id libero iusto similique minus dignissimos. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit dolorem ut omnis corrupti consequatur totam, aliquid ex qui cum deleniti minima, maiores temporibus doloribus, voluptatem et veniam eligendi vel? Distinctio.',
+    upload: 'If you hear something you’d like to add to the soundscape you just heard you can record it with your phone and upload it here: ',
   },
   {
     url: '../mp3/example5.mp3',
     title: 'Song Five',
     mapLocation: 'Gold Medal Garden',
     description: 'The plant energy performing the soundscape for this garden was a rose called “Gemini Rose”. This plant’s reading oscillated between sparse to dense signals.  Voluptatem animi ex repellendus eaque. Quam blanditiis cum quo sunt laudantium nihil earum unde dolore laborum! Id libero iusto similique minus dignissimos. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit dolorem ut omnis corrupti consequatur totam, aliquid ex qui cum deleniti minima, maiores temporibus doloribus, voluptatem et veniam eligendi vel? Distinctio.',
+    upload: 'If you hear something you’d like to add to the soundscape you just heard you can record it with your phone and upload it here: ',
   },
   // keep above as is, everything below are new songs
   {
@@ -39,7 +44,12 @@ export const songs = [
 
 export const uploads = [
   {
-    description: 'this is a description of how to upload things. Quia dolorem ullam, unde aliquam tenetur consequatur ut in esse harum sunt! Atque dolorem provident accusamus sint? Ducimus, magni. Id, enim non? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem animi ex repellendus eaque. Quam blanditiis cum quo sunt laudantium nihil earum unde dolore laborum! Id libero iusto similique minus dignissimos. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit dolorem ut omnis corrupti consequatur totam, aliquid ex qui cum deleniti minima, maiores temporibus doloribus, voluptatem et veniam eligendi vel? Distinctio.'
+    description: {
+      record: 'Record an audio clip on your device', 
+      choose: 'Tap \'choose file\'', 
+      open: 'Select the file, tap \'open\'',
+      upload: 'Tap \'upload files\' and your audio clip will be transfered!',
+    }
   },
   {
     mapLocation: 'Amphitheater',
@@ -69,6 +79,10 @@ export const aboutSite = {
     record: 'On each page there will also be a section encouraging you to record any interesting sounds you hear and upload them to be added to that part of the garden’s soundscape! Submitted field recordings will be added to the soundscapes over the course of the month.',
     footer: 'I invite you to pause, listen and explore.',
   }
+};
+
+export const aboutPage = {
+  description: 'Sonic Blooming is a guided meditation on the sound of movement, growth, and transformation in our environments both external and internal. At the time of year when the roses at the International Rose Test Garden are beginning to bloom, plants are generating extra electricity. In my soundwalk I have used a process called Biodata Sonification, attaching sensors to the plant\'s in the garden to collect their electrical impulses. I have translated these impulses into musical pitches and sound that make up half of the composition visitors will hear. The other half of the composition is made up of field recordings I\'ve collected in the space. Soundwalkers will be able to listen to this soundscape via a weblink as they explore the garden. I am also working with a web developer who is making a website that will host the music, instructions, and have a place where visitors can upload their own field recordings which will be integrated with the soundscapes over the course of the month.'
 };
 
 
