@@ -5,6 +5,7 @@ import styles from './Visualizer.css';
 
 const Visualizer = ({ forwardRef }) => {
   let running = true;
+  let context;
   const canvasRef = useRef(null);
   const visualizerDisplay = useVisualizerDisplay();
   const handleVisualizerDisplay = useHandleVisualizerDisplay();
@@ -19,7 +20,14 @@ const Visualizer = ({ forwardRef }) => {
     // -------------
     const audio = forwardRef.current.audio.current;
     // audio.context = audio.context || new AudioContext();
-    const context =  new AudioContext();
+    const AudioContext = window.AudioContext || window.webkitAudioContext || false;
+
+    if (AudioContext) {
+      context =  new AudioContext();
+    } else {
+      // Alert the user
+      alert('Sorry, but the Web Audio API is not supported by your browser. Please, consider upgrading to the latest version or downloading Google Chrome or Mozilla Firefox');
+    }
 
     // -------------
     // Canvas stuff

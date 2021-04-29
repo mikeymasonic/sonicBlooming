@@ -1,6 +1,6 @@
 import React from 'react';
 import Blurb from '../Blurb/Blurb';
-import { useHandleMapLocation, useHandleSong, useHandlePlayerVisible, useOnAbout } from '../../hooks/DataProvider';
+import { useHandleMapLocation, useHandleSong, useHandlePlayerVisible, useOnAbout, usePlayerVisible } from '../../hooks/DataProvider';
 import {
   songs,
 } from '../../utils/data';
@@ -11,12 +11,14 @@ function Map() {
   const handleMapLocation = useHandleMapLocation();
   const handlePlayerVisible = useHandlePlayerVisible();
   const onAbout = useOnAbout();
+  const playerVisible = usePlayerVisible();
 
   return (
     <section className={styles.mapContainer}>
+      {!onAbout && !playerVisible && <Blurb />}
+      {!playerVisible && !onAbout && <p className={styles.instructions}>Select a garden to listen to:</p>} 
       <section 
         className={styles.mapClass}>
-
         <svg
           xmlns="http://purl.org/dc/elements/1.1/"
           version="1.1"
@@ -87,7 +89,7 @@ function Map() {
           </g>
         </svg>
       </section>
-      {!onAbout && <Blurb />}
+      {!onAbout && playerVisible && <Blurb />}
     </section>
   );
 }

@@ -22,6 +22,18 @@ body {
   -webkit-animation: scale 1.5s;
   -moz-animation: scale 2s; 
 
+  .instructions {
+    width: 100%;
+    text-align: center;
+    margin: 0 0 2em 0;
+    color: #FBC9B1;
+    font-size: 1.2em;
+    letter-spacing: 0.15em;
+    -webkit-animation: fadein 5s; 
+      -moz-animation: fadein 5s; 
+      animation: fadein 5s;
+  }
+
 .mapClass {
   display: flex;
   justify-content: center;
