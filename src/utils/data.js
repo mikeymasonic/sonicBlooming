@@ -53,7 +53,7 @@ export const uploads = [
   },
   {
     mapLocation: 'Amphitheater',
-    url: 'https://script.google.com/macros/s/AKfycbxtDj39tRFOQcbI2OraoM7w2NT9N9xV5tXsCbAMsci94EkCYJzD87iWajNWYLuuWIap/exec',
+    url: 'https://script.google.com/macros/s/AKfycbzOHoT40yseAvGDsHY60Y6ryTqYcaQHp-oX-FF1w5tgAVMaYH8Saxwe40XwH2MLHdRH/exec',
   },
   {
     mapLocation: 'Royal Rosarian Garden',
@@ -64,7 +64,7 @@ export const uploads = [
     url: 'https://script.google.com/macros/s/AKfycbzobp1dHDf_Ka5PnqE1u0qXJRz7IaCe4pjuvxcESpYpsbzLVjRiXnRDXJRyxzQuyNrb/exec',
   },
   {
-    mapLocation: 'Shakespeare Garden',
+    mapLocation: 'Shakespearean Garden',
     url: 'https://script.google.com/macros/s/AKfycbzobp1dHDf_Ka5PnqE1u0qXJRz7IaCe4pjuvxcESpYpsbzLVjRiXnRDXJRyxzQuyNrb/exec',
   },
   {
