@@ -2,11 +2,9 @@ import React, { useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { useVisualizerDisplay, useHandleVisualizerDisplay } from '../../hooks/DataProvider';
 import styles from './Visualizer.css';
-// import Player from '../Player/Player';
 
 const Visualizer = ({ forwardRef }) => {
   let running = true;
-  // let context;
   const canvasRef = useRef(null);
   const visualizerDisplay = useVisualizerDisplay();
   const handleVisualizerDisplay = useHandleVisualizerDisplay();
@@ -194,22 +192,6 @@ const Visualizer = ({ forwardRef }) => {
 
   return (
     <section className={styles.Visualizer}  style={{ visibility: visualizerDisplay ? 'visible' : 'hidden', height: visualizerDisplay ? 100 : 0 }}>
-      {/* <svg
-        className={styles.close}
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-        height="1.5em"
-        onClick={handleClose}
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M6 18L18 6M6 6l12 12"
-        />
-      </svg> */}
       <canvas ref={canvasRef} onClick={handleClose} />
     </section>
   );

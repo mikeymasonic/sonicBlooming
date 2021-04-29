@@ -88,6 +88,7 @@ export const aboutPage = {
 
 export const aboutCrystal = {
   name: 'Crystal Cortez',
+  photoURL: 'http://placekitten.com/g/200/300',
   portfolioURL: 'https://www.crystalcortez.com/',
   gitHubURL:'https://github.com/crystalcortez',
   email: 'crystalquartez@gmail.com',
@@ -97,10 +98,21 @@ export const aboutCrystal = {
 
 export const aboutMikey = {
   name: 'Michael Romay',
+  photoURL: 'http://placekitten.com/g/200/300',
   portfolioURL: 'https://michaelromay.dev/',
   gitHubURL:'https://github.com/mikeymasonic',
   email: 'hi@michaelromay.dev',
   role: 'app development, design',
   bio: 'Human and software engineer with an interest in the use of technologies and their relation to the human experience as conveyed through visual / sound installations and thoughtfully designed software applications. I create immersive digital, visual, and sound art and experiment with sensors, micro-controllers, multi-channel audio, and programing to bring everything together. This pushes my interest what tech can be and how it can make you feel while bridging the intersection of technology and creative art.'
+};
+
+export const aboutJena = {
+  name: 'Jena Boehm',
+  photoURL: 'http://placekitten.com/g/200/300',
+  portfolioURL: 'https://jenaluxboehm.com',
+  gitHubURL:'https://github.com/jena-boehm',
+  email: 'boehmjena@gmail.com',
+  role: 'app development, design',
+  bio: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia dolorem ullam, unde aliquam tenetur consequatur ut in esse harum sunt! Atque dolorem provident accusamus sint? Ducimus, magni. Id, enim non? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem animi ex repellendus eaque. Quam blanditiis cum quo sunt laudantium nihil earum unde dolore laborum!'
 };
 
