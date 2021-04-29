@@ -4,11 +4,11 @@ import PropTypes from 'prop-types';
 const DataContext = createContext();
 
 export const DataProvider = ({ children }) => {
-  // const [song, setSong] = useState('../mp3/example2.mp3');
   const [song, setSong] = useState(null);
   const [mapLocation, setMapLocation] = useState(null);
   const [playerVisible, setPlayerVisible] = useState(false);
   const [visualizerDisplay, setVisualizerDisplay] = useState(false);
+  const [onAbout, setOnAbout] = useState(false);
 
   const handleSong = (track) => {
     setSong(track);
@@ -27,6 +27,10 @@ export const DataProvider = ({ children }) => {
     setVisualizerDisplay(bool);
   };
 
+  const handleOnAbout = (bool) => {
+    setOnAbout(bool);
+  };
+
   return (
     <DataContext.Provider
       value={{
@@ -34,10 +38,12 @@ export const DataProvider = ({ children }) => {
         mapLocation,
         playerVisible,
         visualizerDisplay,
+        onAbout,
         handleSong,
         handleMapLocation,
         handlePlayerVisible,
         handleVisualizerDisplay,
+        handleOnAbout,
       }}
     >
       {children}
@@ -70,6 +76,11 @@ export const useVisualizerDisplay = () => {
   return visualizerDisplay;
 };
 
+export const useOnAbout = () => {
+  const { onAbout } = useContext(DataContext);
+  return onAbout;
+};
+
 // get handlers
 export const useHandleSong = () => {
   const { handleSong } = useContext(DataContext);
@@ -91,3 +102,7 @@ export const useHandleVisualizerDisplay = () => {
   return handleVisualizerDisplay;
 };
 
+export const useHandleOnAbout = () => {
+  const { handleOnAbout } = useContext(DataContext);
+  return handleOnAbout;
+};
