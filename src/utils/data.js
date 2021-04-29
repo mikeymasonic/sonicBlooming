@@ -23,8 +23,8 @@ export const songs = [
   {
     url: '../mp3/example4.mp3',
     title: 'Song Four',
-    mapLocation: 'Shakespeare Garden',
-    description: 'this is a blurb about Shakespeare Garden, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia dolorem ullam, unde aliquam tenetur consequatur ut in esse harum sunt! Atque dolorem provident accusamus sint? Ducimus, magni. Id, enim non? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem animi ex repellendus eaque. Quam blanditiis cum quo sunt laudantium nihil earum unde dolore laborum! Id libero iusto similique minus dignissimos. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit dolorem ut omnis corrupti consequatur totam, aliquid ex qui cum deleniti minima, maiores temporibus doloribus, voluptatem et veniam eligendi vel? Distinctio.',
+    mapLocation: 'Shakespearean Garden',
+    description: 'this is a blurb about Shakespearean Garden, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia dolorem ullam, unde aliquam tenetur consequatur ut in esse harum sunt! Atque dolorem provident accusamus sint? Ducimus, magni. Id, enim non? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem animi ex repellendus eaque. Quam blanditiis cum quo sunt laudantium nihil earum unde dolore laborum! Id libero iusto similique minus dignissimos. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit dolorem ut omnis corrupti consequatur totam, aliquid ex qui cum deleniti minima, maiores temporibus doloribus, voluptatem et veniam eligendi vel? Distinctio.',
     upload: 'If you hear something you’d like to add to the soundscape you just heard you can record it with your phone and upload it here: ',
   },
   {
@@ -38,7 +38,7 @@ export const songs = [
   {
     url: '../mp3/example5.mp3',
     title: 'Song Four Again (but not really)',
-    mapLocation: 'Shakespeare Garden',
+    mapLocation: 'Shakespearean Garden',
   },
 ];
 
@@ -57,19 +57,19 @@ export const uploads = [
   },
   {
     mapLocation: 'Royal Rosarian Garden',
-    url: 'https://script.google.com/macros/s/AKfycbwPrr2R-ScfYxQV0HEgC4J93qTGSJnDkEALAUmpEb8bmVZqZ9KwKTct5mT3h9y2Z1U/exec',
+    url: 'https://script.google.com/macros/s/AKfycbzE7k8jR6lb-Hkt4lbdk_iRpXAqSBozQhhV3Y3oD7-g15Qe11SefjdV0r_lr7Kianek5w/exec',
   },
   {
     mapLocation: 'Rose Test Garden',
-    url: 'https://script.google.com/macros/s/AKfycbzobp1dHDf_Ka5PnqE1u0qXJRz7IaCe4pjuvxcESpYpsbzLVjRiXnRDXJRyxzQuyNrb/exec',
+    url: 'https://script.google.com/macros/s/AKfycbzt0wh2_HScz-TN_xAL_ozGlz_SqNL5iync0KBjm6zJLs_ovykDaV8pVlWYzbTSFASevw/exec',
   },
   {
     mapLocation: 'Shakespearean Garden',
-    url: 'https://script.google.com/macros/s/AKfycbzobp1dHDf_Ka5PnqE1u0qXJRz7IaCe4pjuvxcESpYpsbzLVjRiXnRDXJRyxzQuyNrb/exec',
+    url: 'https://script.google.com/macros/s/AKfycbz_tpHSiChLQrALl-kO9wr79kZhbtkEf6glLa7K7_RwYoNoSm0JRuAKzpfF75699CUx/exec',
   },
   {
-    mapLocation: 'Queen\'s Walk',
-    url: 'https://script.google.com/macros/s/AKfycbzobp1dHDf_Ka5PnqE1u0qXJRz7IaCe4pjuvxcESpYpsbzLVjRiXnRDXJRyxzQuyNrb/exec',
+    mapLocation: 'Gold Medal Garden',
+    url: 'https://script.google.com/macros/s/AKfycbxEQ23yuVBYa4tXISw2KocJdRaf7L2QCdLUkwx7YcbPMLhKD2ps01pcDyyN7Di-gpobAg/exec',
   },
 ];
 
