@@ -150,7 +150,32 @@ a {
 
 }
 
-@media (max-width: 565px) {
+@media (max-width: 414px) {
+  .Header {
+
+    .headerCenter {
+      font-size: 1em;
+    }
+
+    .headerRight {
+      height: 8vh;
+      width: 10vw;
+      margin-right: 0.5em;
+      margin-top: 0.2em;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .Header {
+
+    .headerCenter {
+      font-size: 0.9em;
+    }
+  }
+}
+
+@media (max-width: 320px) {
 
   .Header {
     height: 8vh;
@@ -179,4 +204,19 @@ a {
     }
   }
 
+}
+
+@media (max-width: 280px) {
+  .Header {
+    height: 8vh;
+
+    .headerLeft {
+      height: 7vh;
+      margin-top: 0.5em;
+    }
+
+    .headerCenter {
+      font-size: 0.6em;
+    }
+  }
 }

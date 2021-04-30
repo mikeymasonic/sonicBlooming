@@ -86,6 +86,33 @@
 
 }
 
+@media (max-width: 414px) {
+  .blurbContainer {
+
+    .Blurb {
+      font-size: 0.8em;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .blurbContainer {
+
+    .Blurb {
+      font-size: 0.7em;
+    }
+  }
+}
+
+@media (max-width: 280px) {
+  .blurbContainer {
+
+    .Blurb {
+      font-size: 0.6em;
+    }
+  }
+}
+
 @keyframes fadein {
   from { opacity: 0; }
   to   { opacity: 1; }
