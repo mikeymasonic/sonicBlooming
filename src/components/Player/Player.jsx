@@ -14,6 +14,12 @@ const Player = () => {
   const visualizerDisplay = useVisualizerDisplay();
   const handleVisualizerDisplay = useHandleVisualizerDisplay();
   const playerTitle = `${song?.mapLocation} - ${song?.title}`.toUpperCase();
+  // eslint-disable-next-line no-undef
+  const isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === '[object SafariRemoteNotification]'; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
+  console.log('is safari: ', isSafari);
+
+  const isFirefox = typeof InstallTrigger !== 'undefined';
+  console.log('is firefox: ', isFirefox);
 
 
   const handleFullscreen = () => {
@@ -30,6 +36,7 @@ const Player = () => {
           <section className={styles.Player} style={{ visibility: playerVisible ? 'visible' : 'collapse', height: playerVisible ? 70 : 0 }}>
 
             <section className={styles.playerControls}>
+              {isSafari &&               
               <AudioPlayer
                 ref={player}
                 className={styles.rhap_container}
@@ -41,11 +48,31 @@ const Player = () => {
                     RHAP_UI.DURATION,
                   ]
                 }
-              />
-              {!visualizerDisplay
-                ?
-                <button onClick={handleFullscreen} className={styles.fullscreen}><img src='./images/fullscreen.png' height='25px' /></button>
-                : <button onClick={handleFullscreen} className={styles.fullscreen}><img src='./images/close.png' height='25px' /></button>
+                customVolumeControls = {[]}
+              /> }
+
+              {!isSafari &&               
+              <AudioPlayer
+                ref={player}
+                className={styles.rhap_container}
+                src={song?.url}
+                customProgressBarSection={
+                  [
+                    RHAP_UI.CURRENT_TIME,
+                    <section key="slash">/</section>,
+                    RHAP_UI.DURATION,
+                  ]
+                }
+              /> }
+
+              {!isFirefox && 
+              <section>
+                {!visualizerDisplay
+                  ?
+                  <button onClick={handleFullscreen} className={styles.fullscreen}><img src='./images/fullscreen.png' height='25px' /></button>
+                  : <button onClick={handleFullscreen} className={styles.fullscreen}><img src='./images/close.png' height='25px' /></button>
+                }
+              </section>
               }
             </section>
           </section>
