@@ -27,6 +27,9 @@ exports[`Map component renders Map 1`] = `
     <p
       class="instructions"
     >
+      ---
+      <br />
+      <br />
       Select a garden to listen to:
     </p>
     <section
