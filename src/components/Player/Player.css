@@ -189,16 +189,129 @@
 
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 1800px) {
   .audioContainer {
 
-    .Playlist {
-      height: 5.5em;
+    .playerContainer {
+      width: 60vw;
+      margin: 0;
 
-      a {
-        font-size: 1em;
+      .title {
+        font-size: 0.8vw;
+        letter-spacing: 0.5vmax;
+        margin: 0;
+      }
+
+      .Player {
+        width: 99%;
+        height: 5em;
+
+        .playerControls {
+          display: flex;
+          flex-direction: row;
+          width: 90%;
+
+          .fullscreen >img {
+            width: 1.5em;
+            height: 1.5em;
+          }
+        }
+
+        .rhap_container {
+
+          button {
+            width: 4vw;
+            margin: 0;
+            padding: 0.1em;
+          }
+
+          div {
+            margin: 0 0.1em 0 0.1em;
+            font-size: 0.95em;
+          }
+        }
       }
     }
+
+    .Playlist {
+      width: 60vw;
+      height: 7vh;
+
+      a {
+        width: 30%;
+        font-size: 0.9em;
+      }
+
+      .playlistTitle {
+        font-size: 0.8vmax;
+        letter-spacing: 0.6vmax;
+        margin: 0;
+      }
+    }
+
+  }
+}
+
+@media (max-width: 1450px) {
+  .audioContainer {
+
+    .playerContainer {
+      width: 60vw;
+      margin: 0;
+
+      .title {
+        font-size: 1vw;
+        letter-spacing: 0.5vmax;
+        margin: 0;
+      }
+
+      .Player {
+        width: 99%;
+        height: 5em;
+
+        .playerControls {
+          display: flex;
+          flex-direction: row;
+          width: 90%;
+
+          .fullscreen >img {
+            width: 1.5em;
+            height: 1.5em;
+          }
+        }
+
+        .rhap_container {
+
+          button {
+            width: 6vw;
+            margin: 0;
+            padding: 0.1em;
+          }
+
+          div {
+            margin: 0 0.1em 0 0.1em;
+            font-size: 0.9em;
+          }
+        }
+      }
+    }
+
+    .Playlist {
+      width: 60vw;
+      height: 7vh;
+
+      a {
+        width: 30%;
+        font-size: 0.8em;
+      }
+
+      .playlistTitle {
+        font-size: 1vmax;
+        letter-spacing: 0.6vmax;
+        margin: 0;
+      }
+    }
+
   }
 }
 
@@ -225,7 +338,7 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1027px) {
   .audioContainer {
 
     .playerContainer {
@@ -233,7 +346,7 @@
       margin: 0;
 
       .title {
-        font-size: 1.7vw;
+        font-size: 1.4vw;
         margin: 0;
       }
 
@@ -251,12 +364,13 @@
         .rhap_container {
 
           button {
-            width: 4vw;
+            width: 6vw;
             margin: 2em 0 2em 0;
           }
 
           div {
             margin: 0 0.7em 0 0.7em;
+            font-size: 0.95em;
           }
         }
       }
@@ -264,15 +378,15 @@
 
     .Playlist {
       width: 85vw;
-      height: 7vh;
+      height: 8vh;
 
       a {
-        width: 35%;
-        font-size: 1.1em;
+        width: 30%;
+        font-size: 0.9em;
       }
 
       .playlistTitle {
-        font-size: 1.8vmax;
+        font-size: 1.5vmax;
         letter-spacing: 0.6vmax;
         margin: 0;
       }
@@ -319,11 +433,11 @@
 
     .Playlist {
       width: 85vw;
-      height: 7vh;
+      height: 8vh;
 
       a {
-        width: 35%;
-        font-size: 1.1em;
+        width: 30%;
+        font-size: 0.8em;
       }
 
       .playlistTitle {
