@@ -25,9 +25,9 @@ const Player = () => {
       <section className={styles.audioContainer}>
         <Playlist style={{ visibility: playerVisible ? 'visible' : 'hidden', height: playerVisible ? 100 : 0 }} />
 
-        <div className={styles.playerContainer} style={{ visibility: playerVisible ? 'visible' : 'hidden', height: playerVisible ? 100 : 0, marginBottom: playerVisible ? 20 : 0 }}>
+        <div className={styles.playerContainer} style={{ visibility: playerVisible ? 'visible' : 'hidden', height: playerVisible ? 50 : 0, marginBottom: playerVisible ? 20 : 0 }}>
           <section className={styles.title}>{playerTitle}</section>
-          <section className={styles.Player} style={{ visibility: playerVisible ? 'visible' : 'collapse', height: playerVisible ? 100 : 0 }}>
+          <section className={styles.Player} style={{ visibility: playerVisible ? 'visible' : 'collapse', height: playerVisible ? 50 : 0 }}>
 
             <section className={styles.playerControls}>
               <AudioPlayer
@@ -44,8 +44,8 @@ const Player = () => {
               />
               {!visualizerDisplay
                 ?
-                <button onClick={handleFullscreen}><img src='./images/fullscreen.png' height='25px' /></button>
-                : <button onClick={handleFullscreen}><img src='./images/close.png' height='25px' /></button>
+                <button onClick={handleFullscreen} className={styles.fullscreen}><img src='./images/fullscreen.png' height='25px' /></button>
+                : <button onClick={handleFullscreen} className={styles.fullscreen}><img src='./images/close.png' height='25px' /></button>
               }
             </section>
           </section>

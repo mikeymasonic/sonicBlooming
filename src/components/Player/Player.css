@@ -261,6 +261,60 @@
       }
     }
 
+    .Playlist {
+      width: 85vw;
+      height: 7vh;
+
+      a {
+        width: 35%;
+      }
+    }
+
+  }
+}
+
+@media (max-width: 414px) {
+  .audioContainer {
+
+    .playerContainer {
+      width: 85vw;
+      margin: 0;
+
+      .title {
+        font-size: 2vw;
+        letter-spacing: 0.5vmax;
+      }
+
+      .Player {
+        width: 99%;
+        height: 5em;
+
+        .playerControls {
+          display: flex;
+          flex-direction: row;
+          width: 90%;
+
+          .fullscreen >img {
+            width: 0.9em;
+            height: 0.9em;
+          }
+        }
+
+        .rhap_container {
+
+          button {
+            width: 7vw;
+            margin: 0;
+            padding: 0.1em;
+          }
+
+          div {
+            margin: 0 0.1em 0 0.1em;
+            font-size: 0.9em;
+          }
+        }
+      }
+    }
 
     .Playlist {
       width: 85vw;
@@ -268,6 +322,173 @@
 
       a {
         width: 35%;
+        font-size: 0.7em;
+      }
+
+      .playlistTitle {
+        font-size: 1.3vmax;
+        letter-spacing: 0.6vmax;
+      }
+    }
+
+  }
+}
+
+@media (max-width: 375px) {
+  .audioContainer {
+
+    .playerContainer {
+
+      .title {
+        font-size: 2.3vw;
+      }
+
+      .Player {
+
+        .rhap_container {
+
+          button {
+            width: 7vw;
+          }
+        }
+      }
+    }
+
+    .Playlist {
+
+      a {
+        font-size: 0.7em;
+      }
+
+      .playlistTitle {
+        font-size: 1.1vmax;
+      }
+    }
+
+  }
+}
+
+@media (max-width: 360px) {
+  .audioContainer {
+
+    .playerContainer {
+
+      .title {
+        font-size: 2.4vw;
+      }
+
+      .Player {
+
+        .playerControls {
+          
+          .fullscreen >img {
+            width: 0.7em;
+            height: 0.7em;
+          }
+        }
+
+        .rhap_container {
+
+          button {
+            width: 7vw;
+          }
+        }
+      }
+    }
+
+    .Playlist {
+
+      a {
+        width: 35%;
+        font-size: 0.6em;
+      }
+
+      .playlistTitle {
+        font-size: 1.3vmax;
+        letter-spacing: 0.6vmax;
+      }
+    }
+
+  }
+}
+
+@media (max-width: 320px) {
+  .audioContainer {
+
+    .playerContainer {
+
+      .title {
+        font-size: 2.4vw;
+      }
+    }
+
+
+    .Playlist {
+
+      .playlistTitle {
+        font-size: 1.3vmax;
+      }
+    }
+
+  }
+}
+
+@media (max-width: 280px) {
+  .audioContainer {
+
+    .playerContainer {
+      width: 85vw;
+      margin: 0;
+
+      .title {
+        font-size: 2vw;
+        letter-spacing: 0.5vmax;
+      }
+
+      .Player {
+        width: 99%;
+        height: 5em;
+
+        .playerControls {
+          display: flex;
+          flex-direction: row;
+          width: 90%;
+
+          .fullscreen >img {
+            width: 0.8em;
+            height: 0.8em;
+          }
+        }
+
+        .rhap_container {
+
+          button {
+            width: 8vw;
+            margin: 0;
+            padding: 0.1em;
+          }
+
+          div {
+            margin: 0 0.1em 0 0.1em;
+            font-size: 0.9em;
+          }
+        }
+      }
+    }
+
+
+    .Playlist {
+      width: 85vw;
+      height: 7vh;
+
+      a {
+        width: 35%;
+        font-size: 0.6em;
+      }
+
+      .playlistTitle {
+        font-size: 1vmax;
+        letter-spacing: 0.6vmax;
       }
     }
 
