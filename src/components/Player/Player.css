@@ -185,7 +185,6 @@
     justify-content: left;
     align-items: center;
   }
-
 }
 
 }
@@ -221,6 +220,117 @@
 
     .Playlist {
       width: 55vw;
+    }
+
+  }
+}
+
+@media (max-width: 1024px) {
+  .audioContainer {
+
+    .playerContainer {
+      width: 85vw;
+      margin: 0;
+
+      .title {
+        font-size: 1.7vw;
+        margin: 0;
+      }
+
+      .Player {
+        width: 99%;
+
+        .playerControls {
+
+          .fullscreen >img {
+            width: 1.4em;
+            height: 1.4em;
+          }
+        }
+
+        .rhap_container {
+
+          button {
+            width: 4vw;
+            margin: 2em 0 2em 0;
+          }
+
+          div {
+            margin: 0 0.7em 0 0.7em;
+          }
+        }
+      }
+    }
+
+    .Playlist {
+      width: 85vw;
+      height: 7vh;
+
+      a {
+        width: 35%;
+        font-size: 1.1em;
+      }
+
+      .playlistTitle {
+        font-size: 1.8vmax;
+        letter-spacing: 0.6vmax;
+        margin: 0;
+      }
+    }
+
+  }
+}
+
+@media (max-width: 768px) {
+  .audioContainer {
+
+    .playerContainer {
+      width: 85vw;
+      margin: 0;
+
+      .title {
+        font-size: 2.2vw;
+        margin: 0;
+      }
+
+      .Player {
+        width: 99%;
+
+        .playerControls {
+
+          button {
+            width: 8.5vw;
+          }
+        }
+
+        .rhap_container {
+
+          button {
+            width: 5vw;
+            margin: 2em 0 2em 0;
+          }
+
+          div {
+            margin: 0 0.4em 0 0.4em;
+          }
+        }
+      }
+    }
+
+    .Playlist {
+      width: 85vw;
+      height: 7vh;
+
+      a {
+        width: 35%;
+        font-size: 1.1em;
+      }
+
+      .playlistTitle {
+        font-size: 1.8vmax;
+        letter-spacing: 0.6vmax;
+        margin: 0;
+      }
     }
 
   }
@@ -273,38 +383,74 @@
   }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 540px) {
   .audioContainer {
 
     .playerContainer {
-      width: 85vw;
-      margin: 0;
-
-      .title {
-        font-size: 2vw;
-        letter-spacing: 0.5vmax;
-      }
 
       .Player {
         width: 99%;
-        height: 5em;
 
         .playerControls {
-          display: flex;
-          flex-direction: row;
-          width: 90%;
 
-          .fullscreen >img {
-            width: 0.9em;
-            height: 0.9em;
+          button {
+            width: 8.5vw;
           }
         }
 
         .rhap_container {
 
           button {
-            width: 7vw;
-            margin: 0;
+            width: 8vw;
+          }
+
+          div {
+            margin: 0 0.1em 0 0.1em;
+          }
+        }
+      }
+    }
+
+    .Playlist {
+      width: 85vw;
+      height: 7vh;
+
+      a {
+        width: 35%;
+        font-size: 0.8em;
+      }
+    }
+
+  }
+}
+
+@media (max-width: 414px) {
+  .audioContainer {
+
+    .playerContainer {
+
+      .title {
+        font-size: 2.1vw;
+        letter-spacing: 0.5vmax;
+        margin: 0;
+      }
+
+      .Player {
+
+        .playerControls {
+          width: 90%;
+
+          .fullscreen >img {
+            width: 1.1em;
+            height: 1.1em;
+          }
+        }
+
+        .rhap_container {
+
+          button {
+            width: 8vw;
+            margin: 0.1em;
             padding: 0.1em;
           }
 
@@ -382,15 +528,15 @@
         .playerControls {
           
           .fullscreen >img {
-            width: 0.7em;
-            height: 0.7em;
+            width: 0.8em;
+            height: 0.8em;
           }
         }
 
         .rhap_container {
 
           button {
-            width: 7vw;
+            width: 8vw;
           }
         }
       }
@@ -419,6 +565,24 @@
 
       .title {
         font-size: 2.4vw;
+      }
+
+      .Player {
+
+        .playerControls {
+
+          .fullscreen >img {
+            width: 1em;
+            height: 1em;
+          }
+        }
+        
+        .rhap_container {
+          button {
+            width: 7vw;
+            padding: 0;
+          }
+        }
       }
     }
 
@@ -470,7 +634,7 @@
 
           div {
             margin: 0 0.1em 0 0.1em;
-            font-size: 0.9em;
+            font-size: 0.8em;
           }
         }
       }

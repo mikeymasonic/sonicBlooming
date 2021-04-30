@@ -91,6 +91,18 @@ body {
 
 }
 
+@media (max-width: 1024px) {
+
+  .mapContainer {
+
+    .mapClass {
+     max-width: 85%;
+     margin-top: 1em;
+    }
+  }
+
+}
+
 @media (max-width: 667px) {
 
   .mapContainer {
