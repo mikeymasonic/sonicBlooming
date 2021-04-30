@@ -74,6 +74,18 @@
 
 }
 
+@media (max-width: 567px) {
+  .blurbContainer {
+
+    .Blurb {
+      width: 90%;
+      padding: 0.5em 1em 1em 1em;
+      font-size: 0.7em;
+    }
+  }
+
+}
+
 @keyframes fadein {
   from { opacity: 0; }
   to   { opacity: 1; }

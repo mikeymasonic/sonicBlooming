@@ -111,7 +111,7 @@ export const aboutJena = {
   photoURL: 'http://placekitten.com/g/200/300',
   portfolioURL: 'https://jenaluxboehm.com',
   gitHubURL:'https://github.com/jena-boehm',
-  email: 'boehmjena@gmail.com',
+  email: 'jenaluxboehm@gmail.com',
   role: 'app development, design',
   bio: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia dolorem ullam, unde aliquam tenetur consequatur ut in esse harum sunt! Atque dolorem provident accusamus sint? Ducimus, magni. Id, enim non? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem animi ex repellendus eaque. Quam blanditiis cum quo sunt laudantium nihil earum unde dolore laborum!'
 };

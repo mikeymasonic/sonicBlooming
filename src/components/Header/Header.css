@@ -114,6 +114,10 @@ a {
 @media (max-width: 1200px) {
   .Header {
 
+    .headerCenter {
+      font-size: 1.3em;
+    }
+
     .headerRight, .backContainer {
       width: 6vw;
     }
@@ -133,6 +137,37 @@ a {
       height: 8vh;
       width: 8vw;
       margin-right: 0.5em;
+    }
+
+    .backContainer {
+      margin-right: 1em;
+    }
+
+    h1 {
+      font-size: 1.3em;
+    }
+  }
+
+}
+
+@media (max-width: 565px) {
+
+  .Header {
+    height: 8vh;
+
+    .headerLeft {
+      height: 9vh;
+    }
+
+    .headerCenter {
+      font-size: 0.8em;
+    }
+
+    .headerRight {
+      height: 8vh;
+      width: 8vw;
+      margin-right: 0.5em;
+      margin-top: 0.2em;
     }
 
     .backContainer {
