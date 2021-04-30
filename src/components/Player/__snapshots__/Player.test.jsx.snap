@@ -210,7 +210,9 @@ exports[`Player component renders Player 1`] = `
               </div>
             </div>
           </div>
-          <button>
+          <button
+            class="fullscreen"
+          >
             <img
               height="25px"
               src="./images/fullscreen.png"

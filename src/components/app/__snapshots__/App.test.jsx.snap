@@ -263,7 +263,9 @@ exports[`App component renders App 1`] = `
               </div>
             </div>
           </div>
-          <button>
+          <button
+            class="fullscreen"
+          >
             <img
               height="25px"
               src="./images/fullscreen.png"
@@ -298,6 +300,9 @@ exports[`App component renders App 1`] = `
     <p
       class="instructions"
     >
+      ---
+      <br />
+      <br />
       Select a garden to listen to:
     </p>
     <section

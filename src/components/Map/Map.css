@@ -30,8 +30,8 @@ body {
     font-size: 1.2em;
     letter-spacing: 0.15em;
     -webkit-animation: fadein 5s; 
-      -moz-animation: fadein 5s; 
-      animation: fadein 5s;
+    -moz-animation: fadein 5s; 
+    animation: fadein 5s;
   }
 
 .mapClass {
@@ -91,16 +91,35 @@ body {
 
 }
 
-@media (max-width: 667px) {
-
-  body {
-    height: 100vh;
-  }
+@media (max-width: 1024px) {
 
   .mapContainer {
 
     .mapClass {
      max-width: 85%;
+     margin-top: 1em;
+    }
+  }
+
+}
+
+@media (max-width: 667px) {
+
+  .mapContainer {
+
+    .mapClass {
+     max-width: 85%;
+    }
+  }
+
+}
+
+@media (max-width: 568px) {
+
+  .mapContainer {
+
+    .instructions {
+     font-size: 0.8em;
     }
   }
 

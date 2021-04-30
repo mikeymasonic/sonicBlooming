@@ -16,7 +16,7 @@ function Map() {
   return (
     <section className={styles.mapContainer}>
       {!onAbout && !playerVisible && <Blurb />}
-      {!playerVisible && !onAbout && <p className={styles.instructions}>Select a garden to listen to:</p>} 
+      {!playerVisible && !onAbout && <p className={styles.instructions}>---<br/><br/>Select a garden to listen to:</p>} 
       <section 
         className={styles.mapClass}>
         <svg
