@@ -116,3 +116,21 @@ export const aboutJena = {
   bio: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia dolorem ullam, unde aliquam tenetur consequatur ut in esse harum sunt! Atque dolorem provident accusamus sint? Ducimus, magni. Id, enim non? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem animi ex repellendus eaque. Quam blanditiis cum quo sunt laudantium nihil earum unde dolore laborum!'
 };
 
+export const aboutQu = {
+  name: 'Qu',
+  portfolioURL: 'https://www.generalqu.com/',
+  role: 'map design',
+};
+
+export const aboutClamber = {
+  name: 'clamber',
+  portfolioURL: 'https://clamber.org/',
+  role: 'photos',
+};
+
+export const aboutSponsors = {
+  sponsorOne: '3rd Angle New Music',
+  sponsorOneURL: 'https://www.thirdangle.org/crystal-quartez-soundwalk',
+  sponsorTwo: 'Portland Parks and Recreation',
+  sponsorTwoURL: 'https://www.portland.gov/parks',
+};

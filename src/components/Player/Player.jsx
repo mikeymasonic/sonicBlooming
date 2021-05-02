@@ -26,6 +26,8 @@ const Player = () => {
     handleVisualizerDisplay(!visualizerDisplay);
   };
 
+  console.log(player);
+
   return (
     <>
       <section className={styles.audioContainer}>
