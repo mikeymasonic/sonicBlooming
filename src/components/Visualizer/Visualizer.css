@@ -9,7 +9,7 @@ canvas {
   margin:0;
   left:0;
   height: auto;
-  width: 100vw;
+  /* width: 100vw; */
 }
 
 .close {
