@@ -1,6 +1,13 @@
-import React, { createRef } from 'react';
+import React, { createRef, useEffect } from 'react';
 import AudioPlayer, { RHAP_UI } from 'react-h5-audio-player';
-import { useSong, usePlayerVisible, useVisualizerDisplay, useHandleVisualizerDisplay } from '../../hooks/DataProvider';
+import { 
+  useSong,
+  usePlayerVisible,
+  useVisualizerDisplay,
+  useHandleVisualizerDisplay,
+  useIsSafari,
+  useHandleIsSafari
+} from '../../hooks/DataProvider';
 import Playlist from '../Playlist/Playlist';
 import Visualizer from '../Visualizer/Visualizer';
 import styles from './Player.css';
@@ -12,23 +19,34 @@ const Player = () => {
   const visualizerDisplay = useVisualizerDisplay();
   const handleVisualizerDisplay = useHandleVisualizerDisplay();
   const playerTitle = `${song?.mapLocation} - ${song?.title}`.toUpperCase();
+  const isSafari = useIsSafari();
+  const handleIsSafari = useHandleIsSafari();
   // eslint-disable-next-line no-undef
   // const isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === '[object SafariRemoteNotification]'; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
 
-  const isSafari = navigator.vendor && navigator.vendor.indexOf('Apple') > -1 &&
+  const isSafariCheck = navigator.vendor && navigator.vendor.indexOf('Apple') > -1 &&
   navigator.userAgent &&
   navigator.userAgent.indexOf('CriOS') == -1 &&
   navigator.userAgent.indexOf('FxiOS') == -1;
-  console.log('is safari: ', isSafari);
+  console.log('is safari: ', isSafariCheck);
+  console.log('is safari global: ', isSafari);
 
   const isFirefox = typeof InstallTrigger !== 'undefined';
   // console.log('is firefox: ', isFirefox);
+
+  useEffect(() => {
+    if (isSafariCheck) {
+      console.log('we on safari');
+      handleIsSafari(true);
+    }
+
+  }, []);
 
   const handleFullscreen = () => {
     handleVisualizerDisplay(!visualizerDisplay);
   };
 
-  console.log(player);
+  // console.log(player);
 
   return (
     <>
@@ -63,7 +81,7 @@ const Player = () => {
                 customVolumeControls = {[]}
               /> }
 
-              {!isSafari &&               
+              {!useIsSafari &&               
               <AudioPlayer
                 ref={player}
                 className={styles.rhap_container}
@@ -85,7 +103,7 @@ const Player = () => {
                 }
               /> }
 
-              {!isFirefox && 
+              {!isFirefox && !useIsSafari &&
               <section>
                 {!visualizerDisplay
                   ?

@@ -9,6 +9,7 @@ export const DataProvider = ({ children }) => {
   const [playerVisible, setPlayerVisible] = useState(false);
   const [visualizerDisplay, setVisualizerDisplay] = useState(false);
   const [onAbout, setOnAbout] = useState(false);
+  const [isSafari, setIsSafari] = useState(false);
 
   const handleSong = (track) => {
     setSong(track);
@@ -31,6 +32,10 @@ export const DataProvider = ({ children }) => {
     setOnAbout(bool);
   };
 
+  const handleIsSafari = (bool) => {
+    setIsSafari(bool);
+  };
+
   return (
     <DataContext.Provider
       value={{
@@ -39,11 +44,13 @@ export const DataProvider = ({ children }) => {
         playerVisible,
         visualizerDisplay,
         onAbout,
+        isSafari,
         handleSong,
         handleMapLocation,
         handlePlayerVisible,
         handleVisualizerDisplay,
         handleOnAbout,
+        handleIsSafari,
       }}
     >
       {children}
@@ -81,6 +88,11 @@ export const useOnAbout = () => {
   return onAbout;
 };
 
+export const useIsSafari = () => {
+  const { isSafari } = useContext(DataContext);
+  return isSafari;
+};
+
 // get handlers
 export const useHandleSong = () => {
   const { handleSong } = useContext(DataContext);
@@ -105,4 +117,9 @@ export const useHandleVisualizerDisplay = () => {
 export const useHandleOnAbout = () => {
   const { handleOnAbout } = useContext(DataContext);
   return handleOnAbout;
+};
+
+export const useHandleIsSafari = () => {
+  const { handleIsSafari } = useContext(DataContext);
+  return handleIsSafari;
 };

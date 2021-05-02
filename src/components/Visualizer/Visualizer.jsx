@@ -1,6 +1,10 @@
 import React, { useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { useVisualizerDisplay, useHandleVisualizerDisplay } from '../../hooks/DataProvider';
+import { 
+  useVisualizerDisplay,
+  useHandleVisualizerDisplay,
+  useIsSafari,
+} from '../../hooks/DataProvider';
 import styles from './Visualizer.css';
 
 const Visualizer = ({ forwardRef }) => {
@@ -9,18 +13,28 @@ const Visualizer = ({ forwardRef }) => {
   const canvasRef = useRef(null);
   const visualizerDisplay = useVisualizerDisplay();
   const handleVisualizerDisplay = useHandleVisualizerDisplay();
+  const isSafari = useIsSafari();
 
   const handleClose = () => {
     handleVisualizerDisplay(false);
   };
 
   useEffect(() => {
+    if (isSafari) {
+      return console.log('visualizer disabled');
+    }
     // -------------
     // Audio stuff
     // -------------
     const audio = forwardRef.current.audio.current;
     // audio.context = audio.context || new AudioContext();
     const AudioContext = window.AudioContext || window.webkitAudioContext || false;
+
+    console.log(AudioContext);
+
+    // if('webkitAudioContext' in window) {
+    //   const context = new webkitAudioContext();
+    // }
 
     if (AudioContext) {
       context =  new AudioContext();
