@@ -3,8 +3,8 @@ import Popup from 'reactjs-popup';
 import { useMapLocation } from '../../hooks/DataProvider';
 import { songs, aboutSite } from '../../utils/data';
 import Upload from '../Upload/Upload';
-import 'reactjs-popup/dist/index.css';
 import styles from './Blurb.css';
+// import 'reactjs-popup/dist/index.css';
 
 const Blurb = () => {
   const mapLocation = useMapLocation();

@@ -13,7 +13,7 @@
     justify-content: center;
     align-items: center;
     width: 50vw;
-    visibility: none;
+    /* visibility: none; */
     margin-bottom: 2em;
     border-radius: 5px;
     border: 1px outset #FBC9B1;
@@ -41,7 +41,7 @@
   align-items: center;
   width: 99%;
   margin: 0.2em;
-  visibility: none;
+  /* visibility: none; */
   background: rgb(53,5,97);
   background: linear-gradient(94deg, rgba(53,5,97,1) 0%, rgba(32,3,58,1) 100%);
   color: #FBC9B1;

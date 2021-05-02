@@ -4,23 +4,20 @@ import { useSong, usePlayerVisible, useVisualizerDisplay, useHandleVisualizerDis
 import Playlist from '../Playlist/Playlist';
 import Visualizer from '../Visualizer/Visualizer';
 import styles from './Player.css';
-import 'reactjs-popup/dist/index.css';
 
 const Player = () => {
   const song = useSong();
   const playerVisible = usePlayerVisible();
-  // const onAbout = useOnAbout();
   const player = createRef();
   const visualizerDisplay = useVisualizerDisplay();
   const handleVisualizerDisplay = useHandleVisualizerDisplay();
   const playerTitle = `${song?.mapLocation} - ${song?.title}`.toUpperCase();
   // eslint-disable-next-line no-undef
   const isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === '[object SafariRemoteNotification]'; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
-  console.log('is safari: ', isSafari);
+  // console.log('is safari: ', isSafari);
 
   const isFirefox = typeof InstallTrigger !== 'undefined';
-  console.log('is firefox: ', isFirefox);
-
+  // console.log('is firefox: ', isFirefox);
 
   const handleFullscreen = () => {
     handleVisualizerDisplay(!visualizerDisplay);
