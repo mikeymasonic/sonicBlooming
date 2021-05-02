@@ -6,11 +6,15 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
    id="svg64"
    width="1225"
    height="758"
-   viewBox="0 0 1225 758">
+   viewBox="0 0 1225 758"
+   sodipodi:docname="altmap4.svg"
+   inkscape:version="1.0.2 (e86c8708, 2021-01-15)">
   <metadata
      id="metadata70">
     <rdf:RDF>
@@ -25,7 +29,29 @@
   </metadata>
   <defs
      id="defs68" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1676"
+     inkscape:window-height="929"
+     id="namedview66"
+     showgrid="false"
+     inkscape:zoom="1.3756272"
+     inkscape:cx="272.15967"
+     inkscape:cy="300.52026"
+     inkscape:window-x="0"
+     inkscape:window-y="23"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer7" />
   <g
+     inkscape:groupmode="layer"
+     inkscape:label="Image"
      id="g72"
      style="display:none">
     <image
@@ -4859,27 +4885,46 @@ zkyeGhuZPDXWbuUaAADYRf4fGx6nZN9eAeQAAAAASUVORK5CYII=
        id="image74" />
   </g>
   <g
-     id="layer1">
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="area1"
+     style="display:none">
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 75.686499,119.13616 178.003431,1.4016 8.40961,12.61441 v 40.64646 l 88.30092,1.4016 -1.4016,28.03204 -46.25286,37.84324 v 29.43364 h 28.03203 v 22.42563 l -37.84325,37.84325 -46.25286,15.41762 -49.05606,7.00801 H 137.35698 L 92.505721,341.99085 40.646453,323.77002 22.425629,297.13959 15.41762,280.32037 14.016018,269.10755 H 50.457666 V 242.47712 L 9.8112128,217.24828 2.8032037,204.63387 1.4016018,173.79863 H 70.080092 v -54.66247 z"
        id="path77" />
   </g>
   <g
-     id="layer2" />
+     inkscape:groupmode="layer"
+     id="layer7"
+     inkscape:label="area6">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 77.679724,120.26017 H 259.76196 v 55.66327 h 93.45933 l -15.11842,40.54486 v 79.02811 l -68.7201,54.28887 H 58.412081 L 13.056818,294.80921 V 213.7195 L 0,193.79067 l 0.27371158,-18.29824 72.75521042,0.27371 0.345227,-44.16553 -0.0016,-11.38716 z"
+       id="path175"
+       sodipodi:nodetypes="cccccccccccccccc" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="area2" />
   <path
      style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      d="M 1020.2966,480.19828 H 1187.351 V 691.51215 H 1019.9638 Z"
      id="path85" />
   <g
-     id="layer4">
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="area3">
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 968.35798,691.5188 V 71.816023 H 425.10452 V 179.54006 l -2.31664,42.85795 -17.37485,39.38298 -11.58323,27.79975 -4.63329,11.58323 v 389.19651 z"
        id="path88" />
   </g>
   <g
+     inkscape:groupmode="layer"
      id="layer5"
+     inkscape:label="area4"
      style="display:inline">
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -4887,7 +4932,9 @@ zkyeGhuZPDXWbuUaAADYRf4fGx6nZN9eAeQAAAAASUVORK5CYII=
        id="path93" />
   </g>
   <g
-     id="layer6">
+     inkscape:groupmode="layer"
+     id="layer6"
+     inkscape:label="area5">
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 1056.7855,220.13787 h 95.8465 l 23.4979,40.81208 h 45.759 v 74.20378 h -45.759 l -24.1163,40.81208 h -95.2281 l -23.4979,-40.19372 h -41.43044 v -72.96705 h 40.19374 z"
