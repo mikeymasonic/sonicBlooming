@@ -13,8 +13,13 @@ const Player = () => {
   const handleVisualizerDisplay = useHandleVisualizerDisplay();
   const playerTitle = `${song?.mapLocation} - ${song?.title}`.toUpperCase();
   // eslint-disable-next-line no-undef
-  const isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === '[object SafariRemoteNotification]'; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
-  // console.log('is safari: ', isSafari);
+  // const isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === '[object SafariRemoteNotification]'; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
+
+  const isSafari = navigator.vendor && navigator.vendor.indexOf('Apple') > -1 &&
+  navigator.userAgent &&
+  navigator.userAgent.indexOf('CriOS') == -1 &&
+  navigator.userAgent.indexOf('FxiOS') == -1;
+  console.log('is safari: ', isSafari);
 
   const isFirefox = typeof InstallTrigger !== 'undefined';
   // console.log('is firefox: ', isFirefox);
@@ -40,6 +45,9 @@ const Player = () => {
                 ref={player}
                 className={styles.rhap_container}
                 src={song?.url}
+                onPlay={() => {
+                  console.log('playback started');
+                }}
                 onEnded={() => {
                   if (visualizerDisplay){
                     handleVisualizerDisplay(false);
@@ -60,6 +68,9 @@ const Player = () => {
                 ref={player}
                 className={styles.rhap_container}
                 src={song?.url}
+                onPlay={() => {
+                  console.log('playback started');
+                }}
                 onEnded={() => {
                   if (visualizerDisplay){
                     handleVisualizerDisplay(false);
