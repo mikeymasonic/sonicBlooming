@@ -40,6 +40,11 @@ const Player = () => {
                 ref={player}
                 className={styles.rhap_container}
                 src={song?.url}
+                onEnded={() => {
+                  if (visualizerDisplay){
+                    handleVisualizerDisplay(false);
+                  }
+                }}
                 customProgressBarSection={
                   [
                     RHAP_UI.CURRENT_TIME,
@@ -55,6 +60,11 @@ const Player = () => {
                 ref={player}
                 className={styles.rhap_container}
                 src={song?.url}
+                onEnded={() => {
+                  if (visualizerDisplay){
+                    handleVisualizerDisplay(false);
+                  }
+                }}
                 customProgressBarSection={
                   [
                     RHAP_UI.CURRENT_TIME,
@@ -78,7 +88,6 @@ const Player = () => {
         </div>
 
         {playerVisible && <Visualizer forwardRef={player}/>} 
-        {/* {!playerVisible && !onAbout && <p className={styles.instructions}>Select a garden to listen to:</p>}  */}
       </section>
     </>
   );
