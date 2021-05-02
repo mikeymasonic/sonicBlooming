@@ -4,6 +4,7 @@ import {
   useVisualizerDisplay,
   useHandleVisualizerDisplay,
   useIsSafari,
+  useIsFirefox
 } from '../../hooks/DataProvider';
 import styles from './Visualizer.css';
 
@@ -14,13 +15,14 @@ const Visualizer = ({ forwardRef }) => {
   const visualizerDisplay = useVisualizerDisplay();
   const handleVisualizerDisplay = useHandleVisualizerDisplay();
   const isSafari = useIsSafari();
+  const isFirefox = useIsFirefox();
 
   const handleClose = () => {
     handleVisualizerDisplay(false);
   };
 
   useEffect(() => {
-    if (isSafari) {
+    if (isSafari || isFirefox) {
       return console.log('visualizer disabled');
     }
     // -------------

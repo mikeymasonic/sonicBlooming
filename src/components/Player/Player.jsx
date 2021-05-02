@@ -6,7 +6,9 @@ import {
   useVisualizerDisplay,
   useHandleVisualizerDisplay,
   useIsSafari,
-  useHandleIsSafari
+  useHandleIsSafari,
+  useIsFirefox,
+  useHandleIsFirefox
 } from '../../hooks/DataProvider';
 import Playlist from '../Playlist/Playlist';
 import Visualizer from '../Visualizer/Visualizer';
@@ -21,6 +23,8 @@ const Player = () => {
   const playerTitle = `${song?.mapLocation} - ${song?.title}`.toUpperCase();
   const isSafari = useIsSafari();
   const handleIsSafari = useHandleIsSafari();
+  const isFirefox = useIsFirefox();
+  const handleIsFirefox = useHandleIsFirefox();
   // eslint-disable-next-line no-undef
   // const isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === '[object SafariRemoteNotification]'; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
 
@@ -31,7 +35,7 @@ const Player = () => {
   console.log('is safari: ', isSafariCheck);
   console.log('is safari global: ', isSafari);
 
-  const isFirefox = typeof InstallTrigger !== 'undefined';
+  const isFirefoxCheck = typeof InstallTrigger !== 'undefined';
   // console.log('is firefox: ', isFirefox);
 
   useEffect(() => {
@@ -39,7 +43,10 @@ const Player = () => {
       console.log('we on safari');
       handleIsSafari(true);
     }
-
+    if (isFirefoxCheck) {
+      console.log('we on firefox');
+      handleIsFirefox(true);
+    }
   }, []);
 
   const handleFullscreen = () => {
@@ -81,7 +88,7 @@ const Player = () => {
                 customVolumeControls = {[]}
               /> }
 
-              {!useIsSafari &&               
+              {!isSafari &&               
               <AudioPlayer
                 ref={player}
                 className={styles.rhap_container}
@@ -103,7 +110,7 @@ const Player = () => {
                 }
               /> }
 
-              {!isFirefox && !useIsSafari &&
+              {!isFirefox && !isSafari &&
               <section>
                 {!visualizerDisplay
                   ?
