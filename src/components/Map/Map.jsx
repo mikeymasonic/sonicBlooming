@@ -22,9 +22,8 @@ function Map() {
         <svg
           xmlns="http://purl.org/dc/elements/1.1/"
           version="1.1"
-          id="svg10"
-          // commented this out because firefox didn't like it
-          // width="100vw"
+          id="svg10" 
+          width="100vw"
           height="100%"
           viewBox="0 0 1163 758">
           <g>
