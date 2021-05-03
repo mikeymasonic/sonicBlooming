@@ -82,42 +82,44 @@ export const aboutSite = {
 };
 
 export const aboutPage = {
+  photoURL: '../src/assets/about/aboutMain.jpg',
+  gitHubIcon: '../src/assets/about/githubIcon.png',
+  linkedInIcon: '../src/assets/about/linkedInIcon.png',
+  wwwIcon: '../src/assets/about/wwwIcon.png',
   description: 'Sonic Blooming is a guided meditation on the sound of movement, growth, and transformation in our environments both external and internal. At the time of year when the roses at the International Rose Test Garden are beginning to bloom, plants are generating extra electricity. In my soundwalk I have used a process called Biodata Sonification, attaching sensors to the plant\'s in the garden to collect their electrical impulses. I have translated these impulses into musical pitches and sound that make up half of the composition visitors will hear. The other half of the composition is made up of field recordings I\'ve collected in the space. Soundwalkers will be able to listen to this soundscape via a weblink as they explore the garden. I am also working with a web developer who is making a website that will host the music, instructions, and have a place where visitors can upload their own field recordings which will be integrated with the soundscapes over the course of the month.'
 };
 
 
 export const aboutCrystal = {
   name: 'Crystal Cortez',
-  photoURL: 'http://placekitten.com/g/200/300',
+  photoURL: '../src/assets/about/aboutCrystal.jpg',
   portfolioURL: 'https://www.crystalcortez.com/',
-  gitHubURL:'https://github.com/crystalcortez',
-  email: 'crystalquartez@gmail.com',
   role: 'project leader, sound and art design',
   bio: 'Crystal Cortez is a sound, installation artist & programmer based out of Portland Oregon. She is also a professor of Creative Coding & Sonic Arts at Portland Community College. As someone who never saw herself represented in computer music or creative tech her work focuses on the empowerment of underserved populations gaining access and knowledge around technology. In 2019 she co founded whateverSpace, a maker space offering free and sliding scale workshops and technology rentals with priority going to the BIPOC community. Under her performance moniker Crystal Quartez she transforms field recordings, uses synthesis, audio programming, data sonification, and 3D sound spatialization to produce complex sonic realms. Her practice has recently involved the development of interactive sculptural interfaces and wearable technology that monitor movement and other corporeal methods to liberate the performer from their interfaces. Her art has been shown at NIME, PNCA, Disjecta, PICA, Navel (LA) and more.'
 };
 
 export const aboutMikey = {
   name: 'Michael Romay',
-  photoURL: 'http://placekitten.com/g/200/300',
+  photoURL: '../src/assets/about/aboutMikey.jpg',
   portfolioURL: 'https://michaelromay.dev/',
   gitHubURL:'https://github.com/mikeymasonic',
-  email: 'hi@michaelromay.dev',
+  linkedInURL: 'https://www.linkedin.com/in/michaelromay/',
   role: 'app development, design',
-  bio: 'Human and software engineer with an interest in the use of technologies and their relation to the human experience as conveyed through visual / sound installations and thoughtfully designed software applications. I create immersive digital, visual, and sound art and experiment with sensors, micro-controllers, multi-channel audio, and programing to bring everything together. This pushes my interest what tech can be and how it can make you feel while bridging the intersection of technology and creative art.'
+  bio: 'Michael Romay is a fullstack engineer, installation artist and musician who makes weird digital visual and interactive art.  He has a baby bird named Wootie that is a very sweet boi.'
 };
 
 export const aboutJena = {
   name: 'Jena Boehm',
-  photoURL: 'http://placekitten.com/g/200/300',
+  photoURL: 'http://placekitten.com/g/300/600',
   portfolioURL: 'https://jenaluxboehm.com',
   gitHubURL:'https://github.com/jena-boehm',
-  email: 'jenaluxboehm@gmail.com',
+  linkedInURL: 'https://www.linkedin.com/in/jenaluxboehm/',
   role: 'app development, design',
-  bio: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia dolorem ullam, unde aliquam tenetur consequatur ut in esse harum sunt! Atque dolorem provident accusamus sint? Ducimus, magni. Id, enim non? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem animi ex repellendus eaque. Quam blanditiis cum quo sunt laudantium nihil earum unde dolore laborum!'
+  bio: 'Jena is Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia dolorem ullam, unde aliquam tenetur consequatur ut in esse harum sunt! Atque dolorem provident accusamus sint? Ducimus, magni. Id, enim non? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem animi ex repellendus eaque. Quam blanditiis cum quo sunt laudantium nihil earum unde dolore laborum!'
 };
 
 export const aboutQu = {
-  name: 'Qu',
+  name: 'General Qu',
   portfolioURL: 'https://www.generalqu.com/',
   role: 'map design',
 };
