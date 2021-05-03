@@ -11,10 +11,8 @@ const Upload = ({ close }) => {
   const uploadNodes = uploads.map((upload) => {
     if (mapLocation === upload.mapLocation) {
       return (
-        <section 
-          key={upload.mapLocation}
-          className={styles.uploadContainer}>
-          <h1>Upload for {upload.mapLocation}</h1>
+        <section key={upload.mapLocation} className={styles.uploadContainer}>
+          <h1>Upload for <br/>{upload.mapLocation}</h1>
           <section className={styles.description}>
             <ul>
               <li>{uploadDescription.record}</li>
@@ -23,7 +21,7 @@ const Upload = ({ close }) => {
               <li>{uploadDescription.upload}</li>
             </ul>
           </section>
-          <iframe src={upload.url} width="90%"></iframe>
+          <iframe src={upload.url}></iframe>
         </section>
       );
     }
