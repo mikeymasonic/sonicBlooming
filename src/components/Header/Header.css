@@ -118,6 +118,15 @@ a {
 @media (max-width: 1200px) {
   .Header {
 
+    .headerLeft {
+      width: 7vh;
+
+      img { 
+        width: 100%;
+        margin-top: 0.2em;
+      }
+    }
+
     .headerCenter {
       font-size: 1.3em;
     }
@@ -135,6 +144,10 @@ a {
 
     .headerLeft {
       height: 9vh;
+
+      img {
+        width: 80%;
+      }
     }
 
     .headerRight {
@@ -161,7 +174,8 @@ a {
       padding: 0.4em 0 0 0;
 
       img { 
-        height: 70%;
+        width: 70%;
+        margin-top: 0.2em;
       }
     }
 
@@ -183,6 +197,11 @@ a {
 
     .headerLeft {
       height: 9vh;
+
+      img { 
+        margin-top: 0.3em;
+        width: 70%;
+      }
     }
 
     .headerCenter {
@@ -199,6 +218,10 @@ a {
     .headerLeft {
       height: 9vh;
       margin-left: 0.6em;
+
+      img { 
+        width: 70%;
+      }
     }
 
     .headerCenter {
@@ -229,6 +252,11 @@ a {
 
     .headerLeft {
       height: 8vh;
+
+      img { 
+        width: 70%;
+        margin-top: 0.7em;
+      }
     }
 
     .headerCenter {

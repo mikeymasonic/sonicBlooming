@@ -17,10 +17,14 @@ const About = () => {
     <section className={styles.aboutContainer}>
       <section className={styles.About}>
         <h1>About Sonic Blooming</h1>
-        <img src={aboutPage.photoURL} alt="Flower with sensors attached" className={styles.photo}/>
-        <p>{aboutPage.description}</p>
-        <section>
-        Sponsored by: &nbsp;
+
+        <section className={styles.aboutContainer}>
+          <img src={aboutPage.photoURL} alt="Flower with sensors attached" className={styles.photo}/>
+          <p>{aboutPage.description}</p>
+        </section>
+        
+        <section className={styles.creditsContainer}>
+          <span>Sponsored by: &nbsp;</span>
           <a href={aboutSponsors.sponsorOneURL} target="_blank" rel="noopener noreferrer">
             {aboutSponsors.sponsorOne}
           </a> 
@@ -28,33 +32,40 @@ const About = () => {
           <a href={aboutSponsors.sponsorTwoURL} target="_blank" rel="noopener noreferrer">
             {aboutSponsors.sponsorTwo}
           </a> 
-        </section>
 
-        <section>
-        Map designed by: &nbsp;
+          <span className={styles.char}> ⊹ </span><span>Map designed by: &nbsp;</span>
           <a href={aboutQu.portfolioURL} target="_blank" rel="noopener noreferrer">
             {aboutQu.name}
           </a> 
-          &nbsp; Photos by: &nbsp;
+          <span className={styles.char}> ⊹ </span><span>Photos by: &nbsp;</span>
           <a href={aboutClamber.portfolioURL} target="_blank" rel="noopener noreferrer">
             {aboutClamber.name}
           </a> 
         </section>
-        
-        <section className={styles.dev}>
-          <img src={aboutCrystal.photoURL} alt="Crystal Profile Picture"/>
+      </section>
+
+      <section className={styles.About}>
+
+        <h1>
+          {aboutCrystal.name}: {aboutCrystal.role}
+        </h1>
+        <section className={styles.aboutContainer}>
+
           <section className={styles.links}>
             <a href={aboutCrystal.portfolioURL} target="_blank" rel="noopener noreferrer">
               <img src={aboutPage.wwwIcon} alt="portfolio" className={styles.icons}/>
             </a> 
-          </section>   
-          <section>{aboutCrystal.name}: {aboutCrystal.role}</section>
+          </section>
           <p>{aboutCrystal.bio}</p>
+          <img src={aboutCrystal.photoURL} alt="Crystal Profile Picture"/>
         </section>
+      </section>
+      <section className={styles.About}>
+        <h1>{aboutMikey.name}: {aboutMikey.role}</h1>
 
-
-        <section className={styles.dev}>
+        <section className={styles.aboutContainer}>
           <img src={aboutMikey.photoURL} alt="Mikey Profile Picture"/>
+          <p>{aboutMikey.bio}</p>
           <section className={styles.links}>
             <a href={aboutMikey.portfolioURL} target="_blank" rel="noopener noreferrer">
               <img src={aboutPage.wwwIcon} alt="portfolio" className={styles.icons}/>
@@ -65,13 +76,13 @@ const About = () => {
             <a href={aboutMikey.linkedInURL} target="_blank" rel="noopener noreferrer">
               <img src={aboutPage.linkedInIcon} alt="linked in" className={styles.icons}/>
             </a> 
-          </section>   
-          <section>{aboutMikey.name}: {aboutMikey.role}</section>
-          <p>{aboutMikey.bio}</p>
+          </section>  
         </section>
+      </section>
 
-        <section className={styles.dev}>
-          <img src={aboutJena.photoURL} alt="Jena Profile Picture"/>
+      <section className={styles.About}>
+        <h1>{aboutJena.name}: {aboutJena.role}</h1>
+        <section className={styles.aboutContainer}>
           <section className={styles.links}>
             <a href={aboutJena.portfolioURL} target="_blank" rel="noopener noreferrer">
               <img src={aboutPage.wwwIcon} alt="portfolio" className={styles.icons}/>
@@ -83,8 +94,8 @@ const About = () => {
               <img src={aboutPage.linkedInIcon} alt="linked in" className={styles.icons}/>
             </a> 
           </section>   
-          <section>{aboutJena.name}: {aboutJena.role}</section>
           <p>{aboutJena.bio}</p>
+          <img src={aboutJena.photoURL} alt="Jena Profile Picture"/>
         </section>
 
       </section>
