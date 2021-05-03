@@ -215,7 +215,7 @@ exports[`About component renders About 1`] = `
         </p>
         <img
           alt="Jena Profile Picture"
-          src="../images/about/aboutJena.jpg"
+          src="../images/about/aboutJena.jpeg"
         />
       </section>
     </section>
