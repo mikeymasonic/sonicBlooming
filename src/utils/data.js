@@ -110,12 +110,12 @@ export const aboutMikey = {
 
 export const aboutJena = {
   name: 'Jena Boehm',
-  photoURL: 'http://placekitten.com/g/300/600',
+  photoURL: '../images/about/aboutJena.jpeg',
   portfolioURL: 'https://jenaluxboehm.com',
   gitHubURL:'https://github.com/jena-boehm',
   linkedInURL: 'https://www.linkedin.com/in/jenaluxboehm/',
   role: 'app development, design',
-  bio: 'Jena is Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia dolorem ullam, unde aliquam tenetur consequatur ut in esse harum sunt! Atque dolorem provident accusamus sint? Ducimus, magni. Id, enim non? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem animi ex repellendus eaque. Quam blanditiis cum quo sunt laudantium nihil earum unde dolore laborum!'
+  bio: 'Jena is a fullstack software engineer by day / music producer & DJ by night. more stuff about me blah blah'
 };
 
 export const aboutQu = {

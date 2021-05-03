@@ -11,16 +11,24 @@ exports[`About component renders About 1`] = `
       <h1>
         About Sonic Blooming
       </h1>
-      <img
-        alt="Flower with sensors attached"
-        class="photo"
-        src="../images/about/aboutMain.jpg"
-      />
-      <p>
-        Sonic Blooming is a guided meditation on the sound of movement, growth, and transformation in our environments both external and internal. At the time of year when the roses at the International Rose Test Garden are beginning to bloom, plants are generating extra electricity. In my soundwalk I have used a process called Biodata Sonification, attaching sensors to the plant's in the garden to collect their electrical impulses. I have translated these impulses into musical pitches and sound that make up half of the composition visitors will hear. The other half of the composition is made up of field recordings I've collected in the space. Soundwalkers will be able to listen to this soundscape via a weblink as they explore the garden. I am also working with a web developer who is making a website that will host the music, instructions, and have a place where visitors can upload their own field recordings which will be integrated with the soundscapes over the course of the month.
-      </p>
-      <section>
-        Sponsored by:  
+      <section
+        class="aboutContainer"
+      >
+        <img
+          alt="Flower with sensors attached"
+          class="photo"
+          src="../images/about/aboutMain.jpg"
+        />
+        <p>
+          Sonic Blooming is a guided meditation on the sound of movement, growth, and transformation in our environments both external and internal. At the time of year when the roses at the International Rose Test Garden are beginning to bloom, plants are generating extra electricity. In my soundwalk I have used a process called Biodata Sonification, attaching sensors to the plant's in the garden to collect their electrical impulses. I have translated these impulses into musical pitches and sound that make up half of the composition visitors will hear. The other half of the composition is made up of field recordings I've collected in the space. Soundwalkers will be able to listen to this soundscape via a weblink as they explore the garden. I am also working with a web developer who is making a website that will host the music, instructions, and have a place where visitors can upload their own field recordings which will be integrated with the soundscapes over the course of the month.
+        </p>
+      </section>
+      <section
+        class="creditsContainer"
+      >
+        <span>
+          Sponsored by:  
+        </span>
         <a
           href="https://www.thirdangle.org/crystal-quartez-soundwalk"
           rel="noopener noreferrer"
@@ -36,9 +44,14 @@ exports[`About component renders About 1`] = `
         >
           Portland Parks and Recreation
         </a>
-      </section>
-      <section>
-        Map designed by:  
+        <span
+          class="char"
+        >
+           ⊹ 
+        </span>
+        <span>
+          Map designed by:  
+        </span>
         <a
           href="https://www.generalqu.com/"
           rel="noopener noreferrer"
@@ -46,7 +59,14 @@ exports[`About component renders About 1`] = `
         >
           General Qu
         </a>
-          Photos by:  
+        <span
+          class="char"
+        >
+           ⊹ 
+        </span>
+        <span>
+          Photos by:  
+        </span>
         <a
           href="https://clamber.org/"
           rel="noopener noreferrer"
@@ -55,13 +75,16 @@ exports[`About component renders About 1`] = `
           clamber
         </a>
       </section>
+    </section>
+    <section
+      class="About"
+    >
+      <h1>
+        Crystal Cortez: project leader, sound and art design
+      </h1>
       <section
-        class="dev"
+        class="aboutContainer"
       >
-        <img
-          alt="Crystal Profile Picture"
-          src="../images/about/aboutCrystal.jpg"
-        />
         <section
           class="links"
         >
@@ -77,20 +100,31 @@ exports[`About component renders About 1`] = `
             />
           </a>
         </section>
-        <section>
-          Crystal Cortez: project leader, sound and art design
-        </section>
         <p>
           Crystal Cortez is a sound, installation artist & programmer based out of Portland Oregon. She is also a professor of Creative Coding & Sonic Arts at Portland Community College. As someone who never saw herself represented in computer music or creative tech her work focuses on the empowerment of underserved populations gaining access and knowledge around technology. In 2019 she co founded whateverSpace, a maker space offering free and sliding scale workshops and technology rentals with priority going to the BIPOC community. Under her performance moniker Crystal Quartez she transforms field recordings, uses synthesis, audio programming, data sonification, and 3D sound spatialization to produce complex sonic realms. Her practice has recently involved the development of interactive sculptural interfaces and wearable technology that monitor movement and other corporeal methods to liberate the performer from their interfaces. Her art has been shown at NIME, PNCA, Disjecta, PICA, Navel (LA) and more.
         </p>
+        <img
+          alt="Crystal Profile Picture"
+          src="../images/about/aboutCrystal.jpg"
+        />
       </section>
+    </section>
+    <section
+      class="About"
+    >
+      <h1>
+        Michael Romay: app development, design
+      </h1>
       <section
-        class="dev"
+        class="aboutContainer"
       >
         <img
           alt="Mikey Profile Picture"
           src="../images/about/aboutMikey.jpg"
         />
+        <p>
+          Michael Romay is a fullstack engineer, installation artist and musician who makes weird digital visual and interactive art.  He has a baby bird named Wootie that is a very sweet boi.
+        </p>
         <section
           class="links"
         >
@@ -128,20 +162,17 @@ exports[`About component renders About 1`] = `
             />
           </a>
         </section>
-        <section>
-          Michael Romay: app development, design
-        </section>
-        <p>
-          Michael Romay is a fullstack engineer, installation artist and musician who makes weird digital visual and interactive art.  He has a baby bird named Wootie that is a very sweet boi.
-        </p>
       </section>
+    </section>
+    <section
+      class="About"
+    >
+      <h1>
+        Jena Boehm: app development, design
+      </h1>
       <section
-        class="dev"
+        class="aboutContainer"
       >
-        <img
-          alt="Jena Profile Picture"
-          src="http://placekitten.com/g/300/600"
-        />
         <section
           class="links"
         >
@@ -179,12 +210,13 @@ exports[`About component renders About 1`] = `
             />
           </a>
         </section>
-        <section>
-          Jena Boehm: app development, design
-        </section>
         <p>
-          Jena is Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia dolorem ullam, unde aliquam tenetur consequatur ut in esse harum sunt! Atque dolorem provident accusamus sint? Ducimus, magni. Id, enim non? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem animi ex repellendus eaque. Quam blanditiis cum quo sunt laudantium nihil earum unde dolore laborum!
+          Jena is a fullstack software engineer by day / music producer & DJ by night. more stuff about me blah blah
         </p>
+        <img
+          alt="Jena Profile Picture"
+          src="../images/about/aboutJena.jpeg"
+        />
       </section>
     </section>
   </section>

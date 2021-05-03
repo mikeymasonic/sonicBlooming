@@ -24,9 +24,9 @@ const Header = (props) => {
   return (
     <header className={styles.Header}>
       <div className={styles.headerLeft}>
-        {/* <Link to="/"> */}
-        <img src='./images/rose-shape.png' />
-        {/* </Link> */}
+        <Link to="/">
+          <img src='./images/rose-shape.png' />
+        </Link>
       </div>
 
       <div className={styles.headerCenter}>
