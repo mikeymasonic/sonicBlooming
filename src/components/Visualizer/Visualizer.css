@@ -5,13 +5,11 @@
 canvas {
   display: block;
   /* background-color: lime; */
-  background: rgba(25, 2, 48, 0.92);
+  background: rgba(38,4,71,0.9);
   margin:0;
   left:0;
-  height: auto;
-  /* width: 100vw; */
 }
-
+ 
 .close {
   position: absolute;
   right: 10vh;
