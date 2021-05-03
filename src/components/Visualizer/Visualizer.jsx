@@ -56,7 +56,7 @@ const Visualizer = ({ forwardRef }) => {
     canvas.height = document.body.clientHeight;
 
     const centerX = canvas.width / 2;
-    const centerY = canvas.height / 5;
+    const centerY = canvas.height / 3;
     const radius = document.body.clientWidth <= 425 ? 120 : 140;
     const steps = document.body.clientWidth <= 425 ? 60 : 120;
     const interval = 360 / steps;

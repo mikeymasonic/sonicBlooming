@@ -24,14 +24,15 @@ exports[`Map component renders Map 1`] = `
         </section>
       </section>
     </div>
-    <p
-      class="instructions"
+    <div
+      class="instructionsContainer"
     >
-      ---
-      <br />
-      <br />
-      Select a garden to listen to:
-    </p>
+      <p
+        class="instructions"
+      >
+        Select a garden to listen to:
+      </p>
+    </div>
     <section
       class="mapClass"
     >
