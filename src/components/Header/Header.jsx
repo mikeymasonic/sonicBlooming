@@ -24,8 +24,8 @@ const Header = (props) => {
   return (
     <header className={styles.Header}>
       <div className={styles.headerLeft}>
-        <Link className={styles.navLink} to="/">
-          <img src='./images/rose-shape.png' height='60%' />
+        <Link to="/">
+          <img src='./images/rose-shape.png' />
         </Link>
       </div>
 
