@@ -82,17 +82,17 @@ export const aboutSite = {
 };
 
 export const aboutPage = {
-  photoURL: '../src/assets/about/aboutMain.jpg',
-  gitHubIcon: '../src/assets/about/githubIcon.png',
-  linkedInIcon: '../src/assets/about/linkedInIcon.png',
-  wwwIcon: '../src/assets/about/wwwIcon.png',
+  photoURL: '../images/about/aboutMain.jpg',
+  gitHubIcon: '../images/about/githubIcon.png',
+  linkedInIcon: '../images/about/linkedInIcon.png',
+  wwwIcon: '../images/about/wwwIcon.png',
   description: 'Sonic Blooming is a guided meditation on the sound of movement, growth, and transformation in our environments both external and internal. At the time of year when the roses at the International Rose Test Garden are beginning to bloom, plants are generating extra electricity. In my soundwalk I have used a process called Biodata Sonification, attaching sensors to the plant\'s in the garden to collect their electrical impulses. I have translated these impulses into musical pitches and sound that make up half of the composition visitors will hear. The other half of the composition is made up of field recordings I\'ve collected in the space. Soundwalkers will be able to listen to this soundscape via a weblink as they explore the garden. I am also working with a web developer who is making a website that will host the music, instructions, and have a place where visitors can upload their own field recordings which will be integrated with the soundscapes over the course of the month.'
 };
 
 
 export const aboutCrystal = {
   name: 'Crystal Cortez',
-  photoURL: '../src/assets/about/aboutCrystal.jpg',
+  photoURL: '../images/about/aboutCrystal.jpg',
   portfolioURL: 'https://www.crystalcortez.com/',
   role: 'project leader, sound and art design',
   bio: 'Crystal Cortez is a sound, installation artist & programmer based out of Portland Oregon. She is also a professor of Creative Coding & Sonic Arts at Portland Community College. As someone who never saw herself represented in computer music or creative tech her work focuses on the empowerment of underserved populations gaining access and knowledge around technology. In 2019 she co founded whateverSpace, a maker space offering free and sliding scale workshops and technology rentals with priority going to the BIPOC community. Under her performance moniker Crystal Quartez she transforms field recordings, uses synthesis, audio programming, data sonification, and 3D sound spatialization to produce complex sonic realms. Her practice has recently involved the development of interactive sculptural interfaces and wearable technology that monitor movement and other corporeal methods to liberate the performer from their interfaces. Her art has been shown at NIME, PNCA, Disjecta, PICA, Navel (LA) and more.'
@@ -100,7 +100,7 @@ export const aboutCrystal = {
 
 export const aboutMikey = {
   name: 'Michael Romay',
-  photoURL: '../src/assets/about/aboutMikey.jpg',
+  photoURL: '../images/about/aboutMikey.jpg',
   portfolioURL: 'https://michaelromay.dev/',
   gitHubURL:'https://github.com/mikeymasonic',
   linkedInURL: 'https://www.linkedin.com/in/michaelromay/',
