@@ -110,7 +110,7 @@ export const aboutMikey = {
 
 export const aboutJena = {
   name: 'Jena Boehm',
-  photoURL: '../images/about/aboutJena.jpg',
+  photoURL: '../images/about/aboutJena.jpeg',
   portfolioURL: 'https://jenaluxboehm.com',
   gitHubURL:'https://github.com/jena-boehm',
   linkedInURL: 'https://www.linkedin.com/in/jenaluxboehm/',
