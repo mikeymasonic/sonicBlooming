@@ -10,9 +10,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 60%;
+    width: 80%;
+    height: 85vh;
     text-align: justify;
-    padding: 1.5em;
+    padding: 1em 1.5em 1em 1.5em;
     margin-bottom: 2em;
     background: linear-gradient(120deg, #d3b1fb, #d6b1fb, #e0b3fb, #edb5fb, #fbb7fa, #fbbaea, #fcbcdb, #fcbfce, #fcc1c3, #fcccc3, #fcd3c5, #fcd6c5);
     box-shadow: 0px 0px 4px 4px #070E0D;
@@ -22,32 +23,63 @@
     animation: scale 1.5s;
     -webkit-animation: scale 1.5s;
     -moz-animation: scale 2s; 
+
+    a { 
+      color: #6109AE;
+    }
+
+    h1 { 
+      font-size: 2em;
+      margin: 0 0 0.5em 0;
+    }
+
+    .aboutContainer {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      height: 80%;
+      width: 100%;
+
+      p {
+        -webkit-animation: fadein 5s; 
+        -moz-animation: fadein 5s; 
+        animation: fadein 5s;
+        margin: 3em;
+        font-size: 1.2em;
+      }
+
+      img {
+        display: block;
+        height: 100%;
+        width: auto;
+        border-style: solid;
+        border-width: 5px;
+        border-radius: 10px;
+        margin: 0 auto;
+      }
+    
+      img {
+        display: block;
+        /* margin-top: 10em; */
+        width: 40%;
+        border-style: solid;
+        border-width: 5px;
+        /* border-radius: 90%; */
+        margin: 0 auto;
+      }
+    }
+
+    .creditsContainer {
+      margin: 1em 0 0 0;
+      font-size: 1.1em;
+
+      .char {
+        margin: 0 0.8em 0 0.8em;
+      }
+    }
   }
 
-  .About > p {
-    -webkit-animation: fadein 5s; 
-    -moz-animation: fadein 5s; 
-    animation: fadein 5s;
-  }
-
-  .photo {
-    display: block;
-    width: 50vw;
-    border-style: solid;
-    border-width: 5px;
-    /* border-radius: 90%; */
-    margin: 0 auto;
-  }
-
-  .dev img {
-    display: block;
-    /* margin-top: 10em; */
-    width: 40vw;
-    border-style: solid;
-    border-width: 5px;
-    /* border-radius: 90%; */
-    margin: 0 auto;
-  }
   .links img {
     width: 3vw;
     margin-bottom: 5px;
