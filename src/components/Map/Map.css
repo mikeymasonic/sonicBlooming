@@ -22,16 +22,21 @@ body {
   -webkit-animation: scale 1.5s;
   -moz-animation: scale 2s; 
 
-  .instructions {
-    width: 100%;
-    text-align: center;
-    margin: 0 0 2em 0;
-    color: #FBC9B1;
-    font-size: 1.2em;
-    letter-spacing: 0.15em;
-    -webkit-animation: fadein 5s; 
-    -moz-animation: fadein 5s; 
-    animation: fadein 5s;
+  .instructionsContainer {
+    width: 60%;
+    margin: 0;
+
+    .instructions {
+      width: 100%;
+      text-align: center;
+      color: #FBC9B1;
+      font-size: 0.9em;
+      letter-spacing: 0.15em;
+      margin: 0 0 0.5em 0;
+      -webkit-animation: fadein 5s; 
+      -moz-animation: fadein 5s; 
+      animation: fadein 5s;
+    }
   }
 
 .mapClass {
@@ -69,6 +74,11 @@ body {
     stroke-linecap: round; */
 
   }
+
+  svg a path {
+    animation: fill 4s infinite ease-in-out;
+  }
+
   svg a:focus,
   svg a:hover {
     outline: none;
@@ -95,6 +105,15 @@ body {
 
   .mapContainer {
 
+    .instructionsContainer {
+
+      .instructions {
+       font-size: 1em;
+       margin: 1em 0 1em 0;
+       line-height: 0;
+      }
+    }
+
     .mapClass {
      max-width: 85%;
      margin-top: 1em;
@@ -118,11 +137,46 @@ body {
 
   .mapContainer {
 
+    .instructionsContainer {
+
     .instructions {
      font-size: 0.8em;
+     margin: 1em 0 0 0;
+      line-height: 0;
     }
   }
+  }
 
+}
+
+@media (max-width: 416px) {
+
+  .mapContainer {
+
+    .instructionsContainer {
+
+    .instructions {
+     font-size: 0.7em;
+     margin: 1em 0 0 0;
+     line-height: 0;
+    }
+  }
+  }
+}
+
+@media (max-width: 360px) {
+
+  .mapContainer {
+
+    .instructionsContainer {
+
+    .instructions {
+     font-size: 0.4em;
+     margin: 1em 0 0 0;
+     line-height: 0;
+    }
+  }
+  }
 }
 
 @keyframes fadein {
@@ -152,3 +206,15 @@ body {
       -webkit-transform: scale(1.0);
   }
 }
+
+@keyframes fill {
+  0%{
+    fill:rgba(40,4,78,0);
+  }
+  50%{
+    fill:rgba(40,4,78,0.2);
+  }
+  100%{
+    fill: rgba(40,4,78,0);
+  }
+  }

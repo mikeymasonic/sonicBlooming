@@ -8,13 +8,9 @@ exports[`Header component renders Header 1`] = `
     <div
       class="headerLeft"
     >
-      <a
-        href="/"
-      >
-        <img
-          src="./images/rose-shape.png"
-        />
-      </a>
+      <img
+        src="./images/rose-shape.png"
+      />
     </div>
     <div
       class="headerCenter"

@@ -8,13 +8,9 @@ exports[`App component renders App 1`] = `
     <div
       class="headerLeft"
     >
-      <a
-        href="/"
-      >
-        <img
-          src="./images/rose-shape.png"
-        />
-      </a>
+      <img
+        src="./images/rose-shape.png"
+      />
     </div>
     <div
       class="headerCenter"
@@ -249,14 +245,15 @@ exports[`App component renders App 1`] = `
         </section>
       </section>
     </div>
-    <p
-      class="instructions"
+    <div
+      class="instructionsContainer"
     >
-      ---
-      <br />
-      <br />
-      Select a garden to listen to:
-    </p>
+      <p
+        class="instructions"
+      >
+        Select a garden to listen to:
+      </p>
+    </div>
     <section
       class="mapClass"
     >
