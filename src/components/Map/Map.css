@@ -5,7 +5,7 @@ body {
   background: linear-gradient(270deg, rgba(40,4,78,1) 0%, rgb(34, 4, 66) 100%);
   margin: 0;
   height: 100vh;
-  width: 100vw;
+  width: 99.9vw;
   font-family: 'Kanit', sans-serif;
 
 }
@@ -27,7 +27,7 @@ body {
     margin: 0;
 
     .instructions {
-      width: 100%;
+      width: 99%;
       text-align: center;
       color: #FBC9B1;
       font-size: 0.9em;
