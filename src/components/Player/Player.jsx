@@ -38,9 +38,24 @@ const Player = () => {
   const isFirefoxCheck = typeof InstallTrigger !== 'undefined';
   // console.log('is firefox: ', isFirefox);
 
+  const isIOSCheck =       
+  ['iPad Simulator',
+    'iPhone Simulator',
+    'iPod Simulator',
+    'iPad',
+    'iPhone',
+    'iPod'
+  ].includes(navigator.platform)
+// iPad on iOS 13 detection
+|| (navigator.userAgent.includes('Mac') && 'ontouchend' in document);
+
   useEffect(() => {
     if (isSafariCheck) {
       console.log('we on safari');
+      handleIsSafari(true);
+    }
+    if (isIOSCheck) {
+      console.log('we on ios');
       handleIsSafari(true);
     }
     if (isFirefoxCheck) {
