@@ -67,7 +67,7 @@
 
       img {
         display: block;
-        height: 65vh;
+        height: 30em;
         width: auto;
         border-radius: 10px;
         margin: 0;
@@ -76,7 +76,7 @@
       }
 
       .crystalBio {
-        font-size: 1.1em;
+        font-size: 1.2em;
       }
 
       .devBio {
@@ -107,32 +107,419 @@
 
     .creditsContainer {
       margin: 0.9em 0 1.1em 0;
-      font-size: 1.1em;
-
-      .char {
-        margin: 0 0.8em 0 0.8em;
-      }
+      font-size: 1em;
+      text-align: center;
     }
   }
 }
 
 @media (max-width: 1200px) {
-  .aboutContainer {
+  .aboutPage {
 
     .About {
-      width: 70%;
-      padding: 0.5em 1em 1em 1em;
+      width: 80%;
+
+      p { 
+        font-size: 1em;
+        }
+
+        .aboutContainer {
+
+          .crystalBio {
+            font-size: 1em;
+          }
+
+          .devBio {
+            font-size: 1.2em;
+          }
+        }
+
+      .creditsContainer {
+        font-size: 0.8em;
+      }
     }
   }
 }
 
-@media (max-width: 667px) {
-  .aboutContainer {
+@media (max-width: 1070px) {
+  .aboutPage {
 
     .About {
-      width: 85%;
-      padding: 0.5em 1em 1em 1em;
-      font-size: 0.9em;
+      width: 80%;
+
+      p { 
+        font-size: 0.9em;
+        }
+
+        .aboutContainer {
+
+          img {
+            height: 22em;
+          }
+
+          .crystalBio {
+            font-size: 0.8em;
+          }
+
+          .devBio {
+            font-size: 1.1em;
+          }
+
+          .devPhotos {
+            height: 22em;
+          }
+        }
+
+      .creditsContainer {
+        font-size: 0.7em;
+      }
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .aboutPage {
+
+    .About {
+
+      h1 { 
+        font-size: 1.5em;
+      }
+
+      h2 { 
+        font-size: 1.5em;
+      }
+      
+      div { 
+        font-size: 0.7em;
+      }
+
+      p { 
+        font-size: 0.8em;
+        }
+
+        .aboutContainer {
+
+          img {
+            height: 20em;
+          }
+
+          .crystalBio {
+            font-size: 0.7em;
+          }
+
+          .devBio {
+            font-size: 1em;
+          }
+
+          .devPhotos {
+            height: 20em;
+          }
+        }
+
+      .links img {
+        width: 1.3em;
+        margin-top: 0.3em;
+        margin-bottom: 1em;
+      }
+
+      .creditsContainer {
+        font-size: 0.6em;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutPage {
+
+    .About {
+      width: 90%;
+    }
+  }
+}
+
+@media (max-width: 730px) {
+  .aboutPage {
+
+    .About {
+      width: 70%;
+
+      h1 {
+        margin-bottom: 1em;
+        font-size: 1.8em;
+      }
+
+      h2 {
+        font-size: 1.8em;
+      }
+
+      p { 
+        font-size: 0.9em;
+        width: 90%;
+        margin-top: 2em;
+        }
+
+      .aboutContainer {
+        flex-direction: column;
+
+        img {
+          height: 25em;
+        }
+
+        .crystalBio {
+          font-size: 0.9em;
+          width: 90%;
+        }
+
+        .devBio {
+          font-size: 1em;
+        }
+
+        .devPhotos {
+          height: 25em;
+        }
+      }
+
+      .creditsContainer {
+        font-size: 0.8em;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .aboutPage {
+
+    .About {
+      width: 90%;
+
+      h1 {
+        font-size: 1.5em;
+      }
+
+      h2 {
+        font-size: 1.5em;
+      }
+
+      p { 
+        font-size: 0.8em;
+        width: 90%;
+        }
+
+      .aboutContainer {
+
+        img {
+          height: 25em;
+        }
+
+        .crystalBio {
+          font-size: 0.78m;
+          width: 90%;
+        }
+
+        .devBio {
+          font-size: 0.9em;
+          width: 90%;
+        }
+
+        .devPhotos {
+          height: 24em;
+        }
+      }
+
+      .creditsContainer {
+        font-size: 0.8em;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 416px) {
+  .aboutPage {
+
+    .About {
+
+      h1 {
+        margin-bottom: 1em;
+        font-size: 1.4em;
+      }
+
+      h2 {
+        font-size: 1.5em;
+      }
+
+      p { 
+        font-size: 0.9em;
+        width: 100%;
+        }
+
+      .aboutContainer {
+
+        img {
+          height: 31em;
+        }
+
+        .crystalBio {
+          font-size: 0.9em;
+          width: 100%;
+        }
+
+        .devBio {
+          font-size: 0.9em;
+        }
+
+        .devPhotos {
+          height: 29em;
+        }
+      }
+
+      .creditsContainer {
+        font-size: 0.8em;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .aboutPage {
+
+    .About {
+
+      p { 
+        font-size: 0.8em;
+        }
+
+      .aboutContainer {
+
+        img {
+          height: 27em;
+        }
+
+        .crystalBio {
+          font-size: 0.8em;
+        }
+
+        .devPhotos {
+          height: 26em;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .aboutPage {
+
+    .About {
+
+      h1 {
+        margin-bottom: 1em;
+        font-size: 1.2em;
+      }
+
+      h2 {
+        font-size: 1.3em;
+      }
+
+      p { 
+        font-size: 0.8em;
+        width: 100%;
+        }
+
+      .aboutContainer {
+
+        img {
+          height: 27em;
+        }
+
+        .crystalBio {
+          font-size: 0.8em;
+          width: 100%;
+        }
+
+        .devBio {
+          font-size: 0.8em;
+        }
+
+        .devPhotos {
+          height: 26em;
+        }
+      }
+
+      .creditsContainer {
+        font-size: 0.8em;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .aboutPage {
+
+    .About {
+
+      .aboutContainer {
+
+        img {
+          height: 25em;
+        }
+
+        .devPhotos {
+          height: 24em;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 280px) {
+  .aboutPage {
+
+    .About {
+
+      h1 {
+        margin-bottom: 1em;
+        font-size: 1.1em;
+      }
+
+      h2 {
+        font-size: 1.3em;
+      }
+
+      p { 
+        font-size: 0.7em;
+        width: 100%;
+        }
+
+      .aboutContainer {
+
+        img {
+          height: 20em;
+        }
+
+        .crystalBio {
+          font-size: 0.7em;
+          width: 100%;
+        }
+
+        .devBio {
+          font-size: 0.8em;
+        }
+
+        .devPhotos {
+          height: 20em;
+        }
+      }
+
+      .creditsContainer {
+        font-size: 0.6em;
+        text-align: center;
+      }
     }
   }
 }

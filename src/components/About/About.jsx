@@ -33,11 +33,16 @@ const About = () => {
             {aboutSponsors.sponsorTwo}
           </a> 
 
-          <span className={styles.char}> ⊹ </span><span>Map designed by: &nbsp;</span>
+          <br/>
+
+          <span>Map designed by: &nbsp;</span>
           <a href={aboutQu.portfolioURL} target="_blank" rel="noopener noreferrer">
             {aboutQu.name}
           </a> 
-          <span className={styles.char}> ⊹ </span><span>Photos by: &nbsp;</span>
+
+          <br/> 
+
+          <span>Photos by: &nbsp;</span>
           <a href={aboutClamber.portfolioURL} target="_blank" rel="noopener noreferrer">
             {aboutClamber.name}
           </a> 
@@ -59,8 +64,8 @@ const About = () => {
         </section>
 
         <section className={styles.aboutContainer}>
-          <p className={styles.crystalBio}>{aboutCrystal.bio}</p>
           <img src={aboutCrystal.photoURL} alt="Crystal Profile Picture" className={styles.devPhotos} />
+          <p className={styles.crystalBio}>{aboutCrystal.bio}</p>
         </section>
       </section>
 
@@ -109,8 +114,8 @@ const About = () => {
         </section>   
 
         <section className={styles.aboutContainer}>
-          <p className={styles.devBio}>{aboutJena.bio}</p>
           <img src={aboutJena.photoURL} alt="Jena Profile Picture" className={styles.devPhotos} />
+          <p className={styles.devBio}>{aboutJena.bio}</p>
         </section>
 
       </section>
