@@ -94,7 +94,7 @@ export const aboutCrystal = {
   name: 'Crystal Cortez',
   photoURL: '../images/about/aboutCrystal.jpg',
   portfolioURL: 'https://www.crystalcortez.com/',
-  role: 'project leader, sound and art design',
+  role: 'Project Leader, Sound & Art Design',
   bio: 'Crystal Cortez is a sound, installation artist & programmer based out of Portland Oregon. She is also a professor of Creative Coding & Sonic Arts at Portland Community College. As someone who never saw herself represented in computer music or creative tech her work focuses on the empowerment of underserved populations gaining access and knowledge around technology. In 2019 she co founded whateverSpace, a maker space offering free and sliding scale workshops and technology rentals with priority going to the BIPOC community. Under her performance moniker Crystal Quartez she transforms field recordings, uses synthesis, audio programming, data sonification, and 3D sound spatialization to produce complex sonic realms. Her practice has recently involved the development of interactive sculptural interfaces and wearable technology that monitor movement and other corporeal methods to liberate the performer from their interfaces. Her art has been shown at NIME, PNCA, Disjecta, PICA, Navel (LA) and more.'
 };
 
@@ -104,7 +104,7 @@ export const aboutMikey = {
   portfolioURL: 'https://michaelromay.dev/',
   gitHubURL:'https://github.com/mikeymasonic',
   linkedInURL: 'https://www.linkedin.com/in/michaelromay/',
-  role: 'app development, design',
+  role: 'App Development & Design',
   bio: 'Michael Romay is a fullstack engineer, installation artist and musician who makes weird digital visual and interactive art.  He has a baby bird named Wootie that is a very sweet boi.'
 };
 
@@ -114,8 +114,8 @@ export const aboutJena = {
   portfolioURL: 'https://jenaluxboehm.com',
   gitHubURL:'https://github.com/jena-boehm',
   linkedInURL: 'https://www.linkedin.com/in/jenaluxboehm/',
-  role: 'app development, design',
-  bio: 'Jena is a fullstack software engineer by day / music producer & DJ by night. more stuff about me blah blah'
+  role: 'App Development & Design',
+  bio: 'Jena Boehm is a fullstack software engineer with an eye for front end design. She also produces and performs electronic music under the moniker Luxora Major. Fueled by her love for audio engineering and sound/visual design, she thrives in environments that fuse technology and art together in innovative ways.'
 };
 
 export const aboutQu = {
