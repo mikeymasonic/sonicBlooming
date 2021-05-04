@@ -1,17 +1,18 @@
-.aboutContainer {
+.aboutPage {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100vw;
+  color: rgba(40,4,78,1);
 
-.About {
+  .About {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 80%;
-    height: 85vh;
+    height: fit-content;
     text-align: justify;
     padding: 1em 1.5em 1em 1.5em;
     margin-bottom: 2em;
@@ -28,10 +29,32 @@
       color: #6109AE;
     }
 
+    a:hover { 
+      color: #fe083f;
+    }
+
     h1 { 
       font-size: 2em;
-      margin: 0 0 0.5em 0;
+      margin: 0.1em 0 0.5em 0;
     }
+
+    h2 {
+      font-size: 2.5em;
+      margin: 0;
+    }
+
+    div { 
+      font-size: 1em;
+      font-style: italic;
+    }
+
+    p {
+        -webkit-animation: fadein 5s; 
+        -moz-animation: fadein 5s; 
+        animation: fadein 5s;
+        margin: 1em 3em 1em 3em;
+        font-size: 1.3em;
+      }
 
     .aboutContainer {
       display: flex;
@@ -40,52 +63,56 @@
       align-items: center;
       height: 80%;
       width: 100%;
-
-      p {
-        -webkit-animation: fadein 5s; 
-        -moz-animation: fadein 5s; 
-        animation: fadein 5s;
-        margin: 3em;
-        font-size: 1.2em;
-      }
+      margin-bottom: 1em;
 
       img {
         display: block;
-        height: 100%;
+        height: 65vh;
         width: auto;
-        border-style: solid;
-        border-width: 5px;
         border-radius: 10px;
-        margin: 0 auto;
+        margin: 0;
+        border: 4px outset rgba(40,4,78,1);
+        box-shadow: 1px 1px 5px 1px rgba(40,4,78,1);
       }
-    
-      img {
-        display: block;
-        /* margin-top: 10em; */
-        width: 40%;
-        border-style: solid;
-        border-width: 5px;
-        /* border-radius: 90%; */
-        margin: 0 auto;
+
+      .crystalBio {
+        font-size: 1.1em;
+      }
+
+      .devBio {
+        font-size: 1.4em;
+      }
+
+      .devPhotos {
+        height: 55vh;
       }
     }
 
+    .links img {
+      width: 1.8em;
+      margin: 0.8em 0.3em 0 0.3em;
+      height: auto;
+      display: inline-flex;
+      text-align: right;
+      border-style: none;
+    }
+
+    .links img:hover {
+      transform: scale(1.1);
+    }
+
+    .links img:active {
+      transform: scale(0.95);
+    }
+
     .creditsContainer {
-      margin: 1em 0 0 0;
+      margin: 0.9em 0 1.1em 0;
       font-size: 1.1em;
 
       .char {
         margin: 0 0.8em 0 0.8em;
       }
     }
-  }
-
-  .links img {
-    width: 3vw;
-    margin-bottom: 5px;
-    display: inline-flex;
-    text-align: right;
-    border-style: none;
   }
 }
 
