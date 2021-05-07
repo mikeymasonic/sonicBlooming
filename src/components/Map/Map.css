@@ -76,7 +76,7 @@ body {
   }
 
   svg a path {
-    animation: fill 4s infinite ease-in-out;
+    animation: fill 3s infinite ease-in-out;
   }
 
   svg a:focus,
@@ -209,12 +209,16 @@ body {
 
 @keyframes fill {
   0%{
-    fill:rgba(40,4,78,0);
+    fill:rgba(218, 251, 246, 0);
+    stroke: rgba(218, 251, 246,0);
   }
   50%{
-    fill:rgba(40,4,78,0.2);
+    fill:rgba(218, 251, 246,0.3);
+    stroke: rgb(1218, 251, 246, 0.4);
+    stroke-width: 8;
   }
   100%{
-    fill: rgba(40,4,78,0);
+    fill: rgba(218, 251, 246,0);
+    stroke: rgba(218, 251, 246,0);
   }
   }
