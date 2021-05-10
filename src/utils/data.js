@@ -57,19 +57,19 @@ export const uploads = [
   },
   {
     mapLocation: 'Royal Rosarian Garden',
-    url: 'https://script.google.com/macros/s/AKfycbzE7k8jR6lb-Hkt4lbdk_iRpXAqSBozQhhV3Y3oD7-g15Qe11SefjdV0r_lr7Kianek5w/exec',
+    url: 'https://script.google.com/macros/s/AKfycbwfBhCIxLF9TGK_fXR8qPVxYyuqczU2Wb2OuvE7TQTPPfQtqpWL5XlbR31q8y4xitJfxA/exec',
   },
   {
     mapLocation: 'Rose Test Garden',
-    url: 'https://script.google.com/macros/s/AKfycbzt0wh2_HScz-TN_xAL_ozGlz_SqNL5iync0KBjm6zJLs_ovykDaV8pVlWYzbTSFASevw/exec',
+    url: 'https://script.google.com/macros/s/AKfycbwzrhv3TI-Eg3gGVff0c0Qqtbx5n21l6W5L9PdVZO-DKXUd_EKH4H2uw2iYHYsbAh11wQ/exec',
   },
   {
     mapLocation: 'Shakespearean Garden',
-    url: 'https://script.google.com/macros/s/AKfycbz_tpHSiChLQrALl-kO9wr79kZhbtkEf6glLa7K7_RwYoNoSm0JRuAKzpfF75699CUx/exec',
+    url: 'https://script.google.com/macros/s/AKfycbwiOHCYu9Z8lVndxPz1VElDp1c8msfTa87Af_yX7nvDrNYGW45eHDjtl68vNNESy5KS/exec',
   },
   {
     mapLocation: 'Gold Medal Garden',
-    url: 'https://script.google.com/macros/s/AKfycbxEQ23yuVBYa4tXISw2KocJdRaf7L2QCdLUkwx7YcbPMLhKD2ps01pcDyyN7Di-gpobAg/exec',
+    url: 'https://script.google.com/macros/s/AKfycbxoxaB62nTH1IGLrHsoXbtW3UHoEswFCid9fU1-VvbOKPpJ-s4xpoJW3VCi2xd8LwC4Yg/exec',
   },
 ];
 
