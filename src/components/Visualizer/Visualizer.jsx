@@ -3,7 +3,8 @@ import PropTypes from 'prop-types';
 import { 
   useVisualizerDisplay,
   useHandleVisualizerDisplay,
-  useIsSafari,
+  // useIsSafari,
+  useIsIOS13,
   useIsFirefox
 } from '../../hooks/DataProvider';
 import styles from './Visualizer.css';
@@ -14,23 +15,24 @@ const Visualizer = ({ forwardRef }) => {
   const canvasRef = useRef(null);
   const visualizerDisplay = useVisualizerDisplay();
   const handleVisualizerDisplay = useHandleVisualizerDisplay();
-  const isSafari = useIsSafari();
+  // const isSafari = useIsSafari();
   const isFirefox = useIsFirefox();
+  const isIOS13 = useIsIOS13();
 
   const handleClose = () => {
     handleVisualizerDisplay(false);
   };
 
   useEffect(() => {
-    if (isSafari || isFirefox) {
+    if (isIOS13 || isFirefox) {
       return console.log('visualizer disabled');
     }
     // -------------
     // Audio stuff
     // -------------
+    const AudioContext = window.AudioContext || window.webkitAudioContext || false;
     const audio = forwardRef.current.audio.current;
     // audio.context = audio.context || new AudioContext();
-    const AudioContext = window.AudioContext || window.webkitAudioContext || false;
 
     console.log(AudioContext);
 
@@ -39,7 +41,7 @@ const Visualizer = ({ forwardRef }) => {
     // }
 
     if (AudioContext) {
-      context =  new AudioContext();
+      context = new AudioContext();
     } else {
       // Alert the user
       alert('Sorry, but the Web Audio API is not supported by your browser. Please, consider upgrading to the latest version or downloading Google Chrome or Mozilla Firefox');

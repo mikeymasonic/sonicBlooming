@@ -6,9 +6,11 @@ import {
   useVisualizerDisplay,
   useHandleVisualizerDisplay,
   useIsSafari,
+  useIsIOS13,
   useHandleIsSafari,
   useIsFirefox,
-  useHandleIsFirefox
+  useHandleIsFirefox,
+  useHandleIsIOS13
 } from '../../hooks/DataProvider';
 import Playlist from '../Playlist/Playlist';
 import Visualizer from '../Visualizer/Visualizer';
@@ -26,6 +28,8 @@ const Player = () => {
   const handleIsSafari = useHandleIsSafari();
   const isFirefox = useIsFirefox();
   const handleIsFirefox = useHandleIsFirefox();
+  const isIOS13 = useIsIOS13();
+  const handleIsIOS13 = useHandleIsIOS13();
   // eslint-disable-next-line no-undef
   // const isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === '[object SafariRemoteNotification]'; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
 
@@ -41,36 +45,42 @@ const Player = () => {
 
   if (/iP(hone|od|ad)/.test(navigator.platform)) {
     const v = (navigator.appVersion).match(/OS (\d+)_(\d+)_?(\d+)?/);
-    version = [parseInt(v[1], 10), parseInt(v[2], 10), parseInt(v[3] || 0, 10)];
+    version = [parseInt(v[1], 10)];
+    //if you want all of the os numbers uncomment below
+    // version = [parseInt(v[1], 10), parseInt(v[2], 10), parseInt(v[3] || 0, 10)];
   }
-  console.log('iOS version :' + version);
+  console.log('iOS version : ' + version);
 
   const isFirefoxCheck = typeof InstallTrigger !== 'undefined';
   // console.log('is firefox: ', isFirefox);
 
-  const isIOSCheck =       
-  ['iPad Simulator',
-    'iPhone Simulator',
-    'iPod Simulator',
-    'iPad',
-    'iPhone',
-    'iPod'
-  ].includes(navigator.platform)
-// iPad on iOS 13 detection
-|| (navigator.userAgent.includes('Mac') && 'ontouchend' in document);
+  //   const isIOSCheck =       
+  //   ['iPad Simulator',
+  //     'iPhone Simulator',
+  //     'iPod Simulator',
+  //     'iPad',
+  //     'iPhone',
+  //     'iPod'
+  //   ].includes(navigator.platform)
+  // // iPad on iOS 13 detection
+  // || (navigator.userAgent.includes('Mac') && 'ontouchend' in document);
 
   useEffect(() => {
     if (isSafariCheck) {
       console.log('we on safari');
       handleIsSafari(true);
     }
-    if (isIOSCheck) {
-      console.log('we on ios');
-      handleIsSafari(true);
-    }
+    // if (isIOSCheck) {
+    //   console.log('we on ios');
+    //   handleIsSafari(true);
+    // }
     if (isFirefoxCheck) {
       console.log('we on firefox');
       handleIsFirefox(true);
+    }
+    if (version === 13) {
+      console.log('we on iOS ', version);
+      handleIsIOS13(true);
     }
   }, []);
 
@@ -90,7 +100,7 @@ const Player = () => {
           <section className={styles.Player} style={{ visibility: playerVisible ? 'visible' : 'collapse', height: playerVisible ? 70 : 0 }}>
 
             <section className={styles.playerControls}>
-              {isSafari &&               
+              {isSafari || isIOS13 &&        
               <AudioPlayer
                 ref={player}
                 className={styles.rhap_container}
@@ -135,7 +145,7 @@ const Player = () => {
                 }
               /> }
 
-              {!isFirefox && !isSafari &&
+              {!isFirefox && !isIOS13 &&
               <section>
                 {!visualizerDisplay
                   ?
