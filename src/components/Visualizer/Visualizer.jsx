@@ -30,9 +30,9 @@ const Visualizer = ({ forwardRef }) => {
     // -------------
     // Audio stuff
     // -------------
+    const AudioContext = window.AudioContext || window.webkitAudioContext || false;
     const audio = forwardRef.current.audio.current;
     // audio.context = audio.context || new AudioContext();
-    const AudioContext = window.AudioContext || window.webkitAudioContext || false;
 
     console.log(AudioContext);
 
