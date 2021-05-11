@@ -17,7 +17,7 @@ import Visualizer from '../Visualizer/Visualizer';
 import styles from './Player.css';
 
 const Player = () => {
-  let version;
+  let version = 0;
   const song = useSong();
   const playerVisible = usePlayerVisible();
   const player = createRef();
@@ -65,7 +65,7 @@ const Player = () => {
       handleIsSafari(true);
     }
 
-  }, []);
+  }, [version]);
 
   const handleFullscreen = () => {
     handleVisualizerDisplay(!visualizerDisplay);
