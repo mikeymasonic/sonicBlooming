@@ -44,6 +44,7 @@ const Header = (props) => {
             fill="none" 
             stroke="rgba(40,4,78,1)"
             height="3em"
+            width="3em"
             viewBox="0 0 24 24" 
             strokeLinecap="round" 
             strokeLinejoin="round" 
