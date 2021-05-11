@@ -3,8 +3,9 @@ import PropTypes from 'prop-types';
 import { 
   useVisualizerDisplay,
   useHandleVisualizerDisplay,
-  useIsIOS13,
-  useIsFirefox
+  // useIsIOS13,
+  useIsFirefox,
+  useIsSafari,
 } from '../../hooks/DataProvider';
 import styles from './Visualizer.css';
 
@@ -15,14 +16,15 @@ const Visualizer = ({ forwardRef }) => {
   const visualizerDisplay = useVisualizerDisplay();
   const handleVisualizerDisplay = useHandleVisualizerDisplay();
   const isFirefox = useIsFirefox();
-  const isIOS13 = useIsIOS13();
+  // const isIOS13 = useIsIOS13();
+  const isSafari = useIsSafari();
 
   const handleClose = () => {
     handleVisualizerDisplay(false);
   };
 
   useEffect(() => {
-    if (isIOS13 || isFirefox) {
+    if (isSafari || isFirefox) {
       return console.log('visualizer disabled');
     }
     // -------------

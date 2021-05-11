@@ -6,11 +6,11 @@ import {
   useVisualizerDisplay,
   useHandleVisualizerDisplay,
   useIsSafari,
-  useIsIOS13,
+  // useIsIOS13,
   useHandleIsSafari,
   useIsFirefox,
   useHandleIsFirefox,
-  useHandleIsIOS13
+  // useHandleIsIOS13
 } from '../../hooks/DataProvider';
 import Playlist from '../Playlist/Playlist';
 import Visualizer from '../Visualizer/Visualizer';
@@ -28,8 +28,8 @@ const Player = () => {
   const handleIsSafari = useHandleIsSafari();
   const isFirefox = useIsFirefox();
   const handleIsFirefox = useHandleIsFirefox();
-  const isIOS13 = useIsIOS13();
-  const handleIsIOS13 = useHandleIsIOS13();
+  // const isIOS13 = useIsIOS13();
+  // const handleIsIOS13 = useHandleIsIOS13();
 
   const isSafariCheck = navigator.vendor && navigator.vendor.indexOf('Apple') > -1 &&
   navigator.userAgent &&
@@ -59,11 +59,11 @@ const Player = () => {
       handleIsFirefox(true);
     }
 
-    if (version[0] === 13) {
-      // console.log('we on iOS ', version[0]);
-      handleIsIOS13(true);
-      handleIsSafari(true);
-    }
+    // if (version[0] === 13) {
+    //   // console.log('we on iOS ', version[0]);
+    //   handleIsIOS13(true);
+    //   handleIsSafari(true);
+    // }
 
   }, [version]);
 
@@ -129,7 +129,7 @@ const Player = () => {
               }
       
 
-              {!isFirefox && !isIOS13 &&
+              {!isFirefox && !isSafari &&
               <section>
                 {!visualizerDisplay
                   ?
