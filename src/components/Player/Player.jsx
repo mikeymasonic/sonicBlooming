@@ -41,7 +41,7 @@ const Player = () => {
 
   if (/iP(hone|od|ad)/.test(navigator.platform)) {
     const v = (navigator.appVersion).match(/OS (\d+)_(\d+)_?(\d+)?/);
-    version = [parseInt(v[1], 10), parseInt(v[2], 10)];
+    version = [parseInt(v[1], 10)];
     //if you want all of the os numbers uncomment below
     // version = [parseInt(v[1], 10), parseInt(v[2], 10), parseInt(v[3] || 0, 10)];
   }
