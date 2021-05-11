@@ -30,18 +30,13 @@ const Player = () => {
   const handleIsFirefox = useHandleIsFirefox();
   const isIOS13 = useIsIOS13();
   const handleIsIOS13 = useHandleIsIOS13();
-  // eslint-disable-next-line no-undef
-  // const isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === '[object SafariRemoteNotification]'; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
 
   const isSafariCheck = navigator.vendor && navigator.vendor.indexOf('Apple') > -1 &&
   navigator.userAgent &&
   navigator.userAgent.indexOf('CriOS') == -1 &&
   navigator.userAgent.indexOf('FxiOS') == -1;
-  console.log('is safari: ', isSafariCheck);
-  console.log('is safari global: ', isSafari);
-
-
-  // You can detect iOS 13 on iPhone but in iPad OS 13 navigator.platform comes as MacIntel. So it is not possible to get iPad identified using below code, but it works perfectly on iPhone.
+  // console.log('is safari: ', isSafariCheck);
+  // console.log('is safari global: ', isSafari);
 
   if (/iP(hone|od|ad)/.test(navigator.platform)) {
     const v = (navigator.appVersion).match(/OS (\d+)_(\d+)_?(\d+)?/);
@@ -49,55 +44,32 @@ const Player = () => {
     //if you want all of the os numbers uncomment below
     // version = [parseInt(v[1], 10), parseInt(v[2], 10), parseInt(v[3] || 0, 10)];
   }
-  console.log('iOS version : ' + version);
+  // console.log('iOS version : ' + version);
 
   const isFirefoxCheck = typeof InstallTrigger !== 'undefined';
-  // console.log('is firefox: ', isFirefox);
-
-  //   const isIOSCheck =       
-  //   ['iPad Simulator',
-  //     'iPhone Simulator',
-  //     'iPod Simulator',
-  //     'iPad',
-  //     'iPhone',
-  //     'iPod'
-  //   ].includes(navigator.platform)
-  // // iPad on iOS 13 detection
-  // || (navigator.userAgent.includes('Mac') && 'ontouchend' in document);
 
   useEffect(() => {
     if (isSafariCheck) {
-      console.log('we on safari');
+      // console.log('we on safari');
       handleIsSafari(true);
     }
-    // if (isIOSCheck) {
-    //   console.log('we on ios');
-    //   handleIsSafari(true);
-    // }
+
     if (isFirefoxCheck) {
-      console.log('we on firefox');
+      // console.log('we on firefox');
       handleIsFirefox(true);
     }
-    // if (version === '14') {
-    //   console.log('we on iOS string', version);
-    //   handleIsIOS13(true);
-    //   handleIsSafari(true);
-    // }
 
     if (version[0] === 13) {
-      console.log('we on iOS ', version[0]);
+      // console.log('we on iOS ', version[0]);
       handleIsIOS13(true);
       handleIsSafari(true);
     }
 
-    console.log(version);
   }, []);
 
   const handleFullscreen = () => {
     handleVisualizerDisplay(!visualizerDisplay);
   };
-
-  // console.log(player);
 
   return (
     <>

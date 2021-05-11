@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { 
   useVisualizerDisplay,
   useHandleVisualizerDisplay,
-  // useIsSafari,
   useIsIOS13,
   useIsFirefox
 } from '../../hooks/DataProvider';
@@ -15,7 +14,6 @@ const Visualizer = ({ forwardRef }) => {
   const canvasRef = useRef(null);
   const visualizerDisplay = useVisualizerDisplay();
   const handleVisualizerDisplay = useHandleVisualizerDisplay();
-  // const isSafari = useIsSafari();
   const isFirefox = useIsFirefox();
   const isIOS13 = useIsIOS13();
 
