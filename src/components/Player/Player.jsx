@@ -78,7 +78,7 @@ const Player = () => {
       console.log('we on firefox');
       handleIsFirefox(true);
     }
-    if (version === 13) {
+    if (version === '13') {
       console.log('we on iOS ', version);
       handleIsIOS13(true);
       handleIsSafari(true);
