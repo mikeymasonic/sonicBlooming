@@ -41,7 +41,7 @@ const Visualizer = ({ forwardRef }) => {
     // }
 
     if (AudioContext) {
-      context =  new AudioContext();
+      context = new AudioContext();
     } else {
       // Alert the user
       alert('Sorry, but the Web Audio API is not supported by your browser. Please, consider upgrading to the latest version or downloading Google Chrome or Mozilla Firefox');
