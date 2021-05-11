@@ -11,6 +11,7 @@ export const DataProvider = ({ children }) => {
   const [onAbout, setOnAbout] = useState(false);
   const [isSafari, setIsSafari] = useState(false);
   const [isFirefox, setIsFirefox] = useState(false);
+  const [isIOS13, setIsIOS13] = useState(false);
 
   const handleSong = (track) => {
     setSong(track);
@@ -41,6 +42,11 @@ export const DataProvider = ({ children }) => {
     setIsFirefox(bool);
   };
 
+  const handleIsIOS13 = (bool) => {
+    setIsIOS13(bool);
+  };
+
+
   return (
     <DataContext.Provider
       value={{
@@ -51,6 +57,7 @@ export const DataProvider = ({ children }) => {
         onAbout,
         isSafari,
         isFirefox,
+        isIOS13,
         handleSong,
         handleMapLocation,
         handlePlayerVisible,
@@ -58,6 +65,7 @@ export const DataProvider = ({ children }) => {
         handleOnAbout,
         handleIsSafari,
         handleIsFirefox,
+        handleIsIOS13,
       }}
     >
       {children}
@@ -105,6 +113,11 @@ export const useIsFirefox = () => {
   return isFirefox;
 };
 
+export const useIsIOS13 = () => {
+  const { isIOS13 } = useContext(DataContext);
+  return isIOS13;
+};
+
 // get handlers
 export const useHandleSong = () => {
   const { handleSong } = useContext(DataContext);
@@ -140,3 +153,9 @@ export const useHandleIsFirefox = () => {
   const { handleIsFirefox } = useContext(DataContext);
   return handleIsFirefox;
 };
+
+export const useHandleIsIOS13 = () => {
+  const { handleIsIOS13 } = useContext(DataContext);
+  return handleIsIOS13;
+};
+
