@@ -15,6 +15,7 @@ import Visualizer from '../Visualizer/Visualizer';
 import styles from './Player.css';
 
 const Player = () => {
+  let version;
   const song = useSong();
   const playerVisible = usePlayerVisible();
   const player = createRef();
@@ -34,6 +35,15 @@ const Player = () => {
   navigator.userAgent.indexOf('FxiOS') == -1;
   console.log('is safari: ', isSafariCheck);
   console.log('is safari global: ', isSafari);
+
+
+  // You can detect iOS 13 on iPhone but in iPad OS 13 navigator.platform comes as MacIntel. So it is not possible to get iPad identified using below code, but it works perfectly on iPhone.
+
+  if (/iP(hone|od|ad)/.test(navigator.platform)) {
+    const v = (navigator.appVersion).match(/OS (\d+)_(\d+)_?(\d+)?/);
+    version = [parseInt(v[1], 10), parseInt(v[2], 10), parseInt(v[3] || 0, 10)];
+  }
+  console.log('iOS version :' + version);
 
   const isFirefoxCheck = typeof InstallTrigger !== 'undefined';
   // console.log('is firefox: ', isFirefox);
