@@ -75,8 +75,8 @@ body {
 
   }
 
-  svg a path {
-    animation: fill 4s infinite ease-in-out;
+  svg a path{
+    animation: fill 3s infinite ease-in-out;
   }
 
   svg a:focus,
@@ -84,8 +84,10 @@ body {
     outline: none;
   }
   svg a:focus path,
-  svg a:hover path {
-    fill: rgba(40,4,78,0.2);
+  svg a path:hover {
+    fill: rgba(67, 7, 136,0.1);
+    stroke: rgb(67, 7, 136, 0.2);
+    stroke-width: 5;
     cursor: pointer;
   }
   }
@@ -209,12 +211,16 @@ body {
 
 @keyframes fill {
   0%{
-    fill:rgba(40,4,78,0);
+    fill:rgba(218, 251, 246, 0);
+    stroke: rgba(218, 251, 246,0);
   }
   50%{
-    fill:rgba(40,4,78,0.2);
+    fill:rgba(218, 251, 246, 0.4);
+    stroke: rgb(218, 251, 246, 0.3);
+    stroke-width: 6;
   }
   100%{
-    fill: rgba(40,4,78,0);
+    fill: rgba(218, 251, 246,0);
+    stroke: rgba(218, 251, 246,0);
   }
   }
