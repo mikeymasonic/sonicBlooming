@@ -7,39 +7,39 @@ export const songs = [
     upload: 'If you hear something you’d like to add to the soundscape you just heard you can record it with your phone and upload it here: ',
   },
   {
-    url: '../mp3/example2.mp3',
+    url: '../mp3/seeding.mp3',
     title: 'Seeding',
     mapLocation: 'Royal Rosarian Garden',
     description: 'this is a blurb about royal rosarian garden, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia dolorem ullam, unde aliquam tenetur consequatur ut in esse harum sunt! Atque dolorem provident accusamus sint? Ducimus, magni. Id, enim non? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem animi ex repellendus eaque. Quam blanditiis cum quo sunt laudantium nihil earum unde dolore laborum! Id libero iusto similique minus dignissimos. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit dolorem ut omnis corrupti consequatur totam, aliquid ex qui cum deleniti minima, maiores temporibus doloribus, voluptatem et veniam eligendi vel? Distinctio.',
     upload: 'If you hear something you’d like to add to the soundscape you just heard you can record it with your phone and upload it here: ',
   },
   {
-    url: '../mp3/example3.mp3',
+    url: '../mp3/growth.mp3',
     title: 'Growth',
     mapLocation: 'Rose Test Garden',
     description: 'For this part of the garden I took a reading of a rose called “ring of fire” it’s electrical patterns were more predictable patterns of up and down. During this soundscape I invite you to think about the patterns in your life. Which patterns assist you in blooming, which patterns get in the way? Impedit dolorem ut omnis corrupti consequatur totam, aliquid ex qui cum deleniti minima, maiores temporibus doloribus, voluptatem et veniam eligendi vel? Distinctio',
     upload: 'If you hear something you’d like to add to the soundscape you just heard you can record it with your phone and upload it here: ',
   },
   {
-    url: '../mp3/example4.mp3',
+    url: '../mp3/reproduction.mp3',
     title: 'Reproduction',
     mapLocation: 'Shakespearean Garden',
     description: 'this is a blurb about Shakespearean Garden, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia dolorem ullam, unde aliquam tenetur consequatur ut in esse harum sunt! Atque dolorem provident accusamus sint? Ducimus, magni. Id, enim non? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem animi ex repellendus eaque. Quam blanditiis cum quo sunt laudantium nihil earum unde dolore laborum! Id libero iusto similique minus dignissimos. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit dolorem ut omnis corrupti consequatur totam, aliquid ex qui cum deleniti minima, maiores temporibus doloribus, voluptatem et veniam eligendi vel? Distinctio.',
     upload: 'If you hear something you’d like to add to the soundscape you just heard you can record it with your phone and upload it here: ',
   },
   {
-    url: '../mp3/example5.mp3',
+    url: '../mp3/pollination.mp3',
     title: 'Pollination',
     mapLocation: 'Gold Medal Garden',
     description: 'The plant energy performing the soundscape for this garden was a rose called “Gemini Rose”. This plant’s reading oscillated between sparse to dense signals.  Voluptatem animi ex repellendus eaque. Quam blanditiis cum quo sunt laudantium nihil earum unde dolore laborum! Id libero iusto similique minus dignissimos. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit dolorem ut omnis corrupti consequatur totam, aliquid ex qui cum deleniti minima, maiores temporibus doloribus, voluptatem et veniam eligendi vel? Distinctio.',
     upload: 'If you hear something you’d like to add to the soundscape you just heard you can record it with your phone and upload it here: ',
   },
   // keep above as is, everything below are new songs
-  {
-    url: '../mp3/example5.mp3',
-    title: 'Song Four Again (but not really)',
-    mapLocation: 'Shakespearean Garden',
-  },
+  // {
+  //   url: '../mp3/example5.mp3',
+  //   title: 'Song Four Again (but not really)',
+  //   mapLocation: 'Shakespearean Garden',
+  // },
 ];
 
 export const uploads = [
