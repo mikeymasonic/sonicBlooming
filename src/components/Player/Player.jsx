@@ -78,11 +78,19 @@ const Player = () => {
       console.log('we on firefox');
       handleIsFirefox(true);
     }
-    if (version === '13') {
-      console.log('we on iOS ', version);
+    if (version === '14') {
+      console.log('we on iOS string', version);
       handleIsIOS13(true);
       handleIsSafari(true);
     }
+
+    if (version === 14) {
+      console.log('we on iOS num', version);
+      handleIsIOS13(true);
+      handleIsSafari(true);
+    }
+
+    console.log(version);
   }, []);
 
   const handleFullscreen = () => {
