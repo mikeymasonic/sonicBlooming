@@ -92,7 +92,7 @@ export const aboutPage = {
   linkedInIcon: '../images/about/linkedInIcon.png',
   photoURL: '../images/about/aboutMain.jpg',
   wwwIcon: '../images/about/wwwIcon.png',
-  description: 'Sonic Blooming is a guided meditation on the sound of movement, growth, and transformation in our environments, both external and internal. At the time of year when the roses at the International Rose Test Garden are beginning to bloom, plants are generating extra electricity. In my soundwalk, I have used a process called "Biodata Sonification", attaching sensors to the plants in the garden to collect their electrical impulses. I have translated these impulses into musical pitches and sound that make up half of the composition you will hear. The other half of the compositions are made up of field recordings collected in the space and added to the page throughout the month. Soundwalkers are able to listen to these soundscapes as they explore the garden.'
+  description: 'Sonic Blooming is a guided meditation on the sound of movement, growth, and transformation in our environments both external and internal. At the time of year when the roses at the International Rose Test Garden are beginning to bloom, plants are generating more electricity than usual. In my soundwalk, I have used a process called "Biodata Sonification", attaching sensors to the plants in the garden to collect their electrical impulses. I have translated these impulses into musical pitches and sound that make up half of the composition you will hear. The other half of the compositions are made up of field recordings collected in the space and added to the page throughout the month. Soundwalkers are able to listen to these soundscapes as they explore the garden.'
 };
 
 

@@ -4,7 +4,6 @@ import { useMapLocation } from '../../hooks/DataProvider';
 import { songs, aboutSite } from '../../utils/data';
 import Upload from '../Upload/Upload';
 import styles from './Blurb.css';
-// import 'reactjs-popup/dist/index.css';
 
 const Blurb = () => {
   const mapLocation = useMapLocation();
@@ -13,6 +12,7 @@ const Blurb = () => {
     if (mapLocation === song.mapLocation) {
       return <section key={song.title}>
         <p>{song.description}</p>
+        <p>{song.listen}</p>
         <p>{song.upload}</p>
       </section>;
     }
