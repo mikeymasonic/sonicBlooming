@@ -1,7 +1,7 @@
 import React, { createRef, useEffect } from 'react';
-import {
-  loadingImage
-} from '../../utils/data';
+// import {
+//   loadingImage
+// } from '../../utils/data';
 import AudioPlayer, { RHAP_UI } from 'react-h5-audio-player';
 import { 
   useSong,
@@ -10,12 +10,12 @@ import {
   useHandleVisualizerDisplay,
   useIsSafari,
   // useIsIOS13,
-  useLoading,
+  // useLoading,
   useHandleIsSafari,
   useIsFirefox,
   useHandleIsFirefox,
   // useHandleIsIOS13,
-  useHandleLoading,
+  // useHandleLoading,
 } from '../../hooks/DataProvider';
 // import loadingImage from '../images/map2.png';
 import Playlist from '../Playlist/Playlist';
@@ -34,8 +34,8 @@ const Player = () => {
   const handleIsSafari = useHandleIsSafari();
   const isFirefox = useIsFirefox();
   const handleIsFirefox = useHandleIsFirefox();
-  const loading = useLoading();
-  const handleLoading = useHandleLoading();
+  // const loading = useLoading();
+  // const handleLoading = useHandleLoading();
   // const isIOS13 = useIsIOS13();
   // const handleIsIOS13 = useHandleIsIOS13();
 
@@ -182,7 +182,7 @@ const Player = () => {
           </section>
         </div>
         
-        {loading && <img src={loadingImage.loadingImage} className={styles.loadingImage} />}
+        {/* {loading && <img src={loadingImage.loadingImage} className={styles.loadingImage} />} */}
 
         {playerVisible && <Visualizer forwardRef={player}/>} 
       </section>
