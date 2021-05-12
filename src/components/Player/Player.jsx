@@ -40,18 +40,17 @@ const Player = () => {
   // const handleIsIOS13 = useHandleIsIOS13();
 
 
-  const iOS = () => {
-    return [
-      'iPad Simulator',
-      'iPhone Simulator',
-      'iPod Simulator',
-      'iPad',
-      'iPhone',
-      'iPod'
-    ].includes(navigator.platform)
+  const iOS =   
+  ['iPad Simulator',
+    'iPhone Simulator',
+    'iPod Simulator',
+    'iPad',
+    'iPhone',
+    'iPod'
+  ].includes(navigator.platform);
     // iPad on iOS 13 detection
-    || (navigator.userAgent.includes('Mac') && 'ontouchend' in document);
-  };
+    // || (navigator.userAgent.includes('Mac') && 'ontouchend' in document);
+
 
   const isSafariCheck = navigator.vendor && navigator.vendor.indexOf('Apple') > -1 &&
   navigator.userAgent &&
