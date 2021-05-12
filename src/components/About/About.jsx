@@ -59,7 +59,10 @@ const About = () => {
         </div>
         <section className={styles.links}>
           <a href={aboutCrystal.portfolioURL} target="_blank" rel="noopener noreferrer">
-            <img src={aboutPage.wwwIcon} alt="portfolio" className={styles.icons}/>
+            <img src={aboutPage.wwwIcon} alt="crystal portfolio" className={styles.icons}/>
+          </a> 
+          <a href={aboutCrystal.instagramURL} target="_blank" rel="noopener noreferrer">
+            <img src={aboutPage.instagramIcon} alt="crystal instagram" className={styles.icons}/>
           </a> 
         </section>
 
@@ -78,13 +81,13 @@ const About = () => {
         </div>
         <section className={styles.links}>
           <a href={aboutMikey.portfolioURL} target="_blank" rel="noopener noreferrer">
-            <img src={aboutPage.wwwIcon} alt="portfolio" className={styles.icons}/>
+            <img src={aboutPage.wwwIcon} alt="mikey portfolio" className={styles.icons}/>
           </a> 
           <a href={aboutMikey.gitHubURL} target="_blank" rel="noopener noreferrer">
-            <img src={aboutPage.gitHubIcon} alt="github" className={styles.icons}/>
+            <img src={aboutPage.gitHubIcon} alt="mikey github" className={styles.icons}/>
           </a>
           <a href={aboutMikey.linkedInURL} target="_blank" rel="noopener noreferrer">
-            <img src={aboutPage.linkedInIcon} alt="linked in" className={styles.icons}/>
+            <img src={aboutPage.linkedInIcon} alt="mikey linked in" className={styles.icons}/>
           </a> 
         </section>  
 
@@ -103,13 +106,13 @@ const About = () => {
         </div>
         <section className={styles.links}>
           <a href={aboutJena.portfolioURL} target="_blank" rel="noopener noreferrer">
-            <img src={aboutPage.wwwIcon} alt="portfolio" className={styles.icons}/>
+            <img src={aboutPage.wwwIcon} alt="jena portfolio" className={styles.icons}/>
           </a> 
           <a href={aboutJena.gitHubURL} target="_blank" rel="noopener noreferrer">
-            <img src={aboutPage.gitHubIcon} alt="github" className={styles.icons}/>
+            <img src={aboutPage.gitHubIcon} alt="jena github" className={styles.icons}/>
           </a>
           <a href={aboutJena.linkedInURL} target="_blank" rel="noopener noreferrer">
-            <img src={aboutPage.linkedInIcon} alt="linked in" className={styles.icons}/>
+            <img src={aboutPage.linkedInIcon} alt="jena linked in" className={styles.icons}/>
           </a> 
         </section>   
 
