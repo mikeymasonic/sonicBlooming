@@ -1,10 +1,7 @@
 .Visualizer {
-/* pointer-events: none; */
-
 
 canvas {
   display: block;
-  /* background-color: lime; */
   background: rgba(38,4,71,0.9);
   margin:0;
   left:0;
@@ -28,18 +25,3 @@ canvas {
   pointer-events: all;
 }
 }
-
-/* html, body {
-  height: 100%;
-} */
-/* 
-body {
-  background-image: radial-gradient(circle, #F0C505, #F76E2A 10%, #A71A5B 40%, #651366);
-  position: relative;
-  overflow: hidden;
-} */
-/* 
-canvas {
-  display: block;
-  background-color: lime;
-} */

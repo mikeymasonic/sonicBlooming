@@ -9,8 +9,6 @@ import {
   aboutJena,
 } from '../../utils/data';
 import styles from './About.css';
-// import githubIcon from '../../assets/about/Github-Icon.png';
-// import linkedInIcon from '../../assets/about/LinkedIn-Icon.png';
 
 const About = () => {
   return (
