@@ -72,17 +72,18 @@ const Player = () => {
 
   useEffect(() => {
     if (isSafariCheck) {
-      // console.log('we on safari');
+      console.log('we on safari');
       handleIsSafari(true);
     }
 
     if (isFirefoxCheck) {
-      // console.log('we on firefox');
+      console.log('we on firefox');
       handleIsFirefox(true);
     }
 
     if (iOS) {
       handleIsSafari(true);
+      console.log('we on ios');
     }
 
     // if (version[0] === 13) {
@@ -114,13 +115,13 @@ const Player = () => {
                 src={song?.url}
                 onPlay={() => {
                   console.log('playback started');
-                  handleLoading(true);
-                  console.log('loading? ', loading);
+                  // handleLoading(true);
+                  // console.log('loading? ', loading);
                 }}
                 onLoadedData={() => {
                   console.log('waiting');
-                  handleLoading(false);
-                  console.log('loading? ', loading);
+                  // handleLoading(false);
+                  // console.log('loading? ', loading);
                 }}
                 onEnded={() => {
                   if (visualizerDisplay){
@@ -145,13 +146,13 @@ const Player = () => {
                 src={song?.url}
                 onPlay={() => {
                   console.log('playback started');
-                  handleLoading(true);
-                  console.log('loading? ', loading);
+                  // handleLoading(true);
+                  // console.log('loading? ', loading);
                 }}
                 onLoadedData={() => {
                   console.log('waiting');
-                  handleLoading(false);
-                  console.log('loading? ', loading);
+                  // handleLoading(false);
+                  // console.log('loading? ', loading);
                 }}
                 onEnded={() => {
                   if (visualizerDisplay){
