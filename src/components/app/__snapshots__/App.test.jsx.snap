@@ -232,25 +232,6 @@ exports[`App component renders App 1`] = `
     class="mapContainer"
   >
     <div
-      class="blurbContainer"
-    >
-      <section
-        class="Blurb"
-      >
-        <section>
-          <p>
-            Welcome to Sonic Blooming! This soundwalk is a meditation on movement, growth and transformation in our external and internal environments. At the time of year when the roses at the International Rose Test Garden are beginning to bloom, plants are generating extra energy. I have used a process called Biodata Sonification; attaching sensors to the plants in the garden to collect their electrical impulses. You will hear these impulses translated into musical pitches and sounds that will guide you through the garden.
-          </p>
-          <p>
-            On each page there will also be a section encouraging you to record any interesting sounds you hear and upload them to be added to that part of the garden’s soundscape! Submitted field recordings will be added to the soundscapes over the course of the month.
-          </p>
-          <p>
-            I invite you to pause, listen and explore.
-          </p>
-        </section>
-      </section>
-    </div>
-    <div
       class="instructionsContainer"
     >
       <p
@@ -322,6 +303,25 @@ exports[`App component renders App 1`] = `
         </g>
       </svg>
     </section>
+    <div
+      class="blurbContainer"
+    >
+      <section
+        class="Blurb"
+      >
+        <section>
+          <p>
+            Welcome to Sonic Blooming! This soundwalk is a meditation on movement, growth and transformation in our external and internal environments. At the time of year when the roses at the International Rose Test Garden are beginning to bloom, plants are generating extra energy. I have used a process called Biodata Sonification; attaching sensors to the plants in the garden to collect their electrical impulses. You will hear these impulses translated into musical pitches and sounds that will guide you through the garden.
+          </p>
+          <p>
+            On each page there will also be a section encouraging you to record any interesting sounds you hear and upload them to be added to that part of the garden’s soundscape! Submitted field recordings will be added to the soundscapes over the course of the month.
+          </p>
+          <p>
+            I invite you to pause, listen and explore.
+          </p>
+        </section>
+      </section>
+    </div>
   </section>
 </DocumentFragment>
 `;

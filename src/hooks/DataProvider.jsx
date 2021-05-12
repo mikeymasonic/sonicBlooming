@@ -174,4 +174,3 @@ export const useHandleLoading = () => {
   const { handleLoading } = useContext(DataContext);
   return handleLoading;
 };
-

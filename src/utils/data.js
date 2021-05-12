@@ -145,5 +145,5 @@ export const aboutSponsors = {
 };
 
 export const loadingImage = {
-  loadingImage: '../images/loadingedit3.gif'
+  loadingImage: '../images/loading.gif'
 };

@@ -15,7 +15,6 @@ function Map() {
 
   return (
     <section className={styles.mapContainer}>
-      {!onAbout && !playerVisible && <Blurb />}
       <div className={styles.instructionsContainer}>
         {!playerVisible && !onAbout && <p className={styles.instructions}>Select a garden to listen to:</p>} 
       </div>
@@ -87,7 +86,8 @@ function Map() {
           </g>
         </svg>
       </section>
-      {!onAbout && playerVisible && <Blurb />}
+      {/* {!onAbout && !playerVisible && <Blurb />} */}
+      {!onAbout && <Blurb />}
     </section>
   );
 }

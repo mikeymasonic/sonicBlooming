@@ -1,29 +1,25 @@
 import React, { createRef, useEffect, useState } from 'react';
+import AudioPlayer, { RHAP_UI } from 'react-h5-audio-player';
+import Playlist from '../Playlist/Playlist';
+import Visualizer from '../Visualizer/Visualizer';
 import {
   loadingImage
 } from '../../utils/data';
-import AudioPlayer, { RHAP_UI } from 'react-h5-audio-player';
 import { 
   useSong,
   usePlayerVisible,
   useVisualizerDisplay,
   useHandleVisualizerDisplay,
   useIsSafari,
-  // useIsIOS13,
   useLoading,
   useHandleIsSafari,
   useIsFirefox,
   useHandleIsFirefox,
-  // useHandleIsIOS13
   useHandleLoading,
 } from '../../hooks/DataProvider';
-// import loadingImage from '../images/map2.png';
-import Playlist from '../Playlist/Playlist';
-import Visualizer from '../Visualizer/Visualizer';
 import styles from './Player.css';
 
 const Player = () => {
-  // let version = 0;
   const song = useSong();
   const playerVisible = usePlayerVisible();
   const player = createRef();
@@ -37,36 +33,20 @@ const Player = () => {
   const loading = useLoading();
   const handleLoading = useHandleLoading();
   const [paused, setPaused] = useState(false);
-  // const isIOS13 = useIsIOS13();
-  // const handleIsIOS13 = useHandleIsIOS13();
 
-
-  const iOS =   
+  const isIOSCheck =   
   ['iPad Simulator',
     'iPhone Simulator',
     'iPod Simulator',
     'iPad',
     'iPhone',
     'iPod'
-  ].includes(navigator.platform);
-    // iPad on iOS 13 detection
-    // || (navigator.userAgent.includes('Mac') && 'ontouchend' in document);
-
+  ].includes(navigator.platform) || (navigator.userAgent.includes('Mac') && 'ontouchend' in document); // iPad on iOS 13 detection
 
   const isSafariCheck = navigator.vendor && navigator.vendor.indexOf('Apple') > -1 &&
   navigator.userAgent &&
   navigator.userAgent.indexOf('CriOS') == -1 &&
   navigator.userAgent.indexOf('FxiOS') == -1;
-  // console.log('is safari: ', isSafariCheck);
-  // console.log('is safari global: ', isSafari);
-
-  // if (/iP(hone|od|ad)/.test(navigator.platform)) {
-  //   const v = (navigator.appVersion).match(/OS (\d+)_(\d+)_?(\d+)?/);
-  //   version = [parseInt(v[1], 10)];
-  //   //if you want all of the os numbers uncomment below
-  //   // version = [parseInt(v[1], 10), parseInt(v[2], 10), parseInt(v[3] || 0, 10)];
-  // }
-  // console.log('iOS version : ' + version);
 
   const isFirefoxCheck = typeof InstallTrigger !== 'undefined';
 
@@ -81,17 +61,10 @@ const Player = () => {
       handleIsFirefox(true);
     }
 
-    if (iOS) {
+    if (isIOSCheck) {
       handleIsSafari(true);
       console.log('we on ios');
     }
-
-    // if (version[0] === 13) {
-    //   // console.log('we on iOS ', version[0]);
-    //   handleIsIOS13(true);
-    //   handleIsSafari(true);
-    // }
-
   }, []);
 
   const handleFullscreen = () => {
@@ -104,6 +77,7 @@ const Player = () => {
         <Playlist style={{ visibility: playerVisible ? 'visible' : 'hidden', height: playerVisible ? 100 : 0 }} />
 
         <div className={styles.playerContainer} style={{ visibility: playerVisible ? 'visible' : 'hidden', height: playerVisible ? 70 : 0, marginBottom: playerVisible ? 20 : 0 }}>
+
           <section className={styles.title}>{playerTitle}</section>
           <section className={styles.Player} style={{ visibility: playerVisible ? 'visible' : 'collapse', height: playerVisible ? 70 : 0 }}>
 
@@ -181,20 +155,17 @@ const Player = () => {
                     <section key="slash">/</section>,
                     RHAP_UI.DURATION,
                   ]
-                } 
-              />
+                }/>
               }
-      
 
               {!isFirefox && !isSafari &&
               <section>
                 {!visualizerDisplay
                   ?
                   <button onClick={handleFullscreen} className={styles.fullscreen}><img src='./images/fullscreen.png' height='25px' /></button>
-                  : <button onClick={handleFullscreen} className={styles.fullscreen}><img src='./images/close.png' height='25px' /></button>
-                }
-              </section>
-              } 
+                  : <button onClick={handleFullscreen} className={styles.fullscreen}><img src='./images/close.png' height='25px' /></button>}
+              </section>} 
+              
             </section>
           </section>
         </div>
