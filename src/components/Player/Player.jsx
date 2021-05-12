@@ -1,4 +1,7 @@
 import React, { createRef, useEffect } from 'react';
+import {
+  loadingImage
+} from '../../utils/data';
 import AudioPlayer, { RHAP_UI } from 'react-h5-audio-player';
 import { 
   useSong,
@@ -7,17 +10,20 @@ import {
   useHandleVisualizerDisplay,
   useIsSafari,
   // useIsIOS13,
+  useLoading,
   useHandleIsSafari,
   useIsFirefox,
   useHandleIsFirefox,
   // useHandleIsIOS13
+  useHandleLoading,
 } from '../../hooks/DataProvider';
+// import loadingImage from '../images/map2.png';
 import Playlist from '../Playlist/Playlist';
 import Visualizer from '../Visualizer/Visualizer';
 import styles from './Player.css';
 
 const Player = () => {
-  let version = 0;
+  // let version = 0;
   const song = useSong();
   const playerVisible = usePlayerVisible();
   const player = createRef();
@@ -28,6 +34,8 @@ const Player = () => {
   const handleIsSafari = useHandleIsSafari();
   const isFirefox = useIsFirefox();
   const handleIsFirefox = useHandleIsFirefox();
+  const loading = useLoading();
+  const handleLoading = useHandleLoading();
   // const isIOS13 = useIsIOS13();
   // const handleIsIOS13 = useHandleIsIOS13();
 
@@ -38,12 +46,12 @@ const Player = () => {
   // console.log('is safari: ', isSafariCheck);
   // console.log('is safari global: ', isSafari);
 
-  if (/iP(hone|od|ad)/.test(navigator.platform)) {
-    const v = (navigator.appVersion).match(/OS (\d+)_(\d+)_?(\d+)?/);
-    version = [parseInt(v[1], 10)];
-    //if you want all of the os numbers uncomment below
-    // version = [parseInt(v[1], 10), parseInt(v[2], 10), parseInt(v[3] || 0, 10)];
-  }
+  // if (/iP(hone|od|ad)/.test(navigator.platform)) {
+  //   const v = (navigator.appVersion).match(/OS (\d+)_(\d+)_?(\d+)?/);
+  //   version = [parseInt(v[1], 10)];
+  //   //if you want all of the os numbers uncomment below
+  //   // version = [parseInt(v[1], 10), parseInt(v[2], 10), parseInt(v[3] || 0, 10)];
+  // }
   // console.log('iOS version : ' + version);
 
   const isFirefoxCheck = typeof InstallTrigger !== 'undefined';
@@ -65,7 +73,7 @@ const Player = () => {
     //   handleIsSafari(true);
     // }
 
-  }, [version]);
+  }, []);
 
   const handleFullscreen = () => {
     handleVisualizerDisplay(!visualizerDisplay);
@@ -88,6 +96,13 @@ const Player = () => {
                 src={song?.url}
                 onPlay={() => {
                   console.log('playback started');
+                  handleLoading(true);
+                  console.log('loading? ', loading);
+                }}
+                onLoadedData={() => {
+                  console.log('waiting');
+                  handleLoading(false);
+                  console.log('loading? ', loading);
                 }}
                 onEnded={() => {
                   if (visualizerDisplay){
@@ -112,6 +127,13 @@ const Player = () => {
                 src={song?.url}
                 onPlay={() => {
                   console.log('playback started');
+                  handleLoading(true);
+                  console.log('loading? ', loading);
+                }}
+                onLoadedData={() => {
+                  console.log('waiting');
+                  handleLoading(false);
+                  console.log('loading? ', loading);
                 }}
                 onEnded={() => {
                   if (visualizerDisplay){
@@ -141,6 +163,8 @@ const Player = () => {
             </section>
           </section>
         </div>
+        
+        {loading && <img src={loadingImage.loadingImage} className={styles.loadingImage} />}
 
         {playerVisible && <Visualizer forwardRef={player}/>} 
       </section>

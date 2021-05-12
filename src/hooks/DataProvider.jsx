@@ -125,8 +125,8 @@ export const useIsIOS13 = () => {
 };
 
 export const useLoading = () => {
-  const { isLoading } = useContext(DataContext);
-  return isLoading;
+  const { loading } = useContext(DataContext);
+  return loading;
 };
 
 // get handlers

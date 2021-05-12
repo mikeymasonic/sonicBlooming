@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 
+.loadingImage {
+  /* display: block; */
+  /* background-color: lime; */
+  width: 20%;
+  background-color: rgba(38,4,71,0.9);
+  /* margin:0;
+  left:0; */
+}
+
 .audioContainer {
   display: flex;
   flex-direction: column;
@@ -34,6 +43,8 @@
     text-shadow: 1px 1px 0px rgba(7, 14, 13, 0.2);
   }
 
+
+
 .Player {
   display: flex;
   flex-direction: column;
@@ -46,6 +57,9 @@
   background: linear-gradient(94deg, rgba(53,5,97,1) 0%, rgba(32,3,58,1) 100%);
   color: #FBC9B1;
   overflow: hidden;
+
+
+
 
   .playerControls {
     display: flex;

@@ -143,3 +143,7 @@ export const aboutSponsors = {
   sponsorTwo: 'Portland Parks and Recreation',
   sponsorTwoURL: 'https://www.portland.gov/parks',
 };
+
+export const loadingImage = {
+  loadingImage: '../images/loadingedit3.gif'
+};
