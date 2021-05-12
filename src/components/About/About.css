@@ -34,7 +34,7 @@
     }
 
     h1 { 
-      font-size: 2em;
+      font-size: 2.5em;
       margin: 0.1em 0 0.5em 0;
       -webkit-animation: fadein 5s; 
         -moz-animation: fadein 5s; 
@@ -56,7 +56,7 @@
         -moz-animation: fadein 5s; 
         animation: fadein 5s;
         margin: 1em 3em 1em 3em;
-        font-size: 1.3em;
+        font-size: 1.4em;
       }
 
     .aboutContainer {
@@ -70,7 +70,7 @@
 
       img {
         display: block;
-        height: 30em;
+        height: 27em;
         width: auto;
         border-radius: 10px;
         margin: 0;
