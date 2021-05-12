@@ -164,7 +164,10 @@ const Player = () => {
           </section>
         </div>
         
-        {loading && <img src={loadingImage.loadingImage} className={styles.loadingImage} />}
+        {loading && 
+        <section className={styles.loadingContainer}>
+          <img src={loadingImage.loadingImage} className={styles.loadingImage} />
+        </section>}
 
         {playerVisible && <Visualizer forwardRef={player}/>} 
       </section>

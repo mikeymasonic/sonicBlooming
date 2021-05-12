@@ -1,10 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 
+.loadingContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: rgba(38, 4, 71, 0.92);
+  z-index: 1;
+}
+
 .loadingImage {
   /* display: block; */
   /* background-color: lime; */
+  margin-top: 8em;
   width: 20%;
-  background-color: rgba(38,4,71,0.9);
   /* margin:0;
   left:0; */
 }
@@ -15,6 +27,7 @@
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
+  margin-top: 11vh;
 
   .playerContainer {
     display: flex;
