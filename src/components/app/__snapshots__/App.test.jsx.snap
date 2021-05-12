@@ -224,16 +224,6 @@ exports[`App component renders App 1`] = `
               </div>
             </div>
           </div>
-          <section>
-            <button
-              class="fullscreen"
-            >
-              <img
-                height="25px"
-                src="./images/fullscreen.png"
-              />
-            </button>
-          </section>
         </section>
       </section>
     </div>

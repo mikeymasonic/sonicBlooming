@@ -20,7 +20,7 @@ exports[`About component renders About 1`] = `
           src="../images/about/aboutMain.jpg"
         />
         <p>
-          Sonic Blooming is a guided meditation on the sound of movement, growth, and transformation in our environments both external and internal. At the time of year when the roses at the International Rose Test Garden are beginning to bloom, plants are generating extra electricity. In my soundwalk I have used a process called Biodata Sonification, attaching sensors to the plant's in the garden to collect their electrical impulses. I have translated these impulses into musical pitches and sound that make up half of the composition visitors will hear. The other half of the composition is made up of field recordings I've collected in the space. Soundwalkers will be able to listen to this soundscape via a weblink as they explore the garden. I am also working with a web developer who is making a website that will host the music, instructions, and have a place where visitors can upload their own field recordings which will be integrated with the soundscapes over the course of the month.
+          Sonic Blooming is a guided meditation on the sound of movement, growth, and transformation in our environments both external and internal. At the time of year when the roses at the International Rose Test Garden are beginning to bloom, plants are generating more electricity than usual. In my soundwalk, I have used a process called "Biodata Sonification", attaching sensors to the plants in the garden to collect their electrical impulses. I have translated these impulses into musical pitches and sound that make up half of the composition you will hear. The other half of the compositions are made up of field recordings collected in the space and added to the page throughout the month. Soundwalkers are able to listen to these soundscapes as they explore the garden.
         </p>
       </section>
       <section
@@ -86,9 +86,20 @@ exports[`About component renders About 1`] = `
           target="_blank"
         >
           <img
-            alt="portfolio"
+            alt="crystal portfolio"
             class="icons"
             src="../images/about/wwwIcon.png"
+          />
+        </a>
+        <a
+          href="https://www.instagram.com/crystalquartez/"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <img
+            alt="crystal instagram"
+            class="icons"
+            src="../images/about/instagramIcon.png"
           />
         </a>
       </section>
@@ -125,7 +136,7 @@ exports[`About component renders About 1`] = `
           target="_blank"
         >
           <img
-            alt="portfolio"
+            alt="mikey portfolio"
             class="icons"
             src="../images/about/wwwIcon.png"
           />
@@ -136,7 +147,7 @@ exports[`About component renders About 1`] = `
           target="_blank"
         >
           <img
-            alt="github"
+            alt="mikey github"
             class="icons"
             src="../images/about/githubIcon.png"
           />
@@ -147,7 +158,7 @@ exports[`About component renders About 1`] = `
           target="_blank"
         >
           <img
-            alt="linked in"
+            alt="mikey linked in"
             class="icons"
             src="../images/about/linkedInIcon.png"
           />
@@ -186,7 +197,7 @@ exports[`About component renders About 1`] = `
           target="_blank"
         >
           <img
-            alt="portfolio"
+            alt="jena portfolio"
             class="icons"
             src="../images/about/wwwIcon.png"
           />
@@ -197,7 +208,7 @@ exports[`About component renders About 1`] = `
           target="_blank"
         >
           <img
-            alt="github"
+            alt="jena github"
             class="icons"
             src="../images/about/githubIcon.png"
           />
@@ -208,7 +219,7 @@ exports[`About component renders About 1`] = `
           target="_blank"
         >
           <img
-            alt="linked in"
+            alt="jena linked in"
             class="icons"
             src="../images/about/linkedInIcon.png"
           />
