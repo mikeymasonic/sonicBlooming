@@ -10,16 +10,13 @@
   top: 0;
   background-color: rgba(38, 4, 71, 0.92);
   z-index: 1;
+  
+  .loadingImage {
+    margin-top: 8em;
+    width: 20%;
+  }
 }
 
-.loadingImage {
-  /* display: block; */
-  /* background-color: lime; */
-  margin-top: 8em;
-  width: 20%;
-  /* margin:0;
-  left:0; */
-}
 
 .audioContainer {
   display: flex;
@@ -366,6 +363,14 @@
 }
 
 @media (max-width: 1027px) {
+  .loadingContainer {
+
+    .loadingImage {
+      margin-top: 10em;
+      width: 40%;
+    }
+  }
+
   .audioContainer {
 
     .playerContainer {
@@ -423,6 +428,15 @@
 }
 
 @media (max-width: 768px) {
+
+  .loadingContainer {
+
+    .loadingImage {
+      margin-top: 8em;
+      width: 50%;
+    }
+  }
+
   .audioContainer {
 
     .playerContainer {
