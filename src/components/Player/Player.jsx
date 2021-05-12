@@ -1,4 +1,4 @@
-import React, { createRef, useEffect } from 'react';
+import React, { createRef, useEffect, useState } from 'react';
 import {
   loadingImage
 } from '../../utils/data';
@@ -36,6 +36,7 @@ const Player = () => {
   const handleIsFirefox = useHandleIsFirefox();
   const loading = useLoading();
   const handleLoading = useHandleLoading();
+  const [paused, setPaused] = useState(false);
   // const isIOS13 = useIsIOS13();
   // const handleIsIOS13 = useHandleIsIOS13();
 
@@ -114,8 +115,16 @@ const Player = () => {
                 src={song?.url}
                 onPlay={() => {
                   console.log('playback started');
-                  handleLoading(true);
+                  if (!paused){
+                    handleLoading(true);
+                  } else if (paused) {
+                    setPaused(false);
+                  }
                   console.log('loading? ', loading);
+                }}
+                onPause={() => {
+                  setPaused(true);
+                  console.log('paused? ', paused);
                 }}
                 onLoadedData={() => {
                   console.log('waiting');
@@ -145,8 +154,16 @@ const Player = () => {
                 src={song?.url}
                 onPlay={() => {
                   console.log('playback started');
-                  handleLoading(true);
+                  if (!paused){
+                    handleLoading(true);
+                  } else if (paused) {
+                    setPaused(false);
+                  }
                   console.log('loading? ', loading);
+                }}
+                onPause={() => {
+                  setPaused(true);
+                  console.log('paused? ', paused);
                 }}
                 onLoadedData={() => {
                   console.log('waiting');
