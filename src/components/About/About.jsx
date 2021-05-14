@@ -87,6 +87,9 @@ const About = () => {
           <a href={aboutMikey.linkedInURL} target="_blank" rel="noopener noreferrer">
             <img src={aboutPage.linkedInIcon} alt="mikey linked in" className={styles.icons}/>
           </a> 
+          <a href={aboutMikey.instagramURL} target="_blank" rel="noopener noreferrer">
+            <img src={aboutPage.instagramIcon} alt="mikey instagram" className={styles.icons}/>
+          </a> 
         </section>  
 
         <section className={styles.aboutContainer}>
@@ -111,6 +114,9 @@ const About = () => {
           </a>
           <a href={aboutJena.linkedInURL} target="_blank" rel="noopener noreferrer">
             <img src={aboutPage.linkedInIcon} alt="jena linked in" className={styles.icons}/>
+          </a> 
+          <a href={aboutJena.instagramURL} target="_blank" rel="noopener noreferrer">
+            <img src={aboutPage.instagramIcon} alt="jena instagram" className={styles.icons}/>
           </a> 
         </section>   
 

@@ -111,6 +111,7 @@ export const aboutMikey = {
   portfolioURL: 'https://michaelromay.dev/',
   gitHubURL:'https://github.com/mikeymasonic',
   linkedInURL: 'https://www.linkedin.com/in/michaelromay/',
+  instagramURL: 'https://www.instagram.com/mikeymasonic/',
   role: 'App Development & Design',
   bio: 'Michael Romay is a fullstack engineer, installation artist and musician who makes weird digital visual and interactive art.  He has a baby bird named Wootie that is a very sweet boi.'
 };
@@ -121,6 +122,7 @@ export const aboutJena = {
   portfolioURL: 'https://jenaluxboehm.com',
   gitHubURL:'https://github.com/jena-boehm',
   linkedInURL: 'https://www.linkedin.com/in/jenaluxboehm/',
+  instagramURL: 'https://www.instagram.com/luxoramajor/',
   role: 'App Development & Design',
   bio: 'Jena Boehm is a fullstack software engineer with an eye for front end design. She also produces and performs electronic music under the moniker Luxora Major. Fueled by her love for audio engineering and sound/visual design, she thrives in environments that fuse technology and art together in innovative ways.'
 };
