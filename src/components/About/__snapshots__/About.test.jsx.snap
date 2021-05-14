@@ -163,6 +163,17 @@ exports[`About component renders About 1`] = `
             src="../images/about/linkedInIcon.png"
           />
         </a>
+        <a
+          href="https://www.instagram.com/mikeymasonic/"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <img
+            alt="mikey instagram"
+            class="icons"
+            src="../images/about/instagramIcon.png"
+          />
+        </a>
       </section>
       <section
         class="aboutContainer"
@@ -222,6 +233,17 @@ exports[`About component renders About 1`] = `
             alt="jena linked in"
             class="icons"
             src="../images/about/linkedInIcon.png"
+          />
+        </a>
+        <a
+          href="https://www.instagram.com/luxoramajor/"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <img
+            alt="jena instagram"
+            class="icons"
+            src="../images/about/instagramIcon.png"
           />
         </a>
       </section>
