@@ -72,7 +72,13 @@ const About = () => {
 
         <section className={styles.aboutContainer}>
           <img src={aboutCrystal.photoURL} alt="Crystal Profile Picture" className={styles.devPhotos} />
-          <p className={styles.crystalBio}>{aboutCrystal.bio}</p>
+          <p className={styles.crystalBio}>
+            {aboutCrystal.bioPartOne}
+            <a href={aboutCrystal.whateverSpaceURL} target="_blank" rel="noopener noreferrer">
+              {aboutCrystal.bioWhatever}
+            </a> 
+            {aboutCrystal.bioPartTwo}
+          </p>
         </section>
       </section>
 
@@ -100,7 +106,13 @@ const About = () => {
 
         <section className={styles.aboutContainer}>
           <img src={aboutMikey.photoURL} alt="Mikey Profile Picture" className={styles.devPhotos} />
-          <p className={styles.devBio}>{aboutMikey.bio}</p>
+          <p className={styles.devBio}>
+            {aboutMikey.bioPartOne}
+            <a href={aboutMikey.whateverSpaceURL} target="_blank" rel="noopener noreferrer">
+              {aboutMikey.bioWhatever}
+            </a> 
+            {aboutMikey.bioPartTwo}
+          </p>
         </section>
       </section>
 

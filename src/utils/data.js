@@ -106,8 +106,11 @@ export const aboutCrystal = {
   photoURL: '../images/about/aboutCrystal.jpg',
   portfolioURL: 'https://www.crystalcortez.com/',
   instagramURL: 'https://www.instagram.com/crystalquartez/',
+  whateverSpaceURL: 'http://whateverspace.org',
   role: 'Project Leader, Sound & Art Design',
-  bio: 'Crystal Cortez is a sound, installation artist & programmer based out of Portland Oregon. She is also a professor of Creative Coding & Sonic Arts at Portland Community College. As someone who never saw herself represented in computer music or creative tech her work focuses on the empowerment of underserved populations gaining access and knowledge around technology. In 2019 she co founded whateverSpace, a maker space offering free and sliding scale workshops and technology rentals with priority going to the BIPOC community. Under her performance moniker Crystal Quartez she transforms field recordings, uses synthesis, audio programming, data sonification, and 3D sound spatialization to produce complex sonic realms. Her practice has recently involved the development of interactive sculptural interfaces and wearable technology that monitor movement and other corporeal methods to liberate the performer from their interfaces. Her art has been shown at NIME, PNCA, Disjecta, PICA, Navel (LA) and more.'
+  bioPartOne: 'Crystal Cortez is a sound, installation artist & programmer based out of Portland Oregon. She is also a professor of Creative Coding & Sonic Arts at Portland Community College. As someone who never saw herself represented in computer music or creative tech her work focuses on the empowerment of underserved populations gaining access and knowledge around technology. In 2019 she co founded ',
+  bioWhatever: 'whateverSpace',
+  bioPartTwo: ', a maker space offering free and sliding scale workshops and technology rentals with priority going to the BIPOC community. Under her performance moniker Crystal Quartez she transforms field recordings, uses synthesis, audio programming, data sonification, and 3D sound spatialization to produce complex sonic realms. Her practice has recently involved the development of interactive sculptural interfaces and wearable technology that monitor movement and other corporeal methods to liberate the performer from their interfaces. Her art has been shown at NIME, PNCA, Disjecta, PICA, Navel (LA) and more.'
 };
 
 export const aboutMikey = {
@@ -117,8 +120,11 @@ export const aboutMikey = {
   gitHubURL:'https://github.com/mikeymasonic',
   linkedInURL: 'https://www.linkedin.com/in/michaelromay/',
   instagramURL: 'https://www.instagram.com/mikeymasonic/',
+  whateverSpaceURL: 'http://whateverspace.org',
   role: 'App Development & Design',
-  bio: 'Michael Romay is a fullstack software engineer, installation artist and musician who makes weird visual and interactive digital art.  He is a co-founder of whateverSpace and has a baby bird named Wootie that is a very sweet boi.'
+  bioPartOne: 'Michael Romay is a fullstack software engineer, installation artist and musician who makes weird visual and interactive digital art.  He is a co-founder of ',
+  bioWhatever: 'whateverSpace',
+  bioPartTwo: ' and has a baby bird named Wootie that is a very sweet boi.'
 };
 
 export const aboutJena = {
