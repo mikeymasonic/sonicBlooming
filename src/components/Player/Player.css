@@ -24,7 +24,7 @@
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  margin-top: 11vh;
+  margin-top: 12vh;
 
   .playerContainer {
     display: flex;
@@ -150,7 +150,7 @@
   width: 50vw;
   color: #FBC9B1;
   padding: 0.1em 0.2em 0 0.2em;
-  margin-bottom: 1em;
+  /* margin-bottom: 1em; */
   border: 1px outset #FBC9B1;
   box-shadow: 0px 0px 4px 4px #070E0D;
   background: linear-gradient(120deg, #d3b1fb, #d6b1fb, #e0b3fb, #edb5fb, #fbb7fa, #fbbaea, #fcbcdb, #fcbfce, #fcc1c3, #fcccc3, #fcd3c5, #fcd6c5);
@@ -372,6 +372,7 @@
   }
 
   .audioContainer {
+    margin-top: 11vh;
 
     .playerContainer {
       width: 85vw;
@@ -438,6 +439,7 @@
   }
 
   .audioContainer {
+    margin-top: 11vh;
 
     .playerContainer {
       width: 85vw;
@@ -493,6 +495,7 @@
 
 @media (max-width: 667px) {
   .audioContainer {
+    margin-top: 10vh;
 
     .playerContainer {
       width: 85vw;
@@ -639,9 +642,11 @@
   .audioContainer {
 
     .playerContainer {
+      margin: 0;
 
       .title {
         font-size: 2.3vw;
+        letter-spacing: 0.3em;
       }
 
       .Player {
@@ -673,6 +678,7 @@
   .audioContainer {
 
     .playerContainer {
+      margin: 0;
 
       .title {
         font-size: 2.4vw;

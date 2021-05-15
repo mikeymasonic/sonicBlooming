@@ -15,8 +15,15 @@ exports[`Player component renders Player 1`] = `
         <p>
           For each garden there is an upload section encouraging you to record any interesting sounds you hear to be added to that part of the garden’s soundscape! Submitted field recordings will be added to the soundscapes over the course of the month.
         </p>
-        <p>
-          I invite you to pause, listen and explore. - Crystal Cortez
+        <p
+          class="footer1"
+        >
+          I invite you to pause, listen and explore.
+        </p>
+        <p
+          class="footer2"
+        >
+          - Crystal Cortez
         </p>
       </section>
     </section>
