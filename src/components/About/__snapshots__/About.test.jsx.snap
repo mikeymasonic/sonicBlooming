@@ -20,7 +20,15 @@ exports[`About component renders About 1`] = `
           src="../images/about/aboutMain.jpg"
         />
         <p>
-          Sonic Blooming is a guided meditation on the sound of movement, growth, and transformation in our environments both external and internal. At the time of year when the roses at the International Rose Test Garden are beginning to bloom, plants are generating more electricity than usual. In my soundwalk, I have used a process called "Biodata Sonification", attaching sensors to the plants in the garden to collect their electrical impulses. I have translated these impulses into musical pitches and sound that make up half of the composition you will hear. The other half of the compositions are made up of field recordings collected in the space and added to the page throughout the month. Soundwalkers are able to listen to these soundscapes as they explore the garden.
+          Sonic Blooming is a guided meditation on the sound of movement, growth, and transformation in our environments both external and internal. At the time of year when the roses at the 
+          <a
+            href="https://goo.gl/maps/r8aSvrhMqpDESzNW9"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            International Rose Test Garden
+          </a>
+           are beginning to bloom, plants are generating more electricity than usual. In my soundwalk, I have used a process called "Biodata Sonification", attaching sensors to the plants in the garden to collect their electrical impulses. I have translated these impulses into musical pitches and sound that make up half of the composition you will hear. The other half of the compositions are made up of field recordings collected in the space and added to the page throughout the month. Soundwalkers are able to listen to these soundscapes as they explore the garden.
         </p>
       </section>
       <section
@@ -38,7 +46,7 @@ exports[`About component renders About 1`] = `
         </a>
          & 
         <a
-          href="https://www.portland.gov/parks"
+          href="https://www.portland.gov/parks/washington-park-international-rose-test-garden"
           rel="noopener noreferrer"
           target="_blank"
         >
@@ -186,7 +194,7 @@ exports[`About component renders About 1`] = `
         <p
           class="devBio"
         >
-          Michael Romay is a fullstack engineer, installation artist and musician who makes weird digital visual and interactive art.  He has a baby bird named Wootie that is a very sweet boi.
+          Michael Romay is a fullstack software engineer, installation artist and musician who makes weird visual and interactive digital art.  He is a co-founder of whateverSpace and has a baby bird named Wootie that is a very sweet boi.
         </p>
       </section>
     </section>
