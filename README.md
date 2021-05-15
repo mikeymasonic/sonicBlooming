@@ -23,7 +23,11 @@ Project is created with:
 To run this project, install it locally using npm:
 
 ```
-$ cd ../
+$ cd ../sonicBlooming
 $ npm install
-$ npm start
+$ npm run start
 ```
+
+## Devs
+<a href='https://michaelromay.dev/'>Michael Romay</a>
+<a href='https://jenaluxboehm.com/'>Jena Boehm</a>
