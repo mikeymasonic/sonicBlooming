@@ -33,6 +33,9 @@ const Player = () => {
   const loading = useLoading();
   const handleLoading = useHandleLoading();
   const [paused, setPaused] = useState(false);
+  const handleFullscreen = () => {
+    handleVisualizerDisplay(!visualizerDisplay);
+  };
 
   const isIOSCheck =   
   ['iPad Simulator',
@@ -52,24 +55,17 @@ const Player = () => {
 
   useEffect(() => {
     if (isSafariCheck) {
-      // console.log('we on safari');
       handleIsSafari(true);
     }
 
     if (isFirefoxCheck) {
-      // console.log('we on firefox');
       handleIsFirefox(true);
     }
 
     if (isIOSCheck) {
-      // console.log('we on ios');
       handleIsSafari(true);
     }
   }, []);
-
-  const handleFullscreen = () => {
-    handleVisualizerDisplay(!visualizerDisplay);
-  };
 
   return (
     <>
@@ -82,28 +78,24 @@ const Player = () => {
           <section className={styles.Player} style={{ visibility: playerVisible ? 'visible' : 'collapse', height: playerVisible ? 70 : 0 }}>
 
             <section className={styles.playerControls}>
-              {isSafari &&        
+              {isSafari &&      
               <AudioPlayer
                 ref={player}
                 className={styles.rhap_container}
                 src={song?.url}
                 onPlay={() => {
-                  // console.log('playback started');
                   if (!paused){
                     handleLoading(true);
                   } else if (paused) {
                     setPaused(false);
                   }
-                  // console.log('loading? ', loading);
                 }}
                 onPause={() => {
                   setPaused(true);
-                  // console.log('paused? ', paused);
                 }}
                 onLoadedData={() => {
                   console.log('waiting');
                   handleLoading(false);
-                  // console.log('loading? ', loading);
                 }}
                 onEnded={() => {
                   if (visualizerDisplay){
@@ -121,28 +113,23 @@ const Player = () => {
               />
               }
 
-              {!isSafari &&               
+              {!isSafari &&         
               <AudioPlayer
                 ref={player}
                 className={styles.rhap_container}
                 src={song?.url}
                 onPlay={() => {
-                  // console.log('playback started');
                   if (!paused){
                     handleLoading(true);
                   } else if (paused) {
                     setPaused(false);
                   }
-                  // console.log('loading? ', loading);
                 }}
                 onPause={() => {
                   setPaused(true);
-                  // console.log('paused? ', paused);
                 }}
                 onLoadedData={() => {
-                  // console.log('waiting');
                   handleLoading(false);
-                  // console.log('loading? ', loading);
                 }}
                 onEnded={() => {
                   if (visualizerDisplay){

@@ -20,7 +20,7 @@ exports[`About component renders About 1`] = `
           src="../images/about/aboutMain.jpg"
         />
         <p>
-          Sonic Blooming is a guided meditation on the sound of movement, growth, and transformation in our environments both external and internal. At the time of year when the roses at the 
+          Sonic Blooming is a guided meditation on the sound of movement, growth, and transformation in our environments both external and internal. At the time of year when the roses in the 
           <a
             href="https://goo.gl/maps/r8aSvrhMqpDESzNW9"
             rel="noopener noreferrer"
@@ -28,7 +28,7 @@ exports[`About component renders About 1`] = `
           >
             International Rose Test Garden
           </a>
-           are beginning to bloom, plants are generating more electricity than usual. In my soundwalk, I have used a process called "Biodata Sonification", attaching sensors to the plants in the garden to collect their electrical impulses. I have translated these impulses into musical pitches and sound that make up half of the composition you will hear. The other half of the compositions are made up of field recordings collected in the space and added to the page throughout the month. Soundwalkers are able to listen to these soundscapes as they explore the garden.
+           are beginning to bloom, plants are generating more electricity than usual. In my soundwalk, I have used a process called "Biodata Sonification"; attaching sensors to the plants in the garden to collect their electrical impulses. I have translated these impulses into musical pitches and sound that make up half of the composition you will hear. The other half of the composition is made up of field recordings I've collected in the space over time. Soundwalkers are encouraged to dive deep into these soundscapes as they explore each garden.
         </p>
       </section>
       <section
@@ -122,7 +122,15 @@ exports[`About component renders About 1`] = `
         <p
           class="crystalBio"
         >
-          Crystal Cortez is a sound, installation artist & programmer based out of Portland Oregon. She is also a professor of Creative Coding & Sonic Arts at Portland Community College. As someone who never saw herself represented in computer music or creative tech her work focuses on the empowerment of underserved populations gaining access and knowledge around technology. In 2019 she co founded whateverSpace, a maker space offering free and sliding scale workshops and technology rentals with priority going to the BIPOC community. Under her performance moniker Crystal Quartez she transforms field recordings, uses synthesis, audio programming, data sonification, and 3D sound spatialization to produce complex sonic realms. Her practice has recently involved the development of interactive sculptural interfaces and wearable technology that monitor movement and other corporeal methods to liberate the performer from their interfaces. Her art has been shown at NIME, PNCA, Disjecta, PICA, Navel (LA) and more.
+          Crystal Cortez is a sound, installation artist & programmer based out of Portland Oregon. She is also a professor of Creative Coding & Sonic Arts at Portland Community College. As someone who never saw herself represented in computer music or creative tech her work focuses on the empowerment of underserved populations gaining access and knowledge around technology. In 2019 she co founded 
+          <a
+            href="http://whateverspace.org"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            whateverSpace
+          </a>
+          , a maker space offering free and sliding scale workshops and technology rentals with priority going to the BIPOC community. Under her performance moniker Crystal Quartez she transforms field recordings, uses synthesis, audio programming, data sonification, and 3D sound spatialization to produce complex sonic realms. Her practice has recently involved the development of interactive sculptural interfaces and wearable technology that monitor movement and other corporeal methods to liberate the performer from their interfaces. Her art has been shown at NIME, PNCA, Disjecta, PICA, Navel (LA) and more.
         </p>
       </section>
     </section>
@@ -194,7 +202,15 @@ exports[`About component renders About 1`] = `
         <p
           class="devBio"
         >
-          Michael Romay is a fullstack software engineer, installation artist and musician who makes weird visual and interactive digital art.  He is a co-founder of whateverSpace and has a baby bird named Wootie that is a very sweet boi.
+          Michael Romay is a fullstack software engineer, installation artist and musician who makes weird visual and interactive digital art.  He is a co-founder of 
+          <a
+            href="http://whateverspace.org"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            whateverSpace
+          </a>
+           and has a baby bird named Wootie that is a very sweet boi.
         </p>
       </section>
     </section>
