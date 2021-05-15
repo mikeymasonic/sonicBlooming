@@ -80,7 +80,7 @@ export const uploads = [
 
 export const aboutSite = {
   description: {
-    main: 'Welcome to Sonic Blooming! This soundwalk is a guided meditation on the sound of movement, growth, and transformation in our environments both external and internal. At the time of year when the roses in the International Rose Test Garden are beginning to bloom, plants are generating more electricity than usual. I have used a process called "Biodata Sonification"; attaching sensors to the plants in the garden to collect their electrical impulses. You will hear these impulses translated into musical pitches and sounds that will guide you through the garden.',
+    main: 'Welcome to Sonic Blooming! This soundwalk is a guided meditation on the sound of movement, growth, and transformation in our environments both external and internal. At the time of year when the roses in the International Rose Test Garden are beginning to bloom, plants are generating more energy than usual. I have used a process called "Biodata Sonification"; attaching sensors to the plants in the garden to collect their electrical impulses. You will hear these impulses translated into musical pitches and sounds that will guide you through the garden.',
     record: 'For each garden there is an upload section encouraging you to record any interesting sounds you hear to be added to that part of the garden’s soundscape! Submitted field recordings will be added to the soundscapes over the course of the month.',
     footer: 'I invite you to pause, listen and explore. - Crystal Cortez',
   }
@@ -95,11 +95,8 @@ export const aboutPage = {
   mapURL: 'https://goo.gl/maps/r8aSvrhMqpDESzNW9',
   descriptionPartOne: 'Sonic Blooming is a guided meditation on the sound of movement, growth, and transformation in our environments both external and internal. At the time of year when the roses in the ',
   descriptionTestGarden: 'International Rose Test Garden',
-  descriptionPartTwo: ' are beginning to bloom, plants are generating more electricity than usual. In my soundwalk, I have used a process called "Biodata Sonification"; attaching sensors to the plants in the garden to collect their electrical impulses. I have translated these impulses into musical pitches and sound that make up half of the composition you will hear. The other half of the composition is made up of field recordings I\'ve collected in the space over time. Soundwalkers are encouraged to dive deep into these soundscapes as they explore each garden.'
+  descriptionPartTwo: ' are beginning to bloom, plants are generating more energy than usual. In my soundwalk, I have used a process called "Biodata Sonification"; attaching sensors to the plants in the garden to collect their electrical impulses. I have translated these impulses into musical pitches and sound that make up half of the composition you will hear. The other half of the composition is made up of field recordings I\'ve collected in the space over time. Soundwalkers are encouraged to dive deep into these soundscapes as they explore each garden.'
 };
-
-// Sonic Blooming is a guided meditation on the sound of movement, growth, and transformation in our environments both external and internal. At the time of year when the roses at the International Rose Test Garden are beginning to bloom, plants are generating extra electricity. In my soundwalk I have used a process called Biodata Sonification, attaching sensors to the plant's in the garden to collect their electrical impulses. I have translated these impulses into musical pitches and sound that make up half of the composition visitors will hear. The other half of the composition is made up of field recordings I've collected in the space. Soundwalkers will be able to listen to this soundscape via a weblink as they explore the garden. I am also working with a web developer who is making a website that will host the music, instructions, and have a place where visitors can upload their own field recordings which will be integrated with the soundscapes over the course of the month.
-
 
 export const aboutCrystal = {
   name: 'Crystal Cortez',
