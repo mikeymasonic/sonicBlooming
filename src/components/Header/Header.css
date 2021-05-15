@@ -119,6 +119,7 @@ a {
 
 @media (max-width: 1200px) {
   .Header {
+    height: 9vh;
 
     .headerLeft {
       width: 7vh;
