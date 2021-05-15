@@ -18,7 +18,13 @@ const About = () => {
 
         <section className={styles.aboutContainer}>
           <img src={aboutPage.photoURL} alt="Flower with sensors attached" className={styles.photo}/>
-          <p>{aboutPage.description}</p>
+          <p>
+            {aboutPage.descriptionPartOne}
+            <a href={aboutPage.mapURL} target="_blank" rel="noopener noreferrer">
+              {aboutPage.descriptionTestGarden}
+            </a> 
+            {aboutPage.descriptionPartTwo}
+          </p>
         </section>
         
         <section className={styles.creditsContainer}>

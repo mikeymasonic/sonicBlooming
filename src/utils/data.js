@@ -92,7 +92,10 @@ export const aboutPage = {
   linkedInIcon: '../images/about/linkedInIcon.png',
   photoURL: '../images/about/aboutMain.jpg',
   wwwIcon: '../images/about/wwwIcon.png',
-  description: 'Sonic Blooming is a guided meditation on the sound of movement, growth, and transformation in our environments both external and internal. At the time of year when the roses at the International Rose Test Garden are beginning to bloom, plants are generating more electricity than usual. In my soundwalk, I have used a process called "Biodata Sonification", attaching sensors to the plants in the garden to collect their electrical impulses. I have translated these impulses into musical pitches and sound that make up half of the composition you will hear. The other half of the compositions are made up of field recordings collected in the space and added to the page throughout the month. Soundwalkers are able to listen to these soundscapes as they explore the garden.'
+  mapURL: 'https://goo.gl/maps/r8aSvrhMqpDESzNW9',
+  descriptionPartOne: 'Sonic Blooming is a guided meditation on the sound of movement, growth, and transformation in our environments both external and internal. At the time of year when the roses at the ',
+  descriptionTestGarden: 'International Rose Test Garden',
+  descriptionPartTwo: ' are beginning to bloom, plants are generating more electricity than usual. In my soundwalk, I have used a process called "Biodata Sonification", attaching sensors to the plants in the garden to collect their electrical impulses. I have translated these impulses into musical pitches and sound that make up half of the composition you will hear. The other half of the compositions are made up of field recordings collected in the space and added to the page throughout the month. Soundwalkers are able to listen to these soundscapes as they explore the garden.'
 };
 
 
@@ -113,7 +116,7 @@ export const aboutMikey = {
   linkedInURL: 'https://www.linkedin.com/in/michaelromay/',
   instagramURL: 'https://www.instagram.com/mikeymasonic/',
   role: 'App Development & Design',
-  bio: 'Michael Romay is a fullstack engineer, installation artist and musician who makes weird digital visual and interactive art.  He has a baby bird named Wootie that is a very sweet boi.'
+  bio: 'Michael Romay is a fullstack engineer, installation artist and musician who makes weird digital visual and interactive art.  He is also a co-founder of whateverSpace. He has a baby bird named Wootie that is a very sweet boi.'
 };
 
 export const aboutJena = {
@@ -143,7 +146,7 @@ export const aboutSponsors = {
   sponsorOne: '3rd Angle New Music',
   sponsorOneURL: 'https://www.thirdangle.org/crystal-quartez-soundwalk',
   sponsorTwo: 'Portland Parks and Recreation',
-  sponsorTwoURL: 'https://www.portland.gov/parks',
+  sponsorTwoURL: 'https://www.portland.gov/parks/washington-park-international-rose-test-garden',
 };
 
 export const loadingImage = {
