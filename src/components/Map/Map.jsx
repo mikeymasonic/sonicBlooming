@@ -62,13 +62,16 @@ function Map() {
           </g>
 
           <g>
-            <a onClick={() => {
+            <a className={styles.Hover} onClick={() => {
+              
               handleSong(songs[3]);
               handleMapLocation('Shakespearean Garden');
               handlePlayerVisible(true);
+              
             }}>
               <title>Shakespearean Garden</title>
               <path
+               
                 d="M 979.48986,76.677237 H 1210.7583 V 207.77058 H 978.8715 V 76.677237 Z" />
             </a>
           </g>

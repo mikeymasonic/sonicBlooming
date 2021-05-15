@@ -89,6 +89,7 @@ body {
     stroke: rgb(67, 7, 136, 0.2);
     stroke-width: 5;
     cursor: pointer;
+    animation: 0;
   }
   }
 }
