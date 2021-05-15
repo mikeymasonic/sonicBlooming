@@ -56,7 +56,9 @@ exports[`Map component renders Map 1`] = `
           </a>
         </g>
         <g>
-          <a>
+          <a
+            class="Hover"
+          >
             <title>
               Shakespearean Garden
             </title>
