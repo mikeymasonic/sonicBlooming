@@ -116,7 +116,7 @@ export const aboutMikey = {
   linkedInURL: 'https://www.linkedin.com/in/michaelromay/',
   instagramURL: 'https://www.instagram.com/mikeymasonic/',
   role: 'App Development & Design',
-  bio: 'Michael Romay is a fullstack engineer, installation artist and musician who makes weird digital visual and interactive art.  He is also a co-founder of whateverSpace. He has a baby bird named Wootie that is a very sweet boi.'
+  bio: 'Michael Romay is a fullstack software engineer, installation artist and musician who makes weird visual and interactive digital art.  He is a co-founder of whateverSpace and has a baby bird named Wootie that is a very sweet boi.'
 };
 
 export const aboutJena = {
