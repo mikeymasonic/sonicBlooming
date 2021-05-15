@@ -12,10 +12,11 @@
     justify-content: center;
     align-items: center;
     width: 80%;
+    margin-top: 1em;
     height: fit-content;
     text-align: justify;
     padding: 1em 1.5em 1em 1.5em;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
     background: linear-gradient(120deg, #d3b1fb, #d6b1fb, #e0b3fb, #edb5fb, #fbb7fa, #fbbaea, #fcbcdb, #fcbfce, #fcc1c3, #fcccc3, #fcd3c5, #fcd6c5);
     box-shadow: 0px 0px 4px 4px #070E0D;
     -webkit-animation: fadein 2s; 
@@ -154,7 +155,7 @@
   .aboutPage {
 
     .About {
-      width: 80%;
+      width: 85%;
 
       p { 
         font-size: 0.9em;

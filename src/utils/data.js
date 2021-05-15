@@ -82,7 +82,8 @@ export const aboutSite = {
   description: {
     main: 'Welcome to Sonic Blooming! This soundwalk is a guided meditation on the sound of movement, growth, and transformation in our environments both external and internal. At the time of year when the roses in the International Rose Test Garden are beginning to bloom, plants are generating more energy than usual. I have used a process called "Biodata Sonification"; attaching sensors to the plants in the garden to collect their electrical impulses. You will hear these impulses translated into musical pitches and sounds that will guide you through the garden.',
     record: 'For each garden there is an upload section encouraging you to record any interesting sounds you hear to be added to that part of the garden’s soundscape! Submitted field recordings will be added to the soundscapes over the course of the month.',
-    footer: 'I invite you to pause, listen and explore. - Crystal Cortez',
+    footer: 'I invite you to pause, listen and explore.',
+    footer2: '- Crystal Cortez',
   }
 };
 
