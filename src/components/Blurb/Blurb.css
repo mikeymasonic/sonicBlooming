@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
 
   .Blurb {
     display: flex;
@@ -21,6 +22,14 @@
     animation: scale 1.5s;
     -webkit-animation: scale 1.5s;
     -moz-animation: scale 2s; 
+
+    .footer1{
+      margin: 0;
+    }
+
+    .footer2 {
+    margin: 0 0 0.5em 0;
+    }
   }
 
   .Blurb > p {
@@ -63,6 +72,7 @@
 
 @media (max-width: 1024px) {
   .blurbContainer {
+    width: 100%;
 
     .Blurb {
       width: 85%;
@@ -75,6 +85,7 @@
 
 @media (max-width: 667px) {
   .blurbContainer {
+    width: 95%;
 
     .Blurb {
       width: 85%;

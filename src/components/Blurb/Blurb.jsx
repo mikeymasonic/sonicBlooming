@@ -26,7 +26,8 @@ const Blurb = () => {
         <section>
           <p>{aboutSite.description.main}</p>
           <p>{aboutSite.description.record}</p>
-          <p>{aboutSite.description.footer}</p>
+          <p className={styles.footer1}>{aboutSite.description.footer}</p>
+          <p className={styles.footer2}>{aboutSite.description.footer2}</p>
         </section>} 
         {mapLocation && 
       <Popup 
