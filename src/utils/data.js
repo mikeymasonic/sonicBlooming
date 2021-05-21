@@ -138,7 +138,7 @@ export const aboutJena = {
 
 export const aboutQu = {
   name: 'General Qu',
-  portfolioURL: 'https://www.generalqu.com/',
+  portfolioURL: 'https://generalqu.com/',
   role: 'map design',
 };
 
@@ -146,6 +146,12 @@ export const aboutClamber = {
   name: 'clamber',
   portfolioURL: 'https://clamber.org/',
   role: 'photos',
+};
+
+export const aboutKale = {
+  name: 'Kale Nixon',
+  portfolioURL: 'https://leisureaudio.org/',
+  role: 'audio mastering',
 };
 
 export const aboutSponsors = {

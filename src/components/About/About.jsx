@@ -4,6 +4,7 @@ import {
   aboutSponsors,
   aboutQu,
   aboutClamber,
+  aboutKale,
   aboutCrystal,
   aboutMikey,
   aboutJena,
@@ -49,6 +50,13 @@ const About = () => {
           <span>Photos by: &nbsp;</span>
           <a href={aboutClamber.portfolioURL} target="_blank" rel="noopener noreferrer">
             {aboutClamber.name}
+          </a> 
+
+          <br/> 
+
+          <span>Audio Mastered by: &nbsp;</span>
+          <a href={aboutKale.portfolioURL} target="_blank" rel="noopener noreferrer">
+            {aboutKale.name}
           </a> 
         </section>
       </section>

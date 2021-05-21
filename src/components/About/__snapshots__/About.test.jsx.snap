@@ -57,7 +57,7 @@ exports[`About component renders About 1`] = `
           Map designed by:  
         </span>
         <a
-          href="https://www.generalqu.com/"
+          href="https://generalqu.com/"
           rel="noopener noreferrer"
           target="_blank"
         >
@@ -73,6 +73,17 @@ exports[`About component renders About 1`] = `
           target="_blank"
         >
           clamber
+        </a>
+        <br />
+        <span>
+          Audio Mastered by:  
+        </span>
+        <a
+          href="https://leisureaudio.org/"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Kale Nixon
         </a>
       </section>
     </section>
