@@ -30,13 +30,6 @@ const Visualizer = ({ forwardRef }) => {
     // -------------
     const AudioContext = window.AudioContext || window.webkitAudioContext || false;
     const audio = forwardRef.current.audio.current;
-    // audio.context = audio.context || new AudioContext();
-
-    console.log(AudioContext);
-
-    // if('webkitAudioContext' in window) {
-    //   const context = new webkitAudioContext();
-    // }
 
     if (AudioContext) {
       context = new AudioContext();
@@ -84,7 +77,6 @@ const Visualizer = ({ forwardRef }) => {
     const audioDataArrayR = new Uint8Array(bufferLengthR);
 
     // Make a audio node
-    // audio.source = audio.source || context.createMediaElementSource(audio);
     const source = context.createMediaElementSource(audio);
 
     source.connect(splitter);
